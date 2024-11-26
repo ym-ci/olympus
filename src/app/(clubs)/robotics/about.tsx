@@ -31,7 +31,7 @@ export function AboutUs() {
           />
           <RoboticsCard
             title="Robotics Team"
-            imageSrc="/assets/robotics/bot_close_1.jpg"
+            imageSrc="/assets/robotics/bot_cool.jpg"
             items={[
               "Compete in the VEX V5 Robotics Competition",
               "Compete in various other robotics competitions",

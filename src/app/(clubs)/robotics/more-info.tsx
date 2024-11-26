@@ -69,6 +69,22 @@ const faq = [
     )
   },
   {
+    question: "Where can I find the team on the internet?",
+    answer: (
+      <>
+        You can find us on <Link href="https://www.instagram.com/ym_robotics/" target="_blank" className="text-blue-400 hover:underline hover:text-blue-500">
+          Instagram
+        </Link>!
+        {/* {" "}
+        and
+        {" "}
+        <Link href="https://www.youtube.com/@ymrobotics" target="_blank" className="text-blue-400 hover:underline hover:text-blue-500">
+          YouTube
+        </Link> */}
+      </>
+    )
+  },
+  {
     question: "What is the VEX V5 Robotics Competition's objective this year?",
     answer: (
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Sx6HJSpopeQ?si=ec7c0tWRPUlF_QA-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
