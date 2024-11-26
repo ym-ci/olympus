@@ -38,12 +38,12 @@ export default function LandingPage() {
         {/* Tech Council Quadrant */}
         <Link href="/tech-council" prefetch={false} className="group relative overflow-hidden">
           <Image
-            src="/assets/robotics/group.jpg"
+            src="/assets/tech-council/group.jpg"
             alt="Tech Council"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/20" />
+          <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/30" />
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
             Tech Council
           </h2>
