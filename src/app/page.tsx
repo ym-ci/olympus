@@ -29,7 +29,7 @@ export default function LandingPage() {
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/20" />
+          <div className="absolute inset-0 bg-black/40 transition-all duration-500 group-hover:bg-black/20" />
           <h2 className="absolute bottom-4 right-4 text-2xl font-bold text-white md:text-3xl">
             Programming
           </h2>
@@ -43,7 +43,7 @@ export default function LandingPage() {
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/30" />
+          <div className="absolute inset-0 bg-black/55 transition-all duration-500 group-hover:bg-black/30" />
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
             Tech Council
           </h2>

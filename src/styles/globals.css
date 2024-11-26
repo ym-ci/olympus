@@ -68,3 +68,24 @@
 * {
   scroll-behavior: smooth;
 }
+
+/* Firefox */
+/* * {
+scrollbar-width: thin;
+scrollbar-color: var(--gray-950) var(--indigo-950);
+} */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+  border-radius: 2.5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--accent));
+  border-radius: 14px;
+}
