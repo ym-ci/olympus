@@ -24,7 +24,7 @@ export default function LandingPage() {
         {/* Programming Quadrant */}
         <Link href="/programming" prefetch={false} className="group relative overflow-hidden">
           <Image
-            src="/programming_group.jpg"
+            src="/assets/programming/group.jpg"
             alt="Programming"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
