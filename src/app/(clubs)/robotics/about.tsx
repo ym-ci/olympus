@@ -61,7 +61,7 @@ export function AboutUs() {
           />
         </div>
         <div className='pt-4'>
-          <Link href="#more-info" className='w-full'>
+          <Link href="#faq" className='w-full'>
             <Button className='w-full' variant="outline">Learn More</Button>
           </Link>
         </div>
