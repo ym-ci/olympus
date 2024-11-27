@@ -30,7 +30,6 @@ const faq = [
     question: "Do I have to compete in the CTF (Capture the Flag)?",
     answer: "Not at all! Competitions like PicoCTF and AngstromCTF are completely optional. But it's a fun way to use what you've learned and test your skills."
   },
-  
   {
     question: "I've got more questions! Who do I contact?",
     answer: (
