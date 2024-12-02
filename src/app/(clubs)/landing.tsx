@@ -47,6 +47,7 @@ export function Hero({ image, title, strTitle }: HeroProps) {
             fill
             priority
             className="object-cover"
+            quality={100}
           />
         </div>
       </div>
