@@ -24,7 +24,7 @@ export default function LandingPage() {
         {/* Programming Quadrant */}
         <Link href="/programming" prefetch={false} className="group relative overflow-hidden">
           <Image
-            src="/programming_group.jpg"
+            src="/assets/programming/group.jpg"
             alt="Programming"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
@@ -52,12 +52,12 @@ export default function LandingPage() {
         {/* Cybersecurity Quadrant */}
         <Link href="/cybersecurity" prefetch={false} className="group relative overflow-hidden">
           <Image
-            src="/assets/robotics/group.jpg"
+            src="/assets/cybersecurity/group.png"
             alt="Cybersecurity"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/20" />
+          <div className="absolute inset-0 bg-black/45 transition-all duration-500 group-hover:bg-black/30" />
           <h2 className="absolute bottom-4 right-4 text-2xl font-bold text-white md:text-3xl">
             Cybersecurity
           </h2>

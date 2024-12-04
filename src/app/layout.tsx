@@ -5,6 +5,7 @@ import { type Metadata } from "next";
 import { ThemeProvider } from 'next-themes'
 
 import { TRPCReactProvider } from "@/trpc/react";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "YMCI - Tech Clubs",
@@ -17,6 +18,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
+      <Script
+        src="https://assets.onedollarstats.com/tracker.js"
+        data-site-id="ymci.ca"
+      />
       <body>
         <ThemeProvider attribute={"class"} defaultTheme={"dark"}>
           <TRPCReactProvider>
