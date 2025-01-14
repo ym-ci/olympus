@@ -36,7 +36,7 @@ const Details = () => {
             <div className={`flex flex-col gap-4 ${mobileBorder}`}>
               <h1 className={"text-2xl font-bold"}>Duration</h1>
               <p className={"text-xl"}>
-                11:00-3:15 PM
+                12:15-3:15 PM (Please arrive by 12:00 PM!)
               </p>
             </div>
             <div className={`flex flex-col gap-4 ${mobileBorder}`}>
