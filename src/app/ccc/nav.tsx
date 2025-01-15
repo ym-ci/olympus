@@ -35,7 +35,7 @@ const Navbar = () => {
             type: "spring",
           }}
         >
-          <nav className="space-x-4 bg-black p-2 rounded-xl">
+          <nav className="space-x-4 p-2 rounded-xl">
             {nav.map((item, i) => {
               return (
                 <Link

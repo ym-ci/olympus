@@ -5,7 +5,8 @@ import { gradient } from "@/app/ccc/ui";
 import PopIn from "@/components/framer/pop-in";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { FaArrowDown } from "react-icons/fa";
+import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,12 +23,15 @@ const Hero = () => {
               </PopIn>
               <div className={"flex flex-row self-center gap-4 scale-125"}>
                 <SlideUp duration={0.5} delay={0.5}>
-                  <a href={"#info"}>
-                    <Button color={"primary"}>
-                      <FaArrowDown />
-                      Learn More
+                  <Link href={"#info"} className="group">
+                    <Button
+                      variant="default"
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200"
+                    >
+                      <span>About the CCC</span>
+                      <ArrowDown className="ml-2 w-4 h-4 transition-transform group-hover:translate-y-1" />
                     </Button>
-                  </a>
+                  </Link>
                 </SlideUp>
               </div>
             </div>
