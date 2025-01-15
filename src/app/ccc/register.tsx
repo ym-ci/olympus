@@ -8,11 +8,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import SlideUp from '@/components/framer/slide-up';
-import { gradient } from '@/app/ccc/ui';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Register = () => {
   return (
@@ -35,10 +34,10 @@ const Register = () => {
                     <p className={"col-span-1 md:col-span-5 text-xl"}>
                       Please register online via the google form below.
                     </p>
-                    <Link href={"/ccc-signup?ref=site"} className="group" target="_blank">
+                    <Link href={"/ccc-signup?ref=site"} className="group w-full" target="_blank">
                       <Button
                         variant="default"
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200 w-full md:w-fit"
                       >
                         Register
                         <ExternalLink className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />

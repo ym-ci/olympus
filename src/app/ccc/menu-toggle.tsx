@@ -14,7 +14,7 @@ const Path = (props: React.ComponentProps<typeof motion.path>) => (
 export const MenuToggle = ({ toggle }: { toggle: () => void }) => (
   <button
     onClick={toggle}
-    className={"float-left absolute top-5 left-5 bg-black p-4 rounded-full"}
+    className={"float-left absolute top-5 left-5 p-4 rounded-full"}
   >
     {/* TODO: fix extra space under last line and remove mt-[0.5px] */}
     <svg width="23" height="23" viewBox="0 0 23 23" className={"mt-[0.5px]"}>

@@ -14,12 +14,12 @@ const Hero = () => {
       <div className="flex h-screen justify-center items-center">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 items-center">
-            <div className="flex flex-col justify-center space-y-8 text-center gap-4">
+            <div className="flex flex-col justify-center space-y-1 md:space-y-8 text-center gap-4">
               <PopIn duration={0.5}>
-                <h1 className={`text-6xl font-bold ${gradient} pb-4`}>Canadian Computing Competition</h1>
+                <h1 className={`text-5xl md:text-6xl font-bold ${gradient} pb-4`}>Canadian Computing Competition</h1>
               </PopIn>
               <PopIn duration={0.65}>
-                <h1 className={"text-4xl font-bold text-gray-400 pb-4"}>@ York Mills CI</h1>
+                <h1 className={"text-2xl md:text-4xl font-bold text-gray-400 pb-4"}>@ York Mills CI</h1>
               </PopIn>
               <div className={"flex flex-row self-center gap-4 scale-125"}>
                 <SlideUp duration={0.5} delay={0.5}>

@@ -66,10 +66,10 @@ const Details = () => {
               </div>
             </CardContent>
             <CardFooter className="flex justify-center pt-4 border-t border-white/10">
-              <Link href={"#register"} className="group">
+              <Link href={"#register"} className="group w-full md:w-fit">
                 <Button
                   variant="default"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200 w-full md:w-fit"
                 >
                   Register
                   <ArrowDown className="ml-2 w-4 h-4 transition-transform group-hover:translate-y-1" />
