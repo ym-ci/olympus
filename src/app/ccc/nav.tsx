@@ -7,9 +7,7 @@ import MobileNav from "@/app/ccc/mobile/nav";
 
 export const nav = [
   { href: "#home", label: "Home" },
-  { href: "#info", label: "Info" },
   { href: "#details", label: "Details" },
-  { href: "#register", label: "Register" },
 ];
 
 const Navbar = () => {

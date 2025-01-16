@@ -1,9 +1,7 @@
 "use client";
 
-import Details from '@/app/ccc/details';
 import Hero from '@/app/ccc/hero';
 import Info from '@/app/ccc/info';
-import Register from '@/app/ccc/register';
 import dynamic from 'next/dynamic';
 import React from 'react';
 
@@ -25,26 +23,16 @@ const Page = () => {
           animation: gradient 10s ease infinite;
         }
       `}</style>
-      <Navbar/>
+      <Navbar />
       <main className={`flex min-h-screen flex-col items-center justify-between w-full animate-gradient ${gradient}`}>
         <section id={"home"}>
-          <Hero/>
+          <Hero />
         </section>
         <section className="w-full min-h-screen flex items-center justify-center"
-                 id={"info"}>
+          id={"info"}>
           <div className="container mx-auto text-center">
-            <Info/>
+            <Info />
           </div>
-        </section>
-        <section className="w-full min-h-screen flex items-center justify-center"
-                 id={"details"}>
-          <div className="container mx-auto">
-            <Details/>
-          </div>
-        </section>
-        <section className="w-full min-h-screen flex items-center justify-center"
-                 id={"register"}>
-          <Register/>
         </section>
       </main>
     </>
