@@ -1,5 +1,5 @@
-import { Hero } from "@/app/(clubs)/landing";
-import { AboutProgramming } from "@/app/(clubs)/programming/about";
+import { Hero } from "@/app/(dark)/(clubs)/landing";
+import { AboutProgramming } from "@/app/(dark)/(clubs)/programming/about";
 import { ClassroomIcon } from "@/components/icons/classroom";
 import { InstagramIcon } from "@/components/icons/instagram";
 import Link from "next/link";

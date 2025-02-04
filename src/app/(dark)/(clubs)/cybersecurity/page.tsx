@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutCyberSec } from "@/app/(clubs)/cybersecurity/about";
+import { AboutCyberSec } from "@/app/(dark)/(clubs)/cybersecurity/about";
 import { FAQ } from "@/components/faq";
 import { Contact } from "@/components/contact";
 import { Button } from "@/components/ui/button";
