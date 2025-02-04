@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { MenuItem } from "@/app/ccc/mobile/menu-item";
-import { nav } from "@/app/ccc/nav";
+import { MenuItem } from "@/app/(dark)/ccc/mobile/menu-item";
+import { nav } from "@/app/(dark)/ccc/nav";
 
 const variants = {
   open: {

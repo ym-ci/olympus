@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardTitle, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import SlideUp from "@/components/framer/slide-up";
 import { FaArrowDown } from "react-icons/fa";
-import { gradient } from '@/app/ccc/ui';
+import { gradient } from '@/app/(dark)/ccc/ui';
 import { AlertCircle, ArrowDown, Clock, DollarSign, MapPin, Utensils } from 'lucide-react';
 
 

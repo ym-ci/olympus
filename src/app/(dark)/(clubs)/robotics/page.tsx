@@ -1,7 +1,5 @@
 "use client";
 
-import { Hero } from "@/app/(clubs)/landing";
-import { AboutUs } from "@/app/(clubs)/robotics/about";
 import { FAQ } from "@/components/faq";
 import { ClassroomIcon } from "@/components/icons/classroom";
 import { InstagramIcon } from "@/components/icons/instagram";
@@ -10,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Link from "next/link";
+import { Hero } from "@/app/(dark)/(clubs)/landing";
+import { AboutUs } from "@/app/(dark)/(clubs)/robotics/about";
 
 const faq = [
   {

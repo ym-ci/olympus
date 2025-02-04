@@ -3,8 +3,8 @@
 import React, { useEffect, useRef } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { useDimensions } from "@/components/dimensions";
-import { Navigation } from "@/app/ccc/mobile/navigation";
-import { MenuToggle } from "@/app/ccc/menu-toggle";
+import { Navigation } from "@/app/(dark)/ccc/mobile/navigation";
+import { MenuToggle } from "@/app/(dark)/ccc/menu-toggle";
 const sidebar = {
   open: {
     clipPath: "circle(150% at 50px 40px)",

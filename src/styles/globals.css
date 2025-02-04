@@ -3,7 +3,43 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --portage-50: #eff4fe;
+    --portage-100: #e2eafd;
+    --portage-200: #cad8fb;
+    --portage-300: #aabdf7;
+    --portage-400: #7c90f0;
+    --portage-500: #6b78e9;
+    --portage-600: #4f52dc;
+    --portage-700: #4040c2;
+    --portage-800: #36379d;
+    --portage-900: #33377c;
+    --portage-950: #1e1f48;
+
+    --lavender-pink-50: #fcf3f9;
+    --lavender-pink-100: #fae9f5;
+    --lavender-pink-200: #f8d2ec;
+    --lavender-pink-300: #f4b4de;
+    --lavender-pink-400: #eb7bc3;
+    --lavender-pink-500: #e054a9;
+    --lavender-pink-600: #ce3489;
+    --lavender-pink-700: #b2246f;
+    --lavender-pink-800: #93215c;
+    --lavender-pink-900: #7b204f;
+    --lavender-pink-950: #4b0c2c;
+
+    --cruise-50: #effaf6;
+    --cruise-100: #d8f3e7;
+    --cruise-200: #b6e6d3;
+    --cruise-300: #84d1b8;
+    --cruise-400: #50b798;
+    --cruise-500: #2e9b7e;
+    --cruise-600: #1f7c65;
+    --cruise-700: #196353;
+    --cruise-800: #164f43;
+    --cruise-900: #134138;
+    --cruise-950: #092520;
+
+    --background: #faf6ec;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -27,7 +63,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
+    --primary-darker: 222.2 84% 4.9%;
+    --secondary-darker: 210 40% 12%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,7 +91,9 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
+    --primary-darker: 210 40% 12%;
+    --secondary-darker: 222.2 84% 4.9%;
   }
 }
 @layer base {

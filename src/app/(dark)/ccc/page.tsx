@@ -1,11 +1,11 @@
 "use client";
 
-import Hero from '@/app/ccc/hero';
-import Info from '@/app/ccc/info';
+import Hero from '@/app/(dark)/ccc/hero';
+import Info from '@/app/(dark)/ccc/info';
 import dynamic from 'next/dynamic';
 import React from 'react';
 
-const Navbar = dynamic(() => import('@/app/ccc/nav'), { ssr: false });
+const Navbar = dynamic(() => import('@/app/(dark)/ccc/nav'), { ssr: false });
 
 const Page = () => {
   const gradient = "bg-gradient-to-br from-indigo-950 via-[#14062d] to-slate-950"

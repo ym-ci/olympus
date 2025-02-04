@@ -1,7 +1,7 @@
 "use client";
 
 import SlideUp from "@/components/framer/slide-up";
-import { gradient } from "@/app/ccc/ui";
+import { gradient } from "@/app/(dark)/ccc/ui";
 import PopIn from "@/components/framer/pop-in";
 import React from "react";
 import { Button } from "@/components/ui/button";

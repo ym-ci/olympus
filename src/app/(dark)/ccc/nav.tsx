@@ -3,7 +3,7 @@
 import Link from "next/link";
 import SlideDown from "@/components/framer/slide-down";
 import { useMemo, useState } from "react";
-import MobileNav from "@/app/ccc/mobile/nav";
+import MobileNav from "@/app/(dark)/ccc/mobile/nav";
 
 export const nav = [
   { href: "#home", label: "Home" },

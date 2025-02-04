@@ -1,11 +1,10 @@
 import "@/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import { ThemeProvider } from 'next-themes'
 
 import { TRPCReactProvider } from "@/trpc/react";
 import Script from "next/script";
+import { satoshi } from "@/app/font/satoshi";
 
 export const metadata: Metadata = {
   title: "YMCI - Tech Clubs",
@@ -17,17 +16,15 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={satoshi.variable} suppressHydrationWarning>
       <Script
         src="https://assets.onedollarstats.com/tracker.js"
         data-site-id="ymci.ca"
       />
       <body>
-        <ThemeProvider attribute={"class"} defaultTheme={"dark"}>
-          <TRPCReactProvider>
-            {children}
-          </TRPCReactProvider>
-        </ThemeProvider>
+        <TRPCReactProvider>
+          {children}
+        </TRPCReactProvider>
       </body>
     </html>
   );
