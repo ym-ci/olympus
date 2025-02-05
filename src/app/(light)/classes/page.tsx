@@ -31,6 +31,11 @@ const courses: Course[] = [
             <p>
               This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
             </p>
+            <iframe 
+              src="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" 
+              className="w-full aspect-video"
+              allow="autoplay"
+            ></iframe>
           </div>
         ),
       },
@@ -106,7 +111,7 @@ export default function Classes() {
     } else if (c?.id.endsWith("C")) {
       return "College"
     } else if (c?.id.endsWith("M")) {
-      return "Mixed"
+      return "Mixed - College & University"
     }
     return c?.id.slice(c?.id.length - 1)
   }, [c]);

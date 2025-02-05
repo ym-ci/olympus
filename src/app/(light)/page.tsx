@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export default function LandingPage() {
