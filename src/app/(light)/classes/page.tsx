@@ -1,7 +1,9 @@
 "use client";
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { YoutubeVideo } from "@/components/video/youtube";
+import { DriveVideo } from "@/components/video/drive";
 
 
 type Class = {
@@ -9,8 +11,8 @@ type Class = {
   gradeLevel: 9 | 10 | 11 | 12;
   prereqs?: string[];
   description: React.ReactNode;
+  videos?: React.ReactNode | React.ReactNode[];
 }
-
 
 type Course = {
   id: string;
@@ -31,13 +33,22 @@ const courses: Course[] = [
             <p>
               This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
             </p>
-            <iframe 
-              src="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" 
-              className="w-full aspect-video"
-              allow="autoplay"
-            ></iframe>
           </div>
         ),
+        videos: (
+          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full w-full">
+            <div className="flex flex-col gap-2 min-w-0">
+              <YoutubeVideo id="eKFr5Fq63_s" vertical />
+              <DriveVideo url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview" vertical />
+              <DriveVideo url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview" vertical />
+            </div>
+            <div className="flex flex-col gap-2 min-w-0">
+              <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
+              <YoutubeVideo id="4D1mmO83ufo" />
+              <DriveVideo url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview" vertical />
+            </div>
+          </div>
+        )
       },
       {
         id: "TEJ4M",
@@ -50,6 +61,11 @@ const courses: Course[] = [
             </p>
           </div>
         ),
+        videos: (
+          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full">
+            <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical />
+          </div>
+        )
       },
     ],
     name: "Computer Engineering",
@@ -92,6 +108,12 @@ const courses: Course[] = [
               This course enables students to further develop knowledge and skills in computer science. Students will use modular design principles to create complex and fully documented programs, according to industry standards. Student teams will manage a large software development project, from planning through to project review. Students will also analyse algorithms for effectiveness. They will investigate ethical issues in computing and further explore environmental issues, emerging technologies, areas of research in computer science, and careers in the field.
             </p>
           </div>
+        ),
+        videos: (
+          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full">
+            <YoutubeVideo id="Uiy7pGqdFlUs" />
+          </div>
+
         )
       }
     ]
@@ -104,7 +126,7 @@ export default function Classes() {
 
   const c = useMemo(() => courses.find((c) => c.id === selectedCourse)?.classes.find((cls) => cls.id === selectedClass), [selectedCourse, selectedClass]);
   const courseType = useMemo(() => {
-    if (c?.id.endsWith("U")) { 
+    if (c?.id.endsWith("U")) {
       return "University"
     } else if (c?.id.endsWith("O")) {
       return "Open"
@@ -174,21 +196,37 @@ export default function Classes() {
 
             {/* Details section */}
             {selectedClass && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
-              >
-                <div className="prose prose-blue max-w-none space-y-4">
-                  <div className="flex flex-row gap-4">
-                    <p><span className="font-bold">Prerequisites:</span> {c?.prereqs?.join(", ") ?? "None"}</p>
-                    <p><span className="font-bold">Grade Level:</span> {c?.gradeLevel}</p>
-                    <p><span className="font-bold">Course Type:</span> {courseType}</p>
+              <>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
+                >
+                  <div className="prose prose-blue max-w-none space-y-4">
+                    <div className="flex flex-row gap-4">
+                      <p><span className="font-bold">Prerequisites:</span> {c?.prereqs?.join(", ") ?? "None"}</p>
+                      <p><span className="font-bold">Grade Level:</span> {c?.gradeLevel}</p>
+                      <p><span className="font-bold">Course Type:</span> {courseType}</p>
+                    </div>
+                    {c?.description}
                   </div>
-                  {c?.description}
-                </div>
-              </motion.div>
+                </motion.div>
+                {c?.videos && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
+                  >
+                    <div className="prose prose-blue max-w-none space-y-4 text-center">
+                      <h1 className="text-2xl font-bold">Some amazing projects our students have made in {c.id}</h1>
+                      {c.videos}
+                    </div>
+                  </motion.div>
+
+                )}
+              </>
             )}
           </div>
         )}

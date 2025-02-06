@@ -1,32 +1,49 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 export default function LandingPage() {
   const [hoveredSide, setHoveredSide] = useState<"left" | "right" | null>(null)
+  const [isMobile, setIsMobile] = useState(false)
 
-  const EXPANDED_WIDTH = 60
-  const CONTRACTED_WIDTH = 100 - EXPANDED_WIDTH
-  const DEFAULT_WIDTH = 50
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  const EXPANDED_SIZE = 60
+  const CONTRACTED_SIZE = 40
+  const DEFAULT_SIZE = 50
+
+  const getAnimation = (side: "left" | "right") =>
+    isMobile
+      ? {
+          height:
+            hoveredSide === side
+              ? `${EXPANDED_SIZE}%`
+              : hoveredSide && hoveredSide !== side
+              ? `${CONTRACTED_SIZE}%`
+              : `${DEFAULT_SIZE}%`,
+        }
+      : {
+          width:
+            hoveredSide === side
+              ? `${EXPANDED_SIZE}%`
+              : hoveredSide && hoveredSide !== side
+              ? `${CONTRACTED_SIZE}%`
+              : `${DEFAULT_SIZE}%`,
+        }
 
   return (
-    <div className="flex h-screen overflow-hidden font-sans antialiased">
+    <div className="flex flex-col md:flex-row h-screen overflow-hidden font-sans antialiased">
       <motion.a
-        className="relative bg-primary text-white flex items-center justify-center group w-full cursor-pointer"
-        animate={{
-          width:
-            hoveredSide === "left"
-              ? `${EXPANDED_WIDTH}%`
-              : hoveredSide === "right"
-                ? `${CONTRACTED_WIDTH}%`
-                : `${DEFAULT_WIDTH}%`,
-        }}
-        transition={{
-          duration: 0.4,
-          ease: [0.4, 0, 0.2, 1],
-        }}
+        className="relative bg-primary text-white flex items-center justify-center group w-full h-full cursor-pointer"
+        animate={getAnimation("left")}
+        transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         onMouseEnter={() => setHoveredSide("left")}
         onMouseLeave={() => setHoveredSide(null)}
         href="/classes"
@@ -51,25 +68,17 @@ export default function LandingPage() {
       </motion.a>
 
       <motion.a
-        className="relative bg-secondary text-gray-900 flex items-center justify-center group w-full cursor-pointer"
-        animate={{
-          width:
-            hoveredSide === "right"
-              ? `${EXPANDED_WIDTH}%`
-              : hoveredSide === "left"
-                ? `${CONTRACTED_WIDTH}%`
-                : `${DEFAULT_WIDTH}%`,
-        }}
-        transition={{
-          duration: 0.4,
-          ease: [0.4, 0, 0.2, 1],
-        }}
+        className="relative bg-secondary text-gray-900 flex items-center justify-center group w-full h-full cursor-pointer"
+        animate={getAnimation("right")}
+        transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         onMouseEnter={() => setHoveredSide("right")}
         onMouseLeave={() => setHoveredSide(null)}
         href="/clubs"
       >
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <h1 className="text-7xl font-bold tracking-tight group-hover:scale-110 transition-all duration-500">Clubs</h1>
+          <h1 className="text-7xl font-bold tracking-tight group-hover:scale-110 transition-all duration-500">
+            Clubs
+          </h1>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{
