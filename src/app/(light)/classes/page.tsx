@@ -4,11 +4,14 @@ import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { YoutubeVideo } from "@/components/video/youtube";
 import { DriveVideo } from "@/components/video/drive";
-
+import Image from "next/image";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogHeader } from "@/components/ui/dialog";
+import { Infographic } from "@/app/(light)/classes/infographic";
 
 type Class = {
   id: string;
   gradeLevel: 9 | 10 | 11 | 12;
+
   prereqs?: string[];
   description: React.ReactNode;
   videos?: React.ReactNode | React.ReactNode[];
@@ -29,18 +32,21 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div>
-            <p>
-              This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
-            </p>
-            <p className="pt-4">
-              Students gain valuable hands-on experience in computer engineering, giving them a competitive edge in the job market and strong career prospects. This course provides an advantage for university admissions and future opportunities in technology, circuitry, and robotics.
-            </p>
-            <p className="pt-4">
-              <strong>
-                Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
-              </strong>
-            </p>
+          <div className="flex flex-row gap-4">
+            <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
+            <div>
+              <p>
+                This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
+              </p>
+              <p className="pt-4">
+                Students gain valuable hands-on experience in computer engineering, giving them a competitive edge in the job market and strong career prospects. This course provides an advantage for university admissions and future opportunities in technology, circuitry, and robotics.
+              </p>
+              <p className="pt-4">
+                <strong>
+                  Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, Waterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
+                </strong>
+              </p>
+            </div>
           </div>
         ),
         videos: (
@@ -64,18 +70,21 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["TEJ3M"],
         description: (
-          <div>
-            <p>
-              This course extends students&apos; understanding of computer systems and computer interfacing with external devices. Students will learn more about fundamental concepts of digital logic, electronics, robotics, programming, and networks. Projects will include working with the Arduino microcontroller and C programming, building digital circuits to accomplish arithmetic and logic operations as well as controlling motors and using sensors.
-            </p>
-            <p className="pt-4">
-              Students work on advanced projects that showcase their skills in computer engineering, allowing them to build unique portfolios for university applications. These hands-on experiences set them apart in a competitive job market and provide a strong foundation for future opportunities in technology, circuitry, and robotics.
-            </p>
-            <p className="pt-4">
-              <strong>
-                Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
-              </strong>
-            </p>
+          <div className="flex flex-row gap-4">
+            <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
+            <div>
+              <p>
+                This course extends students&apos; understanding of computer systems and computer interfacing with external devices. Students will learn more about fundamental concepts of digital logic, electronics, robotics, programming, and networks. Projects will include working with the Arduino microcontroller and C programming, building digital circuits to accomplish arithmetic and logic operations as well as controlling motors and using sensors.
+              </p>
+              <p className="pt-4">
+                Students work on advanced projects that showcase their skills in computer engineering, allowing them to build unique portfolios for university applications. These hands-on experiences set them apart in a competitive job market and provide a strong foundation for future opportunities in technology, circuitry, and robotics.
+              </p>
+              <p className="pt-4">
+                <strong>
+                  Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, Waterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
+                </strong>
+              </p>
+            </div>
           </div>
         ),
         videos: (
@@ -97,7 +106,8 @@ const courses: Course[] = [
         id: "ICD2O",
         gradeLevel: 10,
         description: (
-          <div>
+          <div className="flex flex-row gap-4">
+            <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
             <p>
               This course helps students develop cutting-edge digital technology and computer programming skills that will support them in contributing to and leading the global economic, scientific and societal innovations of tomorrow. Students will learn and apply coding concepts and skills to build hands-on projects and investigate artificial intelligence, cybersecurity, and other emerging digital technologies that connect to a wide range of fields and careers. Using critical thinking skills with a focus on digital citizenship, students will investigate the appropriate use and development of the digital technologies that they encounter every day, as well as the benefits and limitations of these technologies.
             </p>
@@ -115,15 +125,22 @@ const courses: Course[] = [
         id: "ICS3U",
         gradeLevel: 11,
         description: (
-          <div>
-            <p>
-              This course introduces students to computer science. Students will design software independently and as part of a team, using industry-standard programming tools and applying the software development life-cycle model. They will also write and use subprograms within computer programs. Students will develop creative solutions for various types of problems as their understanding of the computing environment grows. They will also explore environmental and ergonomic issues, emerging research in computer science, and global career trends in computer-related fields.
-            </p>
-            <p className="pt-4">
-              <strong>
-                Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
-              </strong>
-            </p>
+          <div className="flex flex-row gap-4">
+            <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Engineering" />
+            <div className="space-y-4">
+              <p>
+                This course introduces students to computer science. Students will design software independently and as part of a team, using industry-standard programming tools and applying the software development life-cycle model.
+                They will also write and use subprograms within computer programs.
+              </p>
+              <p>
+                Students will develop creative solutions for various types of problems as their understanding of the computing environment grows. They will also explore environmental and ergonomic issues, emerging research in computer science, and global career trends in computer-related fields.
+              </p>
+              <p>
+                <strong>
+                  Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
+                </strong>
+              </p>
+            </div>
           </div>
         ),
         videos: (
@@ -139,15 +156,21 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["ICS3U"],
         description: (
-          <div>
-            <p>
-              This course enables students to further develop knowledge and skills in computer science. Students will use modular design principles to create complex and fully documented programs, according to industry standards. Student teams will manage a large software development project, from planning through to project review. Students will also analyse algorithms for effectiveness. They will investigate ethical issues in computing and further explore environmental issues, emerging technologies, areas of research in computer science, and careers in the field.
-            </p>
-            <p className="pt-4">
-              <strong>
-                Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
-              </strong>
-            </p>
+          <div className="flex flex-row gap-4">
+            <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
+            <div className="space-y-4">
+              <p>
+                This course enables students to further develop knowledge and skills in computer science. Students will use modular design principles to create complex and fully documented programs, according to industry standards. Student teams will manage a large software development project, from planning through to project review.
+              </p>
+              <p>
+                Students will also analyse algorithms for effectiveness. They will investigate ethical issues in computing and further explore environmental issues, emerging technologies, areas of research in computer science, and careers in the field.
+              </p>
+              <p>
+                <strong>
+                  Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
+                </strong>
+              </p>
+            </div>
           </div>
         ),
         videos: (
