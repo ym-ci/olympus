@@ -33,12 +33,10 @@ const courses: Course[] = [
             <p>
               This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               Students gain valuable hands-on experience in computer engineering, giving them a competitive edge in the job market and strong career prospects. This course provides an advantage for university admissions and future opportunities in technology, circuitry, and robotics.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               <strong>
                 Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
               </strong>
@@ -70,12 +68,10 @@ const courses: Course[] = [
             <p>
               This course extends students&apos; understanding of computer systems and computer interfacing with external devices. Students will learn more about fundamental concepts of digital logic, electronics, robotics, programming, and networks. Projects will include working with the Arduino microcontroller and C programming, building digital circuits to accomplish arithmetic and logic operations as well as controlling motors and using sensors.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               Students work on advanced projects that showcase their skills in computer engineering, allowing them to build unique portfolios for university applications. These hands-on experiences set them apart in a competitive job market and provide a strong foundation for future opportunities in technology, circuitry, and robotics.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               <strong>
                 Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
               </strong>
@@ -83,7 +79,7 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full">
+          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full w-full">
             <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical />
           </div>
         )
@@ -108,7 +104,11 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <DriveVideo url="https://drive.google.com/file/d/1egEOhckzHBr_w_CEfkLcMBfOftFTaioM/preview"></DriveVideo>
+          <div className="flex flex-col md:gap-4 overflow-x-auto max-w-full w-full">
+            <DriveVideo url="https://drive.google.com/file/d/1egEOhckzHBr_w_CEfkLcMBfOftFTaioM/preview"></DriveVideo>
+            <DriveVideo url="https://drive.google.com/file/d/1JbvZrqJdikJ12xhZeQPnqSvxnWaVvqVc/preview"></DriveVideo>
+            <DriveVideo url="https://drive.google.com/file/d/1xtEN1ODYGmIlyDw4KzphNIRAM7K7Sa_8/preview"></DriveVideo>
+          </div>
         )
       },
       {
@@ -119,8 +119,7 @@ const courses: Course[] = [
             <p>
               This course introduces students to computer science. Students will design software independently and as part of a team, using industry-standard programming tools and applying the software development life-cycle model. They will also write and use subprograms within computer programs. Students will develop creative solutions for various types of problems as their understanding of the computing environment grows. They will also explore environmental and ergonomic issues, emerging research in computer science, and global career trends in computer-related fields.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               <strong>
                 Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
               </strong>
@@ -128,7 +127,7 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex flex-col md:gap-4 overflow-x-auto max-w-full">
+          <div className="flex flex-col md:gap-4 overflow-x-auto max-w-full w-full">
             <DriveVideo url="https://drive.google.com/file/d/1rNm4PYJbJTQRZtZnH-r7HbRD8gY0FjxH/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
@@ -144,8 +143,7 @@ const courses: Course[] = [
             <p>
               This course enables students to further develop knowledge and skills in computer science. Students will use modular design principles to create complex and fully documented programs, according to industry standards. Student teams will manage a large software development project, from planning through to project review. Students will also analyse algorithms for effectiveness. They will investigate ethical issues in computing and further explore environmental issues, emerging technologies, areas of research in computer science, and careers in the field.
             </p>
-            <br></br>
-            <p>
+            <p className="pt-4">
               <strong>
                 Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
               </strong>
@@ -153,7 +151,7 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full">
+          <div className="flex flex-col md:gap-4 overflow-x-auto max-w-full w-full">
             <YoutubeVideo id="Uiy7pGqdFlUs" />
             <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
           </div>
