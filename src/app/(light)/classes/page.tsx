@@ -33,6 +33,16 @@ const courses: Course[] = [
             <p>
               This course examines computer systems and control of external devices. Students will assemble computers and small networks by installing and configuring appropriate hardware and software. Students will develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems that use computer programs and interfaces to control and/or respond to external devices.
             </p>
+            <br></br>
+            <p>
+              Students gain valuable hands-on experience in computer engineering, giving them a competitive edge in the job market and strong career prospects. This course provides an advantage for university admissions and future opportunities in technology, circuitry, and robotics.
+            </p>
+            <br></br>
+            <p>
+              <strong>
+                Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
+              </strong>
+            </p>
           </div>
         ),
         videos: (
@@ -46,6 +56,7 @@ const courses: Course[] = [
               <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
               <YoutubeVideo id="4D1mmO83ufo" />
               <DriveVideo url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview" vertical />
+              <DriveVideo url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview" vertical />
             </div>
           </div>
         )
@@ -58,6 +69,16 @@ const courses: Course[] = [
           <div>
             <p>
               This course extends students&apos; understanding of computer systems and computer interfacing with external devices. Students will learn more about fundamental concepts of digital logic, electronics, robotics, programming, and networks. Projects will include working with the Arduino microcontroller and C programming, building digital circuits to accomplish arithmetic and logic operations as well as controlling motors and using sensors.
+            </p>
+            <br></br>
+            <p>
+              Students work on advanced projects that showcase their skills in computer engineering, allowing them to build unique portfolios for university applications. These hands-on experiences set them apart in a competitive job market and provide a strong foundation for future opportunities in technology, circuitry, and robotics.
+            </p>
+            <br></br>
+            <p>
+              <strong>
+                Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities (UofT, UWaterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology, and mechatronics.
+              </strong>
             </p>
           </div>
         ),
@@ -85,6 +106,9 @@ const courses: Course[] = [
               This course helps students develop cutting-edge digital technology and computer programming skills that will support them in contributing to and leading the global economic, scientific and societal innovations of tomorrow. Students will learn and apply coding concepts and skills to build hands-on projects and investigate artificial intelligence, cybersecurity, and other emerging digital technologies that connect to a wide range of fields and careers. Using critical thinking skills with a focus on digital citizenship, students will investigate the appropriate use and development of the digital technologies that they encounter every day, as well as the benefits and limitations of these technologies.
             </p>
           </div>
+        ),
+        videos: (
+          <DriveVideo url="https://drive.google.com/file/d/1egEOhckzHBr_w_CEfkLcMBfOftFTaioM/preview"></DriveVideo>
         )
       },
       {
@@ -95,6 +119,19 @@ const courses: Course[] = [
             <p>
               This course introduces students to computer science. Students will design software independently and as part of a team, using industry-standard programming tools and applying the software development life-cycle model. They will also write and use subprograms within computer programs. Students will develop creative solutions for various types of problems as their understanding of the computing environment grows. They will also explore environmental and ergonomic issues, emerging research in computer science, and global career trends in computer-related fields.
             </p>
+            <br></br>
+            <p>
+              <strong>
+                Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
+              </strong>
+            </p>
+          </div>
+        ),
+        videos: (
+          <div className="flex flex-col md:gap-4 overflow-x-auto max-w-full">
+            <DriveVideo url="https://drive.google.com/file/d/1rNm4PYJbJTQRZtZnH-r7HbRD8gY0FjxH/preview"></DriveVideo>
+            <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
+            <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
           </div>
         )
       },
@@ -107,11 +144,18 @@ const courses: Course[] = [
             <p>
               This course enables students to further develop knowledge and skills in computer science. Students will use modular design principles to create complex and fully documented programs, according to industry standards. Student teams will manage a large software development project, from planning through to project review. Students will also analyse algorithms for effectiveness. They will investigate ethical issues in computing and further explore environmental issues, emerging technologies, areas of research in computer science, and careers in the field.
             </p>
+            <br></br>
+            <p>
+              <strong>
+                Students who have successfully completed our computer science courses have been accepted into top universities, opening doors to exciting opportunities in software development, artificial intelligence, and emerging technologies.
+              </strong>
+            </p>
           </div>
         ),
         videos: (
           <div className="flex flex-col md:flex-row gap-4 overflow-x-auto max-w-full">
             <YoutubeVideo id="Uiy7pGqdFlUs" />
+            <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
           </div>
 
         )
