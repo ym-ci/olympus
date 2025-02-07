@@ -32,7 +32,7 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
             <div>
               <p>
@@ -70,7 +70,7 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["TEJ3M"],
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
             <div>
               <p>
@@ -106,7 +106,7 @@ const courses: Course[] = [
         id: "ICD2O",
         gradeLevel: 10,
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
             <p>
               This course helps students develop cutting-edge digital technology and computer programming skills that will support them in contributing to and leading the global economic, scientific and societal innovations of tomorrow. Students will learn and apply coding concepts and skills to build hands-on projects and investigate artificial intelligence, cybersecurity, and other emerging digital technologies that connect to a wide range of fields and careers. Using critical thinking skills with a focus on digital citizenship, students will investigate the appropriate use and development of the digital technologies that they encounter every day, as well as the benefits and limitations of these technologies.
@@ -125,7 +125,7 @@ const courses: Course[] = [
         id: "ICS3U",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Engineering" />
             <div className="space-y-4">
               <p>
@@ -156,7 +156,7 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["ICS3U"],
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
             <div className="space-y-4">
               <p>
