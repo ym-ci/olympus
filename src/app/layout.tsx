@@ -7,8 +7,8 @@ import Script from "next/script";
 import { satoshi } from "@/app/font/satoshi";
 
 export const metadata: Metadata = {
-  title: "YMCI - Tech Clubs",
-  description: "York Mills Collegiate Institute Technology Clubs",
+  title: "York Mills Collegiate Institute",
+  description: "York Mills Collegiate Institute",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
