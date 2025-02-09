@@ -89,7 +89,7 @@ export default function Page() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-4">What you'll learn</h2>
+            <h2 className="text-2xl font-bold mb-4">{"What you'll learn"}</h2>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>3D modeling fundamentals – bring your ideas to life digitally</li>
               <li>Design ideation and concept development – transform inspiration into detailed 3D designs</li>
@@ -108,11 +108,11 @@ export default function Page() {
             </ul>
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4">What's the catch?</h2>
+            <h2 className="text-2xl font-bold mb-4">{"What's the catch?"}</h2>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>You <b>must</b> make your own part</li>
               <li>Your SAC fee must be paid</li>
-              <li>Your part must not be much bigger than 10mL (We will contact you if it's too big!)</li>
+              <li>{"Your part must not be much bigger than 10mL (We will contact you if it's too big!)"}</li>
               <li>Follow us on instagram! @YM_Robotics </li>
 
             </ul>
