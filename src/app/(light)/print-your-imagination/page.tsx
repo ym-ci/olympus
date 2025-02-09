@@ -117,8 +117,12 @@ export default function Page() {
         </p>
         <p className="mt-4 text-2xl">
           Please make sure you are able to{" "}
-          <span className="bg-secondary">prove</span> that you made the part{" "}
-          <span className="bg-secondary">yourself</span>. Read more below.
+          
+            <span className="bg-secondary">prove</span> that you made the part{" "}
+            <span className="bg-secondary">yourself</span>.{" "}
+            <Link href="#proving-originality" className="text-primary-300 hover:text-secondary-300 hover:underline">
+          Read more below.
+          </Link>
         </p>
       </section>
 
@@ -180,7 +184,7 @@ export default function Page() {
               <li>Follow us on instagram! @YM_Robotics </li>
             </ul>
           </div>
-          <div>
+          <div id="proving-originality">
             <h2 className="mb-4 text-2xl font-bold">{"Proving Originality"}</h2>
             <p className="text-muted-foreground">
               We are not a 3D printing service. We want you to make your own
