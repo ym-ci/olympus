@@ -124,6 +124,16 @@ export default function Page() {
           Read more below.
           </Link>
         </p>
+        <Link
+          href="https://forms.gle/yZgrV4gmGDvhpCFT9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 block"
+        >
+          <Button size="lg" className="bg-primary p-8 text-2xl hover:bg-secondary">
+            Submit Your Design
+          </Button>
+        </Link>
       </section>
 
       {/* Info Section */}
