@@ -21,12 +21,16 @@ export const MenuItem = ({ i, show, href, label, ...props }: MenuItemProps) => {
         delay: show ? (i + 1) * 0.2 : 0,
       }}
       className={
-        "w-full justify-center py-8 list-none mb-[20px] flex items-center cursor-pointer"
+        "mb-[20px] flex w-full cursor-pointer list-none items-center justify-center py-8"
       }
     >
-      <a href={href} onClick={() => {
-        if (props.closeMenu) props.closeMenu();
-      }} className={"text-white"}>
+      <a
+        href={href}
+        onClick={() => {
+          if (props.closeMenu) props.closeMenu();
+        }}
+        className={"text-white"}
+      >
         {label}
       </a>
     </motion.li>

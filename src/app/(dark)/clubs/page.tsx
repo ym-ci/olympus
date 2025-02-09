@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -8,7 +8,11 @@ export default function LandingPage() {
       {/* Grid Container */}
       <div className="grid h-full w-full grid-cols-2 grid-rows-2">
         {/* Robotics Quadrant */}
-        <Link href="/robotics" prefetch={false} className="group relative overflow-hidden">
+        <Link
+          href="/robotics"
+          prefetch={false}
+          className="group relative overflow-hidden"
+        >
           <Image
             src="/assets/robotics/group.jpg"
             alt="Robotics"
@@ -22,7 +26,11 @@ export default function LandingPage() {
         </Link>
 
         {/* Programming Quadrant */}
-        <Link href="/programming" prefetch={false} className="group relative overflow-hidden">
+        <Link
+          href="/programming"
+          prefetch={false}
+          className="group relative overflow-hidden"
+        >
           <Image
             src="/assets/programming/group.jpg"
             alt="Programming"
@@ -36,7 +44,11 @@ export default function LandingPage() {
         </Link>
 
         {/* Tech Council Quadrant */}
-        <Link href="/tech-council" prefetch={false} className="group relative overflow-hidden">
+        <Link
+          href="/tech-council"
+          prefetch={false}
+          className="group relative overflow-hidden"
+        >
           <Image
             src="/assets/tech-council/group.jpg"
             alt="Tech Council"
@@ -50,7 +62,11 @@ export default function LandingPage() {
         </Link>
 
         {/* Cybersecurity Quadrant */}
-        <Link href="/cybersecurity" prefetch={false} className="group relative overflow-hidden">
+        <Link
+          href="/cybersecurity"
+          prefetch={false}
+          className="group relative overflow-hidden"
+        >
           <Image
             src="/assets/cybersecurity/group.png"
             alt="Cybersecurity"
@@ -65,7 +81,7 @@ export default function LandingPage() {
       </div>
 
       {/* Centered Card */}
-      <Card className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/30 p-6 backdrop-blur-md border-0">
+      <Card className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-0 bg-black/30 p-6 backdrop-blur-md">
         <h1 className="text-center text-2xl font-bold text-white md:text-4xl">
           York Mills CI
           <br />
@@ -73,5 +89,5 @@ export default function LandingPage() {
         </h1>
       </Card>
     </div>
-  )
+  );
 }

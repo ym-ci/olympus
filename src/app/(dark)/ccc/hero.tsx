@@ -11,25 +11,35 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <PopIn duration={0.4}>
-      <div className="flex h-screen justify-center items-center">
+      <div className="flex h-screen items-center justify-center">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 items-center">
-            <div className="flex flex-col justify-center space-y-1 md:space-y-8 text-center gap-4">
+          <div className="grid items-center gap-6">
+            <div className="flex flex-col justify-center gap-4 space-y-1 text-center md:space-y-8">
               <PopIn duration={0.5}>
-                <h1 className={`text-5xl md:text-6xl font-bold ${gradient} pb-4`}>Canadian Computing Competition</h1>
+                <h1
+                  className={`text-5xl font-bold md:text-6xl ${gradient} pb-4`}
+                >
+                  Canadian Computing Competition
+                </h1>
               </PopIn>
               <PopIn duration={0.65}>
-                <h1 className={"text-2xl md:text-4xl font-bold text-gray-400 pb-4"}>@ York Mills CI</h1>
+                <h1
+                  className={
+                    "pb-4 text-2xl font-bold text-gray-400 md:text-4xl"
+                  }
+                >
+                  @ York Mills CI
+                </h1>
               </PopIn>
-              <div className={"flex flex-row self-center gap-4 scale-125"}>
+              <div className={"flex scale-125 flex-row gap-4 self-center"}>
                 <SlideUp duration={0.5} delay={0.5}>
                   <Link href={"#info"} className="group">
                     <Button
                       variant="default"
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 transition-all duration-200"
+                      className="bg-blue-600 px-6 py-2 font-semibold text-white transition-all duration-200 hover:bg-blue-700"
                     >
                       <span>About the CCC</span>
-                      <ArrowDown className="ml-2 w-4 h-4 transition-transform group-hover:translate-y-1" />
+                      <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                     </Button>
                   </Link>
                 </SlideUp>

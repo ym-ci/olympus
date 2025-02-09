@@ -26,8 +26,8 @@ const sidebar = {
   },
 };
 const MobileNav = ({
-                     openChange,
-                   }: {
+  openChange,
+}: {
   openChange?: (isOpen: boolean) => void;
 }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -48,9 +48,14 @@ const MobileNav = ({
     >
       <motion.div className="bg-black" variants={sidebar} />
       <AnimatePresence>
-        {isOpen && <Navigation show={isOpen} close={() => {
-          toggleOpen();
-        }} />}
+        {isOpen && (
+          <Navigation
+            show={isOpen}
+            close={() => {
+              toggleOpen();
+            }}
+          />
+        )}
       </AnimatePresence>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

@@ -22,13 +22,13 @@ export type SlideProps = {
 };
 
 const Slide = ({
-                 once = true,
-                 component = motion.div,
-                 ...props
-               }: SlideProps) => {
+  once = true,
+  component = motion.div,
+  ...props
+}: SlideProps) => {
   const Component = component;
   // the children should be hidden, and then while fading in, slide up
-  if (props.stagger){
+  if (props.stagger) {
     const container = {
       show: {
         transition: {
@@ -38,8 +38,8 @@ const Slide = ({
       },
     };
     const variants = {
-      visible: {opacity: 1, scale: 1},
-      hidden: {opacity: 0, scale: 0},
+      visible: { opacity: 1, scale: 1 },
+      hidden: { opacity: 0, scale: 0 },
     };
     // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents, @typescript-eslint/no-explicit-any
     const ChildComponent: typeof motion.div | any =
@@ -50,7 +50,7 @@ const Slide = ({
           className={props.className}
           initial={"hidden"}
           whileInView={"visible"}
-          viewport={{once}}
+          viewport={{ once }}
           variants={container}
           animate={"visible"}
           transition={props.transition}
@@ -83,15 +83,15 @@ const Slide = ({
     <motion.div
       initial={"hidden"}
       whileInView={"visible"}
-      viewport={{once}}
+      viewport={{ once }}
       transition={{
         duration: props.duration,
         delay: props.delay,
         ...props.transition,
       }}
       variants={{
-        visible: {opacity: 1, translateY: 0},
-        hidden: {opacity: 0, translateY: props.translateY},
+        visible: { opacity: 1, translateY: 0 },
+        hidden: { opacity: 0, translateY: props.translateY },
       }}
     >
       {props.children}

@@ -17,8 +17,8 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <header
-      className={`fixed top-0 z-50 px-0 md:px-6 py-0 md:py-4 ${
-        mobileOpen ? "w-full h-full" : ""
+      className={`fixed top-0 z-50 px-0 py-0 md:px-6 md:py-4 ${
+        mobileOpen ? "h-full w-full" : ""
       }`}
     >
       {isMobile ? (
@@ -33,14 +33,14 @@ const Navbar = () => {
             type: "spring",
           }}
         >
-          <nav className="space-x-4 p-2 rounded-xl">
+          <nav className="space-x-4 rounded-xl p-2">
             {nav.map((item, i) => {
               return (
                 <Link
                   href={item.href}
                   key={i}
                   className={
-                    "text-base font-medium text-zinc-200 hover:text-zinc-400 transition-all duration-200"
+                    "text-base font-medium text-zinc-200 transition-all duration-200 hover:text-zinc-400"
                   }
                 >
                   {item.label}

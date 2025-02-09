@@ -22,9 +22,7 @@ export default function RootLayout({
         data-site-id="ymci.ca"
       />
       <body>
-        <TRPCReactProvider>
-          {children}
-        </TRPCReactProvider>
+        <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
   );
