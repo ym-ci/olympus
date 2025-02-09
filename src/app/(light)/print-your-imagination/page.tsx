@@ -17,9 +17,37 @@ export default function Page() {
             Turn your creative ideas into reality with 3D printing
             <br />A workshop by the Robotics Club
           </p>
-          <Button size="lg" className="bg-primary hover:bg-secondary">
-            Start Creating
-          </Button>
+          <Link
+            href="https://ym-robotics.gitbook.io/print-your-imagination"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" className="text-2xl p-8 bg-primary hover:bg-secondary">
+              Start Creating Using Onshape
+            </Button>
+          </Link>
+            <p className="text-2xl mt-4">
+              ... Or use your own 3D modeling software (e.g.{" "} 
+              <Link
+                href="https://all3dp.com/2/tinkercad-tutorial-easy-beginners/"
+                className="text-primary-300 hover:underline hover:text-secondary-300"
+              >
+                Tinkercad
+              </Link>,{" "}
+              <Link
+                href="https://www.autodesk.com/learn/ondemand/collection/self-paced-learning-for-fusion"
+                className="text-primary-300 hover:underline hover:text-secondary-300"
+              >
+                Fusion 360
+              </Link>, {" "}
+              <Link
+                href="https://www.blender.org/"
+                className="text-primary-300 hover:underline hover:text-secondary-300"
+              >
+                Blender
+              </Link>
+               , etc.)
+            </p>
         </div>
       </section>
 
@@ -112,7 +140,7 @@ export default function Page() {
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>You <b>must</b> make your own part</li>
               <li>Your SAC fee must be paid</li>
-              <li>{"Your part must not be much bigger than 10mL (We will contact you if it's too big!)"}</li>
+              <li>{"Try to keep your part under 10mL! We will be lenient (We will contact you if it's too big!)"}</li>
               <li>Follow us on instagram! @YM_Robotics </li>
 
             </ul>
@@ -122,12 +150,18 @@ export default function Page() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-12 text-center">
-        <Button size="lg" className="bg-primary hover:bg-secondary">
-          Start Your Creative Journey →
-        </Button>
+        <Link
+          href="https://ym-robotics.gitbook.io/print-your-imagination"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size="lg" className="bg-primary hover:bg-secondary">
+            Start Your Creative Journey →
+          </Button>
+        </Link>
         <p className="mt-4 text-muted-foreground">
           Join {""}
-          <Link href="/ymrc?ref=print-your-imagination" className="text-primary-300 hover:underline hover:text-secondary-300 ">
+          <Link href="/ymrc?ref=print-your-imagination" className="text-primary-300 hover:underline hover:text-secondary-300">
             Robotics Club
           </Link>{" "}
           and turn your imagination into reality!
