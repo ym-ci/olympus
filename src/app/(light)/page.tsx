@@ -94,7 +94,7 @@ export default function LandingPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/10" />
       </motion.a>
-      <BouncingButton isCorner={true} href="/print-your-imagination">Looking for Print Your Imagination?</BouncingButton>
+      <BouncingButton isCorner={true} href="/print-your-imagination?utm_campaign=2025Poster&utm_source=site_looking_btn">Looking for Print Your Imagination?</BouncingButton>
     </div>
   );
 }
