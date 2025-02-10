@@ -85,55 +85,65 @@ export default function Page() {
           rel="noopener noreferrer"
         >
           <Button
-            size="lg"
-            className="bg-primary p-8 text-2xl hover:bg-secondary"
+        size="lg"
+        className="bg-primary p-8 text-lg md:text-2xl hover:bg-secondary"
           >
-            Start Creating Using Onshape
+        Start Creating Using Onshape
           </Button>
         </Link>
-        <p className="mt-4 text-2xl">
+        <p className="mt-4 text-lg md:text-2xl">
           ... Or use your own 3D modeling software (e.g.{" "}
           <Link
-            href="https://all3dp.com/2/tinkercad-tutorial-easy-beginners/"
-            className="text-primary-300 hover:text-secondary-300 hover:underline"
+        href="https://all3dp.com/2/tinkercad-tutorial-easy-beginners/"
+        className="text-primary-300 hover:text-secondary-300 hover:underline"
           >
-            Tinkercad
+        Tinkercad
           </Link>
           ,{" "}
           <Link
-            href="https://www.autodesk.com/learn/ondemand/collection/self-paced-learning-for-fusion"
-            className="text-primary-300 hover:text-secondary-300 hover:underline"
+        href="https://www.autodesk.com/learn/ondemand/collection/self-paced-learning-for-fusion"
+        className="text-primary-300 hover:text-secondary-300 hover:underline"
           >
-            Fusion 360
+        Fusion 360
           </Link>
           ,{" "}
           <Link
-            href="https://www.blender.org/"
-            className="text-primary-300 hover:text-secondary-300 hover:underline"
+        href="https://www.blender.org/"
+        className="text-primary-300 hover:text-secondary-300 hover:underline"
           >
-            Blender
+        Blender
           </Link>
           , etc.)
         </p>
-        <p className="mt-4 text-2xl">
+        <p className="mt-4 text-lg md:text-2xl">
           Please make sure you are able to{" "}
           
-            <span className="bg-secondary">prove</span> that you made the part{" "}
-            <span className="bg-secondary">yourself</span>.{" "}
-            <Link href="#proving-originality" className="text-primary-300 hover:text-secondary-300 hover:underline">
+        <span className="bg-secondary">prove</span> that you made the part{" "}
+        <span className="bg-secondary">yourself</span>.{" "}
+        <Link href="#proving-originality" className="text-primary-300 hover:text-secondary-300 hover:underline">
           Read more below.
           </Link>
         </p>
-        <Link
-          href="https://forms.gle/yZgrV4gmGDvhpCFT9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-8 block"
-        >
-          <Button size="lg" className="bg-primary p-8 text-2xl hover:bg-secondary">
-            Submit Your Design
-          </Button>
-        </Link>
+        <div className="flex flex-col md:flex-row items-center gap-4 mt-4 justify-center">
+          <Link
+        href="https://forms.gle/yZgrV4gmGDvhpCFT9"
+        target="_blank"
+        rel="noopener noreferrer"
+          >
+        <Button size="lg" className="bg-primary p-8 text-lg md:text-2xl hover:bg-secondary">
+          Submit Your Design
+        </Button>
+          </Link>
+          <Link
+        href="https://discord.gg/R6BcPtFK7Q"
+        target="_blank"
+        rel="noopener noreferrer"
+          >
+        <Button size="lg" className="bg-primary p-8 text-lg md:text-2xl hover:bg-secondary">
+          Got questions? Ask in our Discord
+        </Button>
+          </Link>
+        </div>
       </section>
 
       {/* Info Section */}
@@ -214,7 +224,7 @@ export default function Page() {
               If you have any questions, please contact us on instagram
               @YM_Robotics or join our{" "}
               <Link
-                href="https://discord.gg/BmrgF8fj"
+                href="https://discord.gg/R6BcPtFK7Q"
                 className="text-primary-300 hover:text-secondary-300 hover:underline"
               >
                 discord
