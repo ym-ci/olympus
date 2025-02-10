@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import BouncingButton from "@/components/BouncingButton";
 
 export default function LandingPage() {
   const [hoveredSide, setHoveredSide] = useState<"left" | "right" | null>(null);
@@ -93,6 +94,7 @@ export default function LandingPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/10" />
       </motion.a>
+      <BouncingButton isCorner={true} href="/print-your-imagination">Looking for Print Your Imagination?</BouncingButton>
     </div>
   );
 }
