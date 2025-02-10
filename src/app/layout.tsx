@@ -5,6 +5,7 @@ import { type Metadata } from "next";
 import { TRPCReactProvider } from "@/trpc/react";
 import Script from "next/script";
 import { satoshi } from "@/app/font/satoshi";
+import BouncingButton from "@/components/BouncingButton";
 
 export const metadata: Metadata = {
   title: "York Mills Collegiate Institute",
@@ -22,7 +23,9 @@ export default function RootLayout({
         data-site-id="ymci.ca"
       />
       <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <TRPCReactProvider>
+          {children}
+        </TRPCReactProvider>
       </body>
     </html>
   );
