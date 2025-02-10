@@ -147,6 +147,7 @@ const courses: Course[] = [
               url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview"
               vertical
             />
+            <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical/>
           </div>
         ),
       },
