@@ -25,7 +25,7 @@ export default function BouncingButton({ isCorner, href, className, children }: 
       className
       )}
     >
-      <Button className="animate-bounce hover:bg-secondary-200">{children}</Button>
+      <Button className="animate-bounce hover:bg-secondary-200 text-black">{children}</Button>
     </Link>
   )
 }
