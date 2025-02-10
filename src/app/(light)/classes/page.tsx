@@ -148,6 +148,8 @@ const courses: Course[] = [
               vertical
             />
             <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical/>
+            <Image height={256} width={128} src="/assets/classes/engineering/20250202_103636.jpg" alt=""/>
+            <Image height={256} width={128} src="/assets/classes/engineering/IMG_20250202_124304964_HDR (1).jpg" alt=""/>
           </div>
         ),
       },
