@@ -74,17 +74,9 @@ const courses: Course[] = [
         videos: (
           <div className="flex w-full max-w-full flex-col gap-4 overflow-x-auto md:flex-row">
             <div className="flex min-w-0 flex-col gap-2">
-              <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
-              <YoutubeVideo id="4D1mmO83ufo" />
-              <div className="flex min-w-0 flex-row gap-2">
-                <DriveVideo
-                  url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview"
-                  vertical
-                />
-                <DriveVideo
-                  url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview"
-                  vertical
-                />
+              <div className="grid w-full max-w-full grid-cols-1 gap-4 overflow-x-auto md:grid-cols-2">
+                <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
+                <YoutubeVideo id="4D1mmO83ufo" />
               </div>
               <div className="flex min-w-0 flex-row gap-2">
                 <DriveVideo
@@ -96,6 +88,16 @@ const courses: Course[] = [
                   vertical
                 />
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
+              </div>
+              <div className="grid w-full max-w-full grid-cols-1 gap-4 overflow-x-auto md:grid-cols-2 justify-items-center">
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview"
+                  vertical
+                />
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview"
+                  vertical
+                />
               </div>
             </div>
           </div>
@@ -142,14 +144,18 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex w-full max-w-full flex-col gap-4 overflow-x-auto md:flex-row">
-            <DriveVideo
-              url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview"
-              vertical
-            />
-            <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical/>
-            <Image height={256} width={128} src="/assets/classes/engineering/20250202_103636.jpg" alt=""/>
-            <Image height={256} width={128} src="/assets/classes/engineering/IMG_20250202_124304964_HDR (1).jpg" alt=""/>
+          <div className="flex flex-col gap-4">
+            <div className="grid w-full max-w-full grid-cols-1 gap-4 overflow-x-auto md:grid-cols-2 justify-items-center">
+              <DriveVideo
+                url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview"
+                vertical
+              />
+              <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical />
+            </div>
+            <div className="flex flex-row gap-4 place-content-center">
+              <Image height={256} width={256} src="/assets/classes/engineering/20250202_103636.jpg" alt="" />
+              <Image height={256} width={256} src="/assets/classes/engineering/IMG_20250202_124304964_HDR (1).jpg" alt="" />
+            </div>
           </div>
         ),
       },
@@ -188,10 +194,19 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
-            <DriveVideo url="https://drive.google.com/file/d/1egEOhckzHBr_w_CEfkLcMBfOftFTaioM/preview"></DriveVideo>
-            <DriveVideo url="https://drive.google.com/file/d/1JbvZrqJdikJ12xhZeQPnqSvxnWaVvqVc/preview"></DriveVideo>
-            <DriveVideo url="https://drive.google.com/file/d/1xtEN1ODYGmIlyDw4KzphNIRAM7K7Sa_8/preview"></DriveVideo>
+          <div className="grid w-full max-w-full grid-cols-1 gap-4 overflow-x-auto md:grid-cols-2">
+            <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/10iW3QA2ZQKwT_7DosHZLkF2jVtxO-Hz8/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/123yuhOZC790xklUrLFNWm4kW8DcyCCIS/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1Ds8XenV9LlG9ORO5NWCxbfAIXMllVLVj/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1k7RPaDnWm_JyXYFl44J3_9pJbdD-TfZH/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1CbdqvrPPMEY1fRiDJ6VZYZjB8o07fn5l/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1br8funID591AHgPZc-ZPAU91V0QP-39x/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/12igsiYodFE42agRg0FpY8GZlN1Y9ITTD/preview" />
           </div>
         ),
       },
@@ -335,11 +350,10 @@ export default function Classes() {
                 />
               )}
               <span
-                className={`relative z-10 ${
-                  selectedCourse === course.id
-                    ? "font-semibold text-blue-600"
-                    : "text-gray-600 hover:text-blue-500"
-                }`}
+                className={`relative z-10 ${selectedCourse === course.id
+                  ? "font-semibold text-blue-600"
+                  : "text-gray-600 hover:text-blue-500"
+                  }`}
               >
                 {course.name}
               </span>
@@ -357,11 +371,10 @@ export default function Classes() {
                   <button
                     key={cls.id}
                     onClick={() => setSelectedClass(cls.id)}
-                    className={`relative rounded-full px-4 py-2 transition-colors ${
-                      selectedClass === cls.id
-                        ? "font-medium text-purple-700"
-                        : "text-gray-600 hover:text-purple-600"
-                    }`}
+                    className={`relative rounded-full px-4 py-2 transition-colors ${selectedClass === cls.id
+                      ? "font-medium text-purple-700"
+                      : "text-gray-600 hover:text-purple-600"
+                      }`}
                   >
                     {selectedClass === cls.id && (
                       <motion.div
