@@ -278,6 +278,7 @@ export default function Classes() {
     return localStorage.getItem("kiosk") === "true"
   }, [])
   const kioskUrl = useMemo(() => {
+    if (typeof window === "undefined") return "https://ymci.ca/classes"
     const url = new URL(window.location.href)
     url.searchParams.set("utm_campaign", "coursefair")
     url.searchParams.set("utm_source", "kiosk")
