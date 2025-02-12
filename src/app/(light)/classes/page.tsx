@@ -281,6 +281,7 @@ export default function Classes() {
     const url = new URL(window.location.href)
     url.searchParams.set("utm_campaign", "coursefair")
     url.searchParams.set("utm_source", "kiosk")
+    url.searchParams.delete("kiosk")
     return url.toString()
   }, [])
 
