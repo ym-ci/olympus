@@ -306,7 +306,25 @@ export default function Classes() {
         <ArrowLeft />
         Back
       </Link>
-      <Card className="w-full mx-auto max-w-4xl bg-white/80 shadow-xl backdrop-blur-sm mt-2 overflow-hidden">
+      {showQrCode && (
+        <Card className="fixed right-4 top-4 p-6 bg-white/80 shadow-xl backdrop-blur-sm flex flex-col items-center gap-4 z-10">
+          <CardHeader className="p-0">
+            <CardTitle className="text-center text-xl">Scan to view on your device!</CardTitle>
+          </CardHeader>
+          <div className="p-4 bg-white rounded-lg">
+            <QRCode
+              value={kioskUrl}
+              size={192}
+              style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+              viewBox={`0 0 256 256`}
+            />
+            <div className="flex justify-center">
+              <span className="text-center text-sm text-gray-500">https://ymci.ca</span>
+            </div>
+          </div>
+        </Card>
+      )}
+      <Card className={`w-full mx-auto max-w-4xl bg-white/80 shadow-xl backdrop-blur-sm overflow-hidden ${showQrCode ? 'md:mt-32' : 'mt-2'}`}>
         {/* Course selection */}
         <div className="flex flex-wrap border-b border-gray-200">
           {courses.map((course) => (
@@ -408,24 +426,6 @@ export default function Classes() {
           </div>
         )}
       </Card>
-      {showQrCode && (
-        <Card className="w-fit h-fit p-6 bg-white/80 shadow-xl backdrop-blur-sm mt-2 flex flex-col items-center gap-4">
-          <CardHeader>
-            <CardTitle className="text-center text-2xl">Scan to view on your device!</CardTitle>
-          </CardHeader>
-          <div className="p-4 bg-white rounded-lg">
-            <QRCode
-              value={kioskUrl}
-              size={256}
-              style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-              viewBox={`0 0 256 256`}
-            />
-            <div className="flex justify-center">
-              <span className="text-center text-md text-gray-500">https://ymci.ca</span>
-            </div>
-          </div>
-        </Card>
-      )}
     </main>
   )
 }
