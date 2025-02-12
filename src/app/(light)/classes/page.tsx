@@ -268,6 +268,13 @@ export default function Classes() {
   }, [c])
 
   const showQrCode = useMemo(() => {
+    if (typeof window === "undefined") return false
+    // if kiosk url param is present, return true and set local storage
+    const url = new URL(window.location.href)
+    if (url.searchParams.get("kiosk")) {
+      localStorage.setItem("kiosk", "true")
+      return true
+    }
     return localStorage.getItem("kiosk") === "true"
   }, [])
   const kioskUrl = useMemo(() => {
