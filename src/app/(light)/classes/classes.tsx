@@ -35,7 +35,7 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+          <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
             <div>
               <p>
@@ -84,7 +84,7 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["TEJ3M"],
         description: (
-          <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+          <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
             <div>
               <p>
@@ -152,7 +152,7 @@ const courses: Course[] = [
         id: "ICD2O",
         gradeLevel: 10,
         description: (
-          <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+          <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
             <p>
               This course helps students develop cutting-edge digital technology and computer programming skills that
@@ -186,7 +186,7 @@ const courses: Course[] = [
         id: "ICS3U",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+          <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Engineering" />
             <div className="space-y-4">
               <p>
@@ -222,7 +222,7 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["ICS3U"],
         description: (
-          <div className="flex flex-col gap-4 md:flex-row flex-wrap">
+          <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
             <div className="space-y-4">
               <p>
