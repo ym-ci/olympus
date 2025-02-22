@@ -17,6 +17,7 @@ import Link from "next/link";
 import { Hero } from "@/app/(dark)/(clubs)/landing";
 import { AboutUs } from "@/app/(dark)/(clubs)/robotics/about";
 import BouncingButton from "@/components/BouncingButton";
+import Sponsors from "@/app/(dark)/(clubs)/robotics/sponsors";
 
 const faq = [
   {
@@ -201,6 +202,7 @@ export default function RoboticsPage() {
         strTitle="Robotics Club"
       />
       <AboutUs />
+      <Sponsors />
       <FAQ faq={faq} />
       <BouncingButton isCorner={true} href="/print-your-imagination" className="z-10">Looking for Print Your Imagination?</BouncingButton>
     </main>
