@@ -74,27 +74,29 @@ const courses: Course[] = [
         videos: (
           <div className="flex w-full max-w-full flex-col gap-4 overflow-x-auto md:flex-row">
             <div className="flex min-w-0 flex-col gap-2">
-              <YoutubeVideo id="eKFr5Fq63_s" vertical />
-              <DriveVideo
-                url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview"
-                vertical
-              />
-              <DriveVideo
-                url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview"
-                vertical
-              />
-            </div>
-            <div className="flex min-w-0 flex-col gap-2">
               <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
               <YoutubeVideo id="4D1mmO83ufo" />
-              <DriveVideo
-                url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview"
-                vertical
-              />
-              <DriveVideo
-                url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview"
-                vertical
-              />
+              <div className="flex min-w-0 flex-row gap-2">
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview"
+                  vertical
+                />
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview"
+                  vertical
+                />
+              </div>
+              <div className="flex min-w-0 flex-row gap-2">
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview"
+                  vertical
+                />
+                <DriveVideo
+                  url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview"
+                  vertical
+                />
+                <YoutubeVideo id="eKFr5Fq63_s" vertical />
+              </div>
             </div>
           </div>
         ),
@@ -145,6 +147,9 @@ const courses: Course[] = [
               url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview"
               vertical
             />
+            <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical/>
+            <Image height={256} width={128} src="/assets/classes/engineering/20250202_103636.jpg" alt=""/>
+            <Image height={256} width={128} src="/assets/classes/engineering/IMG_20250202_124304964_HDR (1).jpg" alt=""/>
           </div>
         ),
       },
