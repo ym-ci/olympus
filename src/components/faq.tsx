@@ -16,7 +16,7 @@ export function FAQ({
   return (
     <section
       id="faq"
-      className="flex h-screen w-full snap-start items-center justify-center"
+      className="flex h-screen w-full snap-start items-center justify-center scroll-mt-16"
     >
       <div className="mx-auto w-full max-w-4xl px-4">
         <h2 className="mb-6 text-center text-4xl font-bold dark:text-white">
@@ -28,8 +28,17 @@ export function FAQ({
           defaultValue={`item-${faq.length - 1}`}
         >
           {faq.map((item, index) => (
-            <AccordionItem value={`item-${index}`} key={index}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
+            <AccordionItem 
+              value={`item-${index}`} 
+              key={index}
+              id={`faq-${index}`}
+              className="scroll-mt-24"
+            >
+              <AccordionTrigger>
+                <a href={`#faq-${index}`} className="w-full text-left">
+                  {item.question}
+                </a>
+              </AccordionTrigger>
               <AccordionContent>{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
