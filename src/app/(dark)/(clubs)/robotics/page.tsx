@@ -204,7 +204,6 @@ export default function RoboticsPage() {
       <AboutUs />
       <Sponsors />
       <FAQ faq={faq} />
-      <BouncingButton isCorner={true} href="/print-your-imagination" className="z-10">Looking for Print Your Imagination?</BouncingButton>
     </main>
   );
 }
