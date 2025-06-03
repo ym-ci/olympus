@@ -171,12 +171,11 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" />
-          
+
             <DriveVideo url="https://drive.google.com/file/d/123yuhOZC790xklUrLFNWm4kW8DcyCCIS/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
             <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" />
