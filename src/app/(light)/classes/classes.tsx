@@ -167,17 +167,19 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/10iW3QA2ZQKwT_7DosHZLkF2jVtxO-Hz8/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" />
+          
             <DriveVideo url="https://drive.google.com/file/d/123yuhOZC790xklUrLFNWm4kW8DcyCCIS/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1Ds8XenV9LlG9ORO5NWCxbfAIXMllVLVj/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1k7RPaDnWm_JyXYFl44J3_9pJbdD-TfZH/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1CbdqvrPPMEY1fRiDJ6VZYZjB8o07fn5l/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" />
             <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1br8funID591AHgPZc-ZPAU91V0QP-39x/preview" />
             <DriveVideo url="https://drive.google.com/file/d/12igsiYodFE42agRg0FpY8GZlN1Y9ITTD/preview" />
           </div>
         ),
