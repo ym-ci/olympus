@@ -167,13 +167,13 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <h1 className="text-2xl col-span-1 md:col-span-2"> Assignments</h1>
+            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Assignments</h1>
             <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" />
 
-            <h1 className="text-2xl col-span-1 md:col-span-2">Culminating Projects</h1>
+            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Projects</h1>
             
             <DriveVideo url="https://drive.google.com/file/d/123yuhOZC790xklUrLFNWm4kW8DcyCCIS/preview" />
             <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
@@ -420,7 +420,7 @@ export default function Classes() {
                     className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm"
                   >
                     <div className="prose prose-blue max-w-none space-y-4 text-center">
-                      <h1 className="text-2xl font-bold">Some amazing projects our students have made in {c.id}</h1>
+                      <h1 className="text-2xl font-bold">Some amazing work our students have made in {c.id}</h1>
                       {c.videos}
                     </div>
                   </motion.div>
