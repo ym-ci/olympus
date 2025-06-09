@@ -168,21 +168,21 @@ const courses: Course[] = [
         videos: (
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
             <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Assignments</h1>
-            <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" />
+            <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" /> {/* Snake-Christian */}
+            <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" /> {/* Snake-Lauryn */}
+            <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" /> {/* Scene-Nathan */}
+            <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" /> {/* Scene-Olivia */}
 
-            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Projects</h1>
-            
-            <DriveVideo url="https://drive.google.com/file/d/123yuhOZC790xklUrLFNWm4kW8DcyCCIS/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/16XYK_QkY-CEuovyIeWqLQvlyxy-gahDA/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" />
-            <DriveVideo url="https://drive.google.com/file/d/12igsiYodFE42agRg0FpY8GZlN1Y9ITTD/preview" />
+            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Projects</h1>            
+            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" /> {/* Exit the Dragon */}
+            <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" /> {/* Hole Escape */}
+            <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" /> {/* Key Blaster Demo */}
+            <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" /> {/* Super Mario */}
+
+            <DriveVideo url="https://drive.google.com/file/d/12bLy9sNgEwe0zMmSxesMdVo-pHFOCc_5/preview" /> {/* The Wizard & The Knight */}            
+            <DriveVideo url="https://drive.google.com/file/d/1XGa3C_uzImqqqDXbhuPmMdqjXyNWtKH2/preview" /> {/* Police Pursuit */}  
+            <DriveVideo url="https://drive.google.com/file/d/1I_YsM8vSGAu8o0lDI61W9fGJE3WhjXXA/preview" /> {/* Snakes & Ladders */}
+            <DriveVideo url="https://drive.google.com/file/d/1_9p_Vn5_GRgUmoURGDHw7t2ZMWwkZCIv/preview" /> {/* Furious Fireball */}
           </div>
         ),
       },
