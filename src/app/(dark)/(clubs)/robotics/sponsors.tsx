@@ -10,7 +10,7 @@ export default function Sponsors() {
     >
       <div className="w-full max-w-7xl">
         <h2 className="mb-8 text-center text-3xl font-bold">Sponsors</h2>
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
           <Link href="https://polymaker.com/" target="_blank" className="hover:scale-105 transition-all duration-300 w-1/3 h-1/3">
             <PolymakerLogo />
           </Link>
