@@ -219,10 +219,15 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+            {/*
             <DriveVideo url="https://drive.google.com/file/d/1rNm4PYJbJTQRZtZnH-r7HbRD8gY0FjxH/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
-            <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview"></DriveVideo> {/* Adriano Tino */}       
+            */}
+            <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview" vertical ></DriveVideo> {/* Adriano Tino */}       
+            <DriveVideo url="https://drive.google.com/file/d/1N0NqyP8m0QJ9QiRnhxOd0C6rM3ItvT2n/preview"></DriveVideo> {/* Chloe Lawrence */}       
+            <YoutubeVideo id="jGEUGBzywz4"/>  {/* Felicia Zhou */}
+            <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
           </div>
         ),
       },
@@ -257,9 +262,15 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+            {/*
             <YoutubeVideo id="Uiy7pGqdFlUs" />
             <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
+            */}
             <DriveVideo url="https://drive.google.com/file/d/12j98NuIUBUzMLfY_o9YhQreuynqHQQBw/preview"></DriveVideo> {/* Elemental Escape */}
+            <DriveVideo url="https://drive.google.com/file/d/1CP8Ze25qQyG-w_PqMumxd8t5uup15z7N/preview"></DriveVideo> {/* Nam Cap */}
+            <YoutubeVideo id="CPWX_HymZqg"/> {/* White Coats */}
+            <YoutubeVideo id="ol21zBTqDXs"/> {/* Tetris */}
+            <YoutubeVideo id="VtV1dqQbDyM"/> {/* Crusader */}
           </div>
         ),
       },
