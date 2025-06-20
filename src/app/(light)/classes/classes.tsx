@@ -268,6 +268,7 @@ const courses: Course[] = [
             */}
             <DriveVideo url="https://drive.google.com/file/d/12j98NuIUBUzMLfY_o9YhQreuynqHQQBw/preview"></DriveVideo> {/* Elemental Escape */}
             <DriveVideo url="https://drive.google.com/file/d/1CP8Ze25qQyG-w_PqMumxd8t5uup15z7N/preview"></DriveVideo> {/* Nam Cap */}
+            <DriveVideo url="https://drive.google.com/file/d/1S4DM3BV1tsz7-evfFN8CxRHhvQb_B5El/preview"></DriveVideo> {/* Omni Fighter */}
             <YoutubeVideo id="CPWX_HymZqg"/> {/* White Coats */}
             <YoutubeVideo id="ol21zBTqDXs"/> {/* Tetris */}
             <YoutubeVideo id="VtV1dqQbDyM"/> {/* Crusader */}
