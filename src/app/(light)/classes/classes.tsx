@@ -224,10 +224,14 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
             */}
-            <DriveVideo url="https://drive.google.com/file/d/1N0NqyP8m0QJ9QiRnhxOd0C6rM3ItvT2n/preview"></DriveVideo> {/* Chloe Lawrence */}       
             <YoutubeVideo id="jGEUGBzywz4"/>  {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
-            <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview" vertical ></DriveVideo> {/* Adriano Tino */}       
+            <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
+            <YoutubeVideo id="eRbv4Oq9Ob4"/> {/* Gian Pauyon */}
+            <DriveVideo url="https://drive.google.com/file/d/1M2eoGDtCpWp72fLlYiGaybiHiMMGQtWd/preview"></DriveVideo> {/* Ethan Bravo */} 
+            <DriveVideo url="https://drive.google.com/file/d/1UhLpKzDfeo8bAhklI4lq6OSKJbMNgQRD/preview"></DriveVideo> {/* Jakim Cau */} 
+            <DriveVideo url="https://drive.google.com/file/d/1N0NqyP8m0QJ9QiRnhxOd0C6rM3ItvT2n/preview"></DriveVideo> {/* Chloe Lawrence */} 
+            <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview"></DriveVideo> {/* Adriano Tino */}       
           </div>
         ),
       },
