@@ -231,6 +231,7 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1M2eoGDtCpWp72fLlYiGaybiHiMMGQtWd/preview"></DriveVideo> {/* Ethan Bravo */} 
             <DriveVideo url="https://drive.google.com/file/d/1UhLpKzDfeo8bAhklI4lq6OSKJbMNgQRD/preview"></DriveVideo> {/* Jakim Cau */} 
             <DriveVideo url="https://drive.google.com/file/d/1N0NqyP8m0QJ9QiRnhxOd0C6rM3ItvT2n/preview"></DriveVideo> {/* Chloe Lawrence */} 
+            <DriveVideo url="https://drive.google.com/file/d/1NhY7P8RPvBczAyGFGqcVLBhc22BA6lj7/preview"></DriveVideo> {/* Panayiotis Vavaroutsos */} 
             <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview"></DriveVideo> {/* Adriano Tino */}       
           </div>
         ),
