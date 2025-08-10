@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import PolymakerLogo from "@/components/robotics/logos/polymaker";
 import JukeboxLogo from "@/components/icons/jukebox";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export default function Sponsors() {
   return (
@@ -68,9 +70,21 @@ export default function Sponsors() {
           <p className="text-gray-400 mb-6">
             Interested in supporting our team?
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105">
-            Become a Sponsor
-          </button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105">
+                Become a Sponsor
+              </button>
+            </DialogTrigger>
+            <DialogContent className="bg-gray-900 border border-gray-800">
+              <DialogHeader>
+                <DialogTitle>Become a Sponsor</DialogTitle>
+              </DialogHeader>
+              <DialogDescription className="text-gray-400 text-md">
+                Thank you for your interest in sponsoring our team! We are always looking for new sponsors to help us with our projects. If you are interested in sponsoring us, please contact us at <a href="mailto:robotics@ymci.ca" className="text-blue-400 hover:text-blue-300">robotics@ymci.ca</a>.
+              </DialogDescription>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>
