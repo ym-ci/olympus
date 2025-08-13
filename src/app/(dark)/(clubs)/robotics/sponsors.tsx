@@ -49,10 +49,10 @@ export default function Sponsors() {
           </Link>
         </div>
         
-        {/* Jukebox - Featured Sponsor */}
+        {/* Jukebox */}
         <div className="flex justify-center">
           <Link 
-            href="https://jukebox.com/" 
+            href="https://www.jukeboxprint.com/custom-stickers" 
             target="_blank" 
             className="group flex flex-col items-center justify-center p-12 bg-gradient-to-br from-pink-500/10 to-purple-600/10 rounded-2xl border border-pink-500/30 hover:border-pink-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/20"
           >
