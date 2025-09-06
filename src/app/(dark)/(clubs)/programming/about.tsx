@@ -30,7 +30,7 @@ export const AboutProgramming = () => {
           <CardContent>
             <p className="text-lg">
               We participate in the <strong>CCC</strong> (Canadian Computing
-              Competition), <strong>BCC</strong> (British Computing
+              Competition), <strong>BCC</strong> (Beaver Computing
               Competition), and more!
             </p>
           </CardContent>
