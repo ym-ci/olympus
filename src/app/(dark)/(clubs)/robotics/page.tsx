@@ -25,11 +25,11 @@ const faq = [
     answer: (
       <div className="space-y-4">
         <p>
-          <strong>Robotics Club:</strong> No time commitment, just show up to
+          <strong>Robotics Team:</strong> No time commitment, just show up to
           our bi-weekly meetings!
         </p>
         <p>
-          <strong>Robotics Team:</strong> We meet almost every day at lunch in
+          <strong>Robotics team:</strong> We meet almost every day at lunch in
           room <strong>204/206</strong>. We require at least 2+ hours of
           commitment per week. We also have a weekly meeting every monday after
           school in room <strong>206</strong>.
@@ -41,8 +41,8 @@ const faq = [
     question: "Where are meetings held?",
     answer: (
       <>
-        Bi-weekly meetings every other Thursday after school in room{" "}
-        <strong>204</strong>, alternating with Programming Club.
+        Weekly, every monday afterschool and every other Thursday at lunch in room{" "}
+        <strong>206/204</strong>.
       </>
     ),
   },
@@ -50,22 +50,22 @@ const faq = [
     question: "What do I need to join?",
     answer: (
       <>
-        No experience is required for both Robotics Club and the Robotics Team!
+        No experience is required for the Robotics Team!
         We welcome all skill levels.
       </>
     ),
   },
-  {
-    question:
-      "What is the difference between Robotics Club and the Robotics Team?",
-    answer: (
-      <>
-        Robotics Club is a club that meets bi-weekly after school to work on fun
-        projects and learn new things. The Robotics Team is a group of dedicated
-        students who build and program robots to compete in competitions.
-      </>
-    ),
-  },
+  // {
+  //   question:
+  //     "What is the difference between Robotics Club and the Robotics Team?",
+  //   answer: (
+  //     <>
+  //       Robotics Club is a club that meets bi-weekly after school to work on fun
+  //       projects and learn new things. The Robotics Team is a group of dedicated
+  //       students who build and program robots to compete in competitions.
+  //     </>
+  //   ),
+  // },
   {
     question: "What competitions does the team compete in?",
     answer: (
@@ -130,7 +130,7 @@ const faq = [
           <CardHeader>Executives</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For everything else related to the club/team details, please
+              For everything else related to the team details, please
               contact our executives!
             </p>
             <Dialog>
@@ -143,13 +143,13 @@ const faq = [
                 </DialogHeader>
                 <div className="flex flex-col gap-2">
                   <p>
-                    <strong>Evan Yu:</strong> evan.yu@student.tdsb.on.ca
+                    <strong>Ryan Yu:</strong> ryan.yu9@student.tdsb.on.ca
                   </p>
                   <p>
                     <strong>Aaron Huang:</strong>{" "}
                     aaron.huang5@student.tdsb.on.ca
                   </p>
-                  <Link href="mailto:evan.yu@student.tdsb.on.ca,aaron.huang5@student.tdsb.on.ca?subject=Robotics%20Club%20-%20Question">
+                  <Link href="mailto:ryan.yu9@student.tdsb.on.ca,aaron.huang5@student.tdsb.on.ca?subject=Robotics%20Team%20-%20Question">
                     <Button className="w-full">Send Email</Button>
                   </Link>
                 </div>
@@ -181,7 +181,7 @@ export default function RoboticsPage() {
         image="/assets/robotics/banner.jpg"
         title={
           <div>
-            <h1>Robotics Club/Team</h1>
+            <h1 className="pb-4">Robotics Team</h1>
             <div className="flex flex-row gap-2 place-self-center">
               <Link
                 href="https://www.instagram.com/ym_robotics/"
@@ -199,7 +199,7 @@ export default function RoboticsPage() {
             </div>
           </div>
         }
-        strTitle="Robotics Club"
+        strTitle="Robotics Team"
       />
       <AboutUs />
       <Sponsors />

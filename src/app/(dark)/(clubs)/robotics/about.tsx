@@ -38,29 +38,9 @@ export function AboutUs() {
           </p>
         </div>
         
-        <div className="grid gap-8 lg:gap-12 md:grid-cols-2 mb-12">
-          <RoboticsCard
-            title="Robotics Club"
-            imageSrc="/assets/robotics/group2.jpg"
-            items={[
-              "Learn to design, build, and code machines and robots",
-              "No experience necessary",
-              "Use platforms like Arduino, Raspberry Pi, and more!",
-              "Open to all students!",
-            ]}
-            button={
-              <div className="flex w-full flex-col gap-2">
-                <Link href="/ymrc" className="w-full">
-                  <Button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
-                    Join Robotics Club
-                  </Button>
-                </Link>
-              </div>
-            }
-            gradient="from-blue-500/10 to-cyan-500/10"
-            borderColor="border-blue-500/30 hover:border-blue-500/60"
-          />
-          <RoboticsCard
+        <div className="flex justify-center mb-12">
+          <div className="max-w-lg w-full">
+            <RoboticsCard
             title="Robotics Team"
             imageSrc="/assets/robotics/bot_cool.jpg"
             items={[
@@ -97,6 +77,7 @@ export function AboutUs() {
             gradient="from-purple-500/10 to-pink-500/10"
             borderColor="border-purple-500/30 hover:border-purple-500/60"
           />
+          </div>
         </div>
         
         <div className="text-center">
