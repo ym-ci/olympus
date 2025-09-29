@@ -55,6 +55,7 @@ export function AboutUs() {
                   href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4?cjc=bzfg3257"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full"
                 >
                   <Button className="w-full transform bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
                     Join Robotics Team
