@@ -31,11 +31,24 @@ export function Hero({ image, title, strTitle }: HeroProps) {
   }, []);
 
   const scrollToNextSection = () => {
-    const heroHeight = window.innerHeight;
-    window.scrollTo({
-      top: heroHeight,
-      behavior: "smooth",
-    });
+    const heroSection = document.querySelector('section');
+    const nextSection = heroSection?.nextElementSibling as HTMLElement;
+    
+    if (nextSection) {
+      // Scroll to the next section
+      nextSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    } else {
+      // Fallback to viewport height if no next section found
+      const heroHeight = window.innerHeight;
+      console.log('Fallback scroll to:', heroHeight);
+      window.scrollTo({
+        top: heroHeight,
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <section className="relative h-screen w-full snap-start overflow-hidden">
@@ -72,9 +85,10 @@ export function Hero({ image, title, strTitle }: HeroProps) {
       </div>
       
       {/* Scroll indicator */}
-      <motion.button
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 transform rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-3 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
-        onClick={scrollToNextSection}
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center z-50 pointer-events-none">
+        <motion.button
+          className="rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-3 text-white shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer pointer-events-auto"
+          onClick={scrollToNextSection}
         initial={{ y: 0 }}
         animate={{
           y: isVisible ? [0, -10, 0] : 0,
@@ -94,6 +108,7 @@ export function Hero({ image, title, strTitle }: HeroProps) {
       >
         <ChevronDown size={24} />
       </motion.button>
+      </div>
     </section>
   );
 }
