@@ -5,19 +5,18 @@ const Path = (props: React.ComponentProps<typeof motion.path>) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="gray"
+    stroke="white"
     strokeLinecap="round"
     {...props}
   />
 );
 
-export const MenuToggle = ({ toggle }: { toggle: () => void }) => (
+export const MenuToggle = ({ toggle, className }: { toggle: () => void; className?: string }) => (
   <button
     onClick={toggle}
-    className={"absolute left-5 top-5 float-left rounded-full p-4"}
+    className={`z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-md transition-colors hover:bg-white/20 ${className}`}
   >
-    {/* TODO: fix extra space under last line and remove mt-[0.5px] */}
-    <svg width="23" height="23" viewBox="0 0 23 23" className={"mt-[0.5px]"}>
+    <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
           closed: { d: "M 2 2.5 L 20 2.5" },

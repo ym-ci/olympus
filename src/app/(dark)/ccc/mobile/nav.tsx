@@ -5,18 +5,18 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { useDimensions } from "@/components/dimensions";
 import { Navigation } from "@/app/(dark)/ccc/mobile/navigation";
 import { MenuToggle } from "@/app/(dark)/ccc/menu-toggle";
+
 const sidebar = {
   open: {
-    clipPath: "circle(150% at 50px 40px)",
+    clipPath: "circle(150% at calc(100% - 40px) 40px)",
     transition: {
       type: "spring",
       stiffness: 20,
       restDelta: 2,
     },
-    height: "100%",
   },
   closed: {
-    clipPath: "circle(15px at 40px 40px)",
+    clipPath: "circle(0px at calc(100% - 40px) 40px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -25,6 +25,7 @@ const sidebar = {
     },
   },
 };
+
 const MobileNav = ({
   openChange,
 }: {
@@ -42,11 +43,14 @@ const MobileNav = ({
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      custom={height + 1}
+      custom={height}
       ref={containerRef}
-      className={isOpen ? "h-full w-full" : ""}
+      className={`fixed inset-0 z-50 ${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
     >
-      <motion.div className="bg-black" variants={sidebar} />
+      <motion.div 
+        className="absolute inset-0 bg-[#030014]/95 backdrop-blur-xl" 
+        variants={sidebar} 
+      />
       <AnimatePresence>
         {isOpen && (
           <Navigation
@@ -57,7 +61,10 @@ const MobileNav = ({
           />
         )}
       </AnimatePresence>
-      <MenuToggle toggle={() => toggleOpen()} />
+      <MenuToggle 
+        toggle={() => toggleOpen()} 
+        className="absolute top-4 right-4 pointer-events-auto"
+      />
     </motion.nav>
   );
 };
