@@ -35,9 +35,9 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
-            <div className="flex w-full flex-col gap-4 md:flex-row">
+            <div className="flex w-full flex-col gap-4">
               <p>
                 This course examines computer systems and control of external devices. Students will assemble computers
                 and small networks by installing and configuring appropriate hardware and software. Students will
