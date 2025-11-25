@@ -85,10 +85,10 @@ const courses: Course[] = [
         prereqs: ["TEJ3M"],
         description: (
           <div className="flex flex-col gap-4 md:flex-row">
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 md:max-w-sm md:shrink-0">
               <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
             </div>  
-            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
+            <div className="flex w-full flex-col gap-4 md:w-2/3">
               <p>
                 This course extends students&apos; understanding of computer systems and computer interfacing with
                 external devices. Students will learn more about fundamental concepts of digital logic, electronics,
@@ -157,10 +157,10 @@ const courses: Course[] = [
         gradeLevel: 10,
         description: (
           <div className="flex flex-col gap-4 md:flex-row">
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 md:max-w-sm md:shrink-0">
               <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
             </div>
-            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
+            <div className="flex w-full flex-col gap-4 md:w-2/3">
               <p>
                 This course helps students develop cutting-edge digital technology and computer programming skills that
                 will support them in contributing to and leading the global economic, scientific and societal innovations
@@ -203,10 +203,10 @@ const courses: Course[] = [
         gradeLevel: 11,
         description: (
           <div className="flex flex-col gap-4 md:flex-row">
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 md:max-w-sm md:shrink-0">
               <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Computer Science" />
             </div>
-            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
+            <div className="flex w-full flex-col gap-4 md:w-2/3">
               <p>
                 This course introduces students to computer science. Students will design software independently and as
                 part of a team, using industry-standard programming tools and applying the software development
@@ -255,10 +255,10 @@ const courses: Course[] = [
         prereqs: ["ICS3U"],
         description: (
           <div className="flex flex-col gap-4 md:flex-row">
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 md:max-w-sm md:shrink-0">
               <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
             </div>
-            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
+            <div className="flex w-full flex-col gap-4 md:w-2/3">
               <p>
                 This course enables students to further develop knowledge and skills in computer science. Students will
                 use modular design principles to create complex and fully documented programs, according to industry
