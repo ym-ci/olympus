@@ -61,23 +61,6 @@ export default function LandingPage() {
           </h2>
         </Link>
 
-        {/* Cybersecurity Quadrant */}
-        <Link
-          href="/cybersecurity"
-          prefetch={false}
-          className="group relative overflow-hidden"
-        >
-          <Image
-            src="/assets/cybersecurity/group.png"
-            alt="Cybersecurity"
-            fill
-            className="object-cover transition-all duration-500 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-black/45 transition-all duration-500 group-hover:bg-black/30" />
-          <h2 className="absolute bottom-4 right-4 text-2xl font-bold text-white md:text-3xl">
-            Cybersecurity
-          </h2>
-        </Link>
       </div>
 
       {/* Centered Card */}

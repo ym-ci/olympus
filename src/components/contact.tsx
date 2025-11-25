@@ -30,7 +30,6 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
     "Robotics Team",
     "Robotics Club",
     "Programming Club",
-    "Cybersecurity Club",
   ];
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>

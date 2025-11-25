@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import BouncingButton from "@/components/BouncingButton";
+import Image from "next/image";
 
 export default function LandingPage() {
   const [hoveredSide, setHoveredSide] = useState<"left" | "right" | null>(null);
@@ -42,13 +42,22 @@ export default function LandingPage() {
   return (
     <div className="flex h-screen flex-col overflow-hidden font-sans antialiased md:flex-row">
       <motion.a
-        className="group relative flex h-full w-full cursor-pointer items-center justify-center bg-primary text-white"
+        className="group relative flex h-full w-full cursor-pointer items-center justify-center overflow-hidden bg-primary text-white"
         animate={getAnimation("left")}
         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         onMouseEnter={() => setHoveredSide("left")}
         onMouseLeave={() => setHoveredSide(null)}
         href="/classes"
       >
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/landing/classes.jpg"
+            alt="Classes"
+            fill
+            className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+            priority
+          />
+        </div>
         <div className="relative z-10 flex flex-col items-center gap-6">
           <h1 className="text-7xl font-bold tracking-tight transition-all duration-500 group-hover:scale-110">
             Classes
@@ -65,19 +74,28 @@ export default function LandingPage() {
             Explore Classes <ArrowRight className="h-5 w-5" />
           </motion.div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
       </motion.a>
 
       <motion.a
-        className="group relative flex h-full w-full cursor-pointer items-center justify-center bg-secondary text-gray-900"
+        className="group relative flex h-full w-full cursor-pointer items-center justify-center overflow-hidden bg-secondary text-gray-900"
         animate={getAnimation("right")}
         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         onMouseEnter={() => setHoveredSide("right")}
         onMouseLeave={() => setHoveredSide(null)}
         href="/clubs"
       >
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/landing/clubs.jpg"
+            alt="Clubs"
+            fill
+            className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+            priority
+          />
+        </div>
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <h1 className="text-7xl font-bold tracking-tight transition-all duration-500 group-hover:scale-110">
+          <h1 className="text-7xl font-bold tracking-tight text-white transition-all duration-500 group-hover:scale-110">
             Clubs
           </h1>
           <motion.div
@@ -87,12 +105,12 @@ export default function LandingPage() {
               y: hoveredSide === "right" ? 0 : 10,
             }}
             transition={{ duration: 0.3, delay: 0.1 }}
-            className="flex items-center gap-2 text-xl"
+            className="flex items-center gap-2 text-xl text-white"
           >
             Discover Clubs <ArrowRight className="h-5 w-5" />
           </motion.div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
       </motion.a>
     </div>
   );
