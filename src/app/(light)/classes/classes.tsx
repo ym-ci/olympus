@@ -35,7 +35,7 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
               <div className="md:w-1/3">
                 <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
               </div>
