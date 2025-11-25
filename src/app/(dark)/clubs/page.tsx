@@ -6,7 +6,7 @@ export default function LandingPage() {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
       {/* Grid Container */}
-      <div className="grid h-full w-full grid-cols-2 grid-rows-2">
+      <div className="grid h-full w-full grid-cols-2 grid-rows-[1fr_1.25fr]">
         {/* Robotics Quadrant */}
         <Link
           href="/robotics"
@@ -47,13 +47,13 @@ export default function LandingPage() {
         <Link
           href="/tech-council"
           prefetch={false}
-          className="group relative overflow-hidden"
+          className="group relative col-span-2 overflow-hidden"
         >
           <Image
             src="/assets/tech-council/group.jpg"
             alt="Tech Council"
             fill
-            className="object-cover transition-all duration-500 group-hover:scale-110"
+            className="object-cover transition-all duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/55 transition-all duration-500 group-hover:bg-black/30" />
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
