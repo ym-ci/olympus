@@ -63,12 +63,14 @@ const courses: Course[] = [
           <div className="flex w-full flex-col gap-4 md:flex-row">
             <div className="flex min-w-0 flex-col gap-2">
               <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-                <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" />
+                {/* <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" /> */}
+                <YoutubeVideo id="AvVXW7dvTBA" />
                 <YoutubeVideo id="4D1mmO83ufo" />
               </div>
               <div className="flex min-w-0 flex-row gap-2">
-                <DriveVideo url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview" vertical />
-                <DriveVideo url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview" vertical />
+                <YoutubeVideo id="5tif0xcV7Uw" vertical />
+                {/* <DriveVideo url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview" vertical /> */}
+                {/* <DriveVideo url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview" vertical /> */}
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
               </div>
               <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
@@ -113,8 +115,10 @@ const courses: Course[] = [
         videos: (
           <div className="flex flex-col gap-4">
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
-              <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical />
-              <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical />
+              <YoutubeVideo id="Jc7ePaNkMME" vertical />
+              <YoutubeVideo id="Um6cMtcq3Dg" />
+              {/* <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical /> */}
+              {/* <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical /> */}
             </div>
             <div className="flex flex-row gap-4 place-content-center">
               <div className="w-full md:w-auto">
