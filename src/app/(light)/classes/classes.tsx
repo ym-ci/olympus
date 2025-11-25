@@ -35,7 +35,7 @@ const courses: Course[] = [
         id: "TEJ3M",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-col gap-4 md:flex-row">
+          <div className="flex flex-col gap-4">
               <div className="md:w-1/3">
                 <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
               </div>
@@ -46,12 +46,12 @@ const courses: Course[] = [
                 develop knowledge and skills in electronics, robotics, programming, digital logic and will build systems
                 that use computer programs and interfaces to control and/or respond to external devices.
               </p>
-              <p className="pt-4 md:pt-0">
+              <p className="pt-4">
                 Students gain valuable hands-on experience in computer engineering, giving them a competitive edge in
                 the job market and strong career prospects. This course provides an advantage for university admissions
                 and future opportunities in technology, circuitry, and robotics.
               </p>
-              <p className="pt-4 md:pt-0">
+              <p className="pt-4">
                 <strong>
                   Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities
                   (UofT, Waterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology,
