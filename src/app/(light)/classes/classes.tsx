@@ -37,7 +37,7 @@ const courses: Course[] = [
         description: (
           <div className="flex flex-row gap-4">
             <Infographic src="/assets/classes/engineering/3m.png" alt="Why Engineering" />
-            <div>
+            <div className="flex w-full flex-col gap-4 md:flex-row">
               <p>
                 This course examines computer systems and control of external devices. Students will assemble computers
                 and small networks by installing and configuring appropriate hardware and software. Students will
