@@ -49,7 +49,7 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
         primary: {
-          DEFAULT: "var(--portage-400)",
+          DEFAULT: "var(--landing-image-classes)",
           "50": "var(--portage-50)",
           "100": "var(--portage-100)",
           "200": "var(--portage-200)",
