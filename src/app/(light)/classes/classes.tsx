@@ -84,9 +84,11 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["TEJ3M"],
         description: (
-          <div className="flex flex-row gap-4">
-            <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
-            <div>
+          <div className="flex flex-col gap-4 md:flex-row">
+            <div className="md:w-1/3">
+              <Infographic src="/assets/classes/engineering/4m.png" alt="Why Engineering" />
+            </div>  
+            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
               <p>
                 This course extends students&apos; understanding of computer systems and computer interfacing with
                 external devices. Students will learn more about fundamental concepts of digital logic, electronics,
@@ -94,13 +96,13 @@ const courses: Course[] = [
                 C programming, building digital circuits to accomplish arithmetic and logic operations as well as
                 controlling motors and using sensors.
               </p>
-              <p className="pt-4">
+              <p className="pt-4 md:pt-0">
                 Students work on advanced projects that showcase their skills in computer engineering, allowing them to
                 build unique portfolios for university applications. These hands-on experiences set them apart in a
                 competitive job market and provide a strong foundation for future opportunities in technology,
                 circuitry, and robotics.
               </p>
-              <p className="pt-4">
+              <p className="pt-4 md:pt-0">
                 <strong>
                   Students who have successfully completed TEJ3M and TEJ4M have been accepted into top universities
                   (UofT, Waterloo, UBC, McMaster), paving the way for exciting opportunities in engineering, technology,
@@ -154,17 +156,21 @@ const courses: Course[] = [
         id: "ICD2O",
         gradeLevel: 10,
         description: (
-          <div className="flex flex-row gap-4">
-            <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
-            <p>
-              This course helps students develop cutting-edge digital technology and computer programming skills that
-              will support them in contributing to and leading the global economic, scientific and societal innovations
-              of tomorrow. Students will learn and apply coding concepts and skills to build hands-on projects and
-              investigate artificial intelligence, cybersecurity, and other emerging digital technologies that connect
-              to a wide range of fields and careers. Using critical thinking skills with a focus on digital citizenship,
-              students will investigate the appropriate use and development of the digital technologies that they
-              encounter every day, as well as the benefits and limitations of these technologies.
-            </p>
+          <div className="flex flex-col gap-4 md:flex-row">
+            <div className="md:w-1/3">
+              <Infographic src="/assets/classes/cs/ICD2O.png" alt="Why Engineering" />
+            </div>
+            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
+              <p>
+                This course helps students develop cutting-edge digital technology and computer programming skills that
+                will support them in contributing to and leading the global economic, scientific and societal innovations
+                of tomorrow. Students will learn and apply coding concepts and skills to build hands-on projects and
+                investigate artificial intelligence, cybersecurity, and other emerging digital technologies that connect
+                to a wide range of fields and careers. Using critical thinking skills with a focus on digital citizenship,
+                students will investigate the appropriate use and development of the digital technologies that they
+                encounter every day, as well as the benefits and limitations of these technologies.
+              </p>
+            </div>
           </div>
         ),
         videos: (
@@ -196,20 +202,22 @@ const courses: Course[] = [
         id: "ICS3U",
         gradeLevel: 11,
         description: (
-          <div className="flex flex-row gap-4">
-            <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Computer Science" />
-            <div className="space-y-4">
+          <div className="flex flex-col gap-4 md:flex-row">
+            <div className="md:w-1/3">
+              <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Computer Science" />
+            </div>
+            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
               <p>
                 This course introduces students to computer science. Students will design software independently and as
                 part of a team, using industry-standard programming tools and applying the software development
                 life-cycle model. They will also write and use subprograms within computer programs.
               </p>
-              <p>
+              <p className="pt-4 md:pt-0">
                 Students will develop creative solutions for various types of problems as their understanding of the
                 computing environment grows. They will also explore environmental and ergonomic issues, emerging
                 research in computer science, and global career trends in computer-related fields.
               </p>
-              <p>
+              <p className="pt-4 md:pt-0">
                 <strong>
                   Students who have successfully completed our computer science courses have been accepted into top
                   universities, opening doors to exciting opportunities in software development, artificial
@@ -246,21 +254,23 @@ const courses: Course[] = [
         gradeLevel: 12,
         prereqs: ["ICS3U"],
         description: (
-          <div className="flex flex-row gap-4">
-            <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
-            <div className="space-y-4">
+          <div className="flex flex-col gap-4 md:flex-row">
+            <div className="md:w-1/3">
+              <Infographic src="/assets/classes/cs/ICS4U.png" alt="Why Engineering" />
+            </div>
+            <div className="flex w-full flex-col gap-4 md:w-2/3 md:flex-row">
               <p>
                 This course enables students to further develop knowledge and skills in computer science. Students will
                 use modular design principles to create complex and fully documented programs, according to industry
                 standards. Student teams will manage a large software development project, from planning through to
                 project review.
               </p>
-              <p>
+              <p className="pt-4 md:pt-0">
                 Students will also analyse algorithms for effectiveness. They will investigate ethical issues in
                 computing and further explore environmental issues, emerging technologies, areas of research in computer
                 science, and careers in the field.
               </p>
-              <p>
+              <p className="pt-4 md:pt-0">
                 <strong>
                   Students who have successfully completed our computer science courses have been accepted into top
                   universities, opening doors to exciting opportunities in software development, artificial
