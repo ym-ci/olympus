@@ -68,7 +68,7 @@ const courses: Course[] = [
                 <YoutubeVideo id="4D1mmO83ufo" />
               </div>
               <div className="flex min-w-0 flex-row gap-2">
-                <YoutubeVideo id="5tif0xcV7Uw" vertical />
+                <YoutubeVideo id="5tiF0xcV7Uw" vertical />
                 {/* <DriveVideo url="https://drive.google.com/file/d/1L4Dq2R3W_RLKjJrXLoRwYluf46YnZxgm/preview" vertical /> */}
                 {/* <DriveVideo url="https://drive.google.com/file/d/1UvF-xInUAOz0oiO5vSdQH9igJJJYVnIS/preview" vertical /> */}
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
@@ -116,7 +116,7 @@ const courses: Course[] = [
           <div className="flex flex-col gap-4">
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
               <YoutubeVideo id="Jc7ePaNkMME" vertical />
-              <YoutubeVideo id="Um6cMtcq3Dg" />
+              <YoutubeVideo id="Um6cMtcq3Dg" vertical />
               {/* <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical /> */}
               {/* <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical /> */}
             </div>
