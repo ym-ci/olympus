@@ -74,8 +74,10 @@ const courses: Course[] = [
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
               </div>
               <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
-                <DriveVideo url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview" vertical />
-                <DriveVideo url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview" vertical />
+                <YoutubeVideo id="Fya9y7kVNiU" vertical />
+                <YoutubeVideo id="wkt8DENV97Q" vertical />
+                {/* <DriveVideo url="https://drive.google.com/file/d/1u7J4kOsndbWT7qSMIV5macK3I1zg82Gr/preview" vertical /> */}
+                {/* <DriveVideo url="https://drive.google.com/file/d/1fUBP33ShGvn9-idLIYc9C4Fz7PGNTvVF/preview" vertical /> */}
               </div>
             </div>
           </div>
@@ -199,7 +201,7 @@ const courses: Course[] = [
         gradeLevel: 11,
         description: (
           <div className="flex flex-row gap-4">
-            <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Engineering" />
+            <Infographic src="/assets/classes/cs/ICS3U.png" alt="Why Computer Science" />
             <div className="space-y-4">
               <p>
                 This course introduces students to computer science. Students will design software independently and as
@@ -228,6 +230,9 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
             */}
+            <YoutubeVideo id="qLFiF6ZQlAE"/> 
+            <YoutubeVideo id="G5lb-oTKE-A"/> 
+            <YoutubeVideo id="g08OutJ2NjU"/> 
             <YoutubeVideo id="jGEUGBzywz4"/>  {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
             <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
