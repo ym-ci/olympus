@@ -39,6 +39,8 @@
     --cruise-900: #134138;
     --cruise-950: #092520;
 
+    --landing-image-classes: url("public/assets/IMG_2803.JPG")
+    /* --landing-image-clubs: url("public/assets/IMG_2803.JPG") */
     --background: #faf6ec;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
