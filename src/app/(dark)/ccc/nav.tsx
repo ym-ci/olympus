@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import MobileNav from "@/app/(dark)/ccc/mobile/nav";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export const nav = [
   { href: "/ccc", label: "CCC" },
@@ -12,6 +13,7 @@ export const nav = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("/ccc");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -36,7 +38,7 @@ const Navbar = () => {
         >
           <Link
             href="/"
-            className="mr-4 rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white hover:bg-white/20 transition-colors"
+            className="mr-4 rounded-full px-4 py-2 text-sm font-bold text-slate-300 hover:bg-white/20 transition-colors"
           >
             YMCI
           </Link>
@@ -46,7 +48,11 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-5 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-white/10 hover:text-white"
+                onClick={() => setActive(item.href)}
+                className={cn(
+                  "rounded-full px-5 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-white/10 hover:text-white",
+                  active === item.href && "bg-white/10 text-white"
+                )}
               >
                 {item.label}
               </Link>
