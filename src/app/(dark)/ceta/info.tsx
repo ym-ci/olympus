@@ -31,7 +31,7 @@ const Info = () => {
             </div>
             <h2 className="mb-6 text-3xl font-bold text-white md:text-5xl tracking-tight">
               Discover the <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Challenge</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">Challenge</span>
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl">
               Get ready to put your engineering skills to the test! 
@@ -40,8 +40,8 @@ const Info = () => {
               You’ll combine mechanical know-how, electrical design, and programming skills to create 
               a robot that can sense its environment and navigate challenges with precision. 
               Strong communication and teamwork are a must as you bring your ideas to life. 
-              The competition is open to all experience levels—whether you’re a beginner or 
-              a seasoned builder—so come showcase your creativity, problem-solving, and passion for robotics!
+              The competition is open to all experience levels, whether you’re a beginner or 
+              a seasoned builder! Come showcase your creativity, problem-solving, and passion for robotics!
             </p>
           </div>
           <div className="mt-8">
@@ -105,7 +105,7 @@ const Info = () => {
         </InfoCard>
 
         {/* Registration CTA */}
-        <InfoCard className="md:col-span-3 bg-gradient-to-r from-indigo-900/40 to-purple-900/40 border-indigo-500/30" delay={0.4}>
+        <InfoCard className="md:col-span-3 bg-gradient-to-r from-indigo-00/40 to-blue-900/40 border-indigo-500/30" delay={0.4}>
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-6">
               <div className="hidden md:flex rounded-full bg-indigo-500/20 p-4 text-indigo-400 ring-1 ring-indigo-500/40">

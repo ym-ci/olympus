@@ -61,7 +61,7 @@ const Navbar = () => {
 
           <div className="ml-2 pl-2 border-l border-white/10">
              <Link href="https://forms.gle/Qi6wvBmajwB5B1J56" target="_blank">
-              <button className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-indigo-500 hover:scale-105">
+              <button className="rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-indigo-500 hover:scale-105">
                 Register
               </button>
             </Link>

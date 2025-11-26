@@ -9,7 +9,7 @@ const Navbar = dynamic(() => import("@/app/(dark)/ceta/nav"), { ssr: false });
 
 const Page = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[#030014] overflow-x-hidden selection:bg-indigo-500/30 text-slate-200">
+    <div className="relative min-h-screen w-full bg-[#000035] overflow-x-hidden selection:bg-indigo-500/30 text-slate-200">
       {/* Background Gradients */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-indigo-600/10 blur-[120px]" />
