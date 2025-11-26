@@ -88,7 +88,12 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Location</h3>
-                <p className="text-slate-400">Double Gym</p>
+                <p className="text-slate-400">490 York Mills Rd, North York, ON M3B 1W6 - Exit #8 - Double Gym</p>
+                <Link href="https://drive.google.com/file/d/1GIbBJrXvU30nxl0EKxTppqx6k9XW4N0W/view?usp=sharing" target="_blank">
+                  <Button variant="link" className="p-0 text-blue-400 hover:text-blue-300 text-lg">
+                    See parking info here <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="w-full h-[1px] bg-white/5" />
