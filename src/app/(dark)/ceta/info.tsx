@@ -29,10 +29,20 @@ const Info = () => {
             <div className="mb-6 inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-300 border border-blue-500/30">
               About the Event
             </div>
-            <h2 className="mb-6 text-3xl font-bold text-white md:text-5xl tracking-tight">
-              Discover the <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">Challenge</span>
-            </h2>
+            <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-start">
+              <img
+                src="/assets/ceta/CETA-logo-v2025.jpg"
+                alt="CETA Logo"
+                className="h-24 w-auto object-contain"
+              />
+
+              <h2 className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-none md:-mt-3">
+                Discover the <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">
+                  Challenge
+                </span>
+              </h2>
+            </div>
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl">
               Get ready to put your engineering skills to the test! 
               This robotics competition invites students from Computer Engineering 
