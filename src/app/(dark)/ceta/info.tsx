@@ -32,7 +32,7 @@ const Info = () => {
             </div>
             <div className="mb-4 flex flex-col gap-4">
               <div className="flex justify-center">
-                <div className="relative h-24 w-24 md:h-28 md:w-28 mb-4">
+                <div className="relative h-24 w-24 md:h-32 md:w-32 mb-4">
                   <Image
                     src="/assets/ceta/CETA-logo-v2025-light.png"
                     alt="CETA Logo"
