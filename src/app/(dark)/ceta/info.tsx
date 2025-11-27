@@ -55,7 +55,7 @@ const Info = () => {
             </p>
           </div>
           <div className="mt-8">
-             <Link href="https://drive.google.com/file/d/1YpiCDtMkTaMjV7zC_gU2cG2tKUOMlYdw/view?usp=sharing" target="_blank">
+             <Link href="https://drive.google.com/file/d/10URjoDBG3lnxzEHxnYPUB91bktOGATZl/view?usp=sharing" target="_blank">
               <Button variant="link" className="p-0 text-blue-400 hover:text-blue-300 text-lg">
                 Read more on the official documentation <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
