@@ -31,7 +31,7 @@ const Hero = () => {
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-blue-500 via-blue-300 to-blue-100 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
-                  Competition
+                  Robotics Competition
                 </span>
               </h1>
             </PopIn>
