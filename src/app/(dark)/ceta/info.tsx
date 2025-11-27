@@ -33,15 +33,15 @@ const Info = () => {
             <div className="mb-4 flex flex-col gap-4">
               <div className="flex justify-center">
                 <div className="relative h-24 w-24 md:h-28 md:w-28 mb-4">
-                          <Image
-                            src="/assets/ceta/CETA-logo-v2025-light.png"
-                            alt="CETA Logo"
-                            fill
-                            className="h-24 w-auto object-contain"
-                            priority
-                          />
-                  </div>
+                  <Image
+                    src="/assets/ceta/CETA-logo-v2025-light.png"
+                    alt="CETA Logo"
+                    fill
+                    className="h-24 w-auto object-contain"
+                    priority
+                  />
                 </div>
+              </div>
 
               <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight whitespace-nowrap md:-mt-3">
                 Discover the{" "}
@@ -64,7 +64,7 @@ const Info = () => {
           <div className="mt-8">
              <Link href="https://drive.google.com/file/d/10URjoDBG3lnxzEHxnYPUB91bktOGATZl/view?usp=sharing" target="_blank">
               <Button variant="link" className="p-0 text-blue-400 hover:text-blue-300 text-lg">
-                Read more on the official documentation <ArrowRight className="ml-2 h-5 w-5" />
+                Read more in the official documentation <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
