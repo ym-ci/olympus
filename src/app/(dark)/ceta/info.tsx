@@ -5,6 +5,7 @@ import { Calendar, MapPin, Clock, DollarSign, AlertCircle, ArrowRight } from "lu
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const InfoCard = ({ children, className, delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => (
   <motion.div
@@ -26,18 +27,24 @@ const Info = () => {
         {/* Main About Card */}
         <InfoCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between min-h-[300px]" delay={0.1}>
           <div>
-            <div className="mb-6 inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-300 border border-blue-500/30">
+            <div className="mb-2 inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-300 border border-blue-500/30">
               About the Event
             </div>
-            <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-start">
-              <img
-                src="/assets/ceta/CETA-logo-v2025.jpg"
-                alt="CETA Logo"
-                className="h-24 w-auto object-contain"
-              />
+            <div className="mb-4 flex flex-col gap-4">
+              <div className="flex justify-center">
+                <div className="relative h-24 w-24 md:h-28 md:w-28 mb-4">
+                          <Image
+                            src="/assets/ceta/CETA-logo-v2025-light.png"
+                            alt="CETA Logo"
+                            fill
+                            className="h-24 w-auto object-contain"
+                            priority
+                          />
+                  </div>
+                </div>
 
-              <h2 className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-none md:-mt-3">
-                Discover the <br />
+              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight whitespace-nowrap md:-mt-3">
+                Discover the{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">
                   Challenge
                 </span>
