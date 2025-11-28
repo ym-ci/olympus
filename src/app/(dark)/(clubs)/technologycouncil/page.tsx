@@ -68,7 +68,7 @@ const faq = [
                 </DialogHeader>
                 <div className="flex flex-col gap-2">
                   <p>
-                    <strong>Andrew Ng:</strong> andrew.ng3@student.tdsb.on.ca
+                    <strong>Max Ma:</strong> xiaoying.ma@student.tdsb.on.ca
                   </p>
                   <Link href="mailto:andrew.ng3@student.tdsb.on.ca?subject=Tech%20Council%20-%20Question">
                     <Button className="w-full">Send Email</Button>
@@ -101,7 +101,7 @@ export default function TechCouncilPage() {
         image="/assets/tech-council/group.jpg"
         title={
           <div>
-            <h1>Tech Council</h1>
+            <h1>Technology Council</h1>
             <div className="flex flex-row gap-2 place-self-center">
               <Link
                 href="https://www.instagram.com/ymtechcouncil/"
@@ -115,7 +115,7 @@ export default function TechCouncilPage() {
             </div>
           </div>
         }
-        strTitle="Tech Council"
+        strTitle="Technology Council"
       />
       <AboutTechCouncil />
       <FAQ faq={faq} />

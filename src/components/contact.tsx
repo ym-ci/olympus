@@ -28,7 +28,6 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
   const clubs = [
     "Technology Council",
     "Robotics Team",
-    "Robotics Club",
     "Programming Club",
   ];
   return (

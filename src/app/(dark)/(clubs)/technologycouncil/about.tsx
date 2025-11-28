@@ -10,7 +10,7 @@ export const AboutTechCouncil = () => {
         <Card className="w-full">
           <CardHeader>
             <CardTitle className="text-center text-2xl font-bold">
-              What is Tech Council?
+              What is Technology Council?
             </CardTitle>
           </CardHeader>
           <CardContent>

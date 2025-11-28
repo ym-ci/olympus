@@ -51,13 +51,13 @@ export default function LandingPage() {
         >
           <Image
             src="/assets/tech-council/group.jpg"
-            alt="Tech Council"
+            alt="Technology Council"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/55 transition-all duration-500 group-hover:bg-black/30" />
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
-            Tech Council
+            Technology Council
           </h2>
         </Link>
 
