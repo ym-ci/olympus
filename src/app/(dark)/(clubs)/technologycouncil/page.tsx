@@ -13,6 +13,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react"
+
 
 const faq = [
   {
@@ -97,6 +99,11 @@ const faq = [
 export default function TechCouncilPage() {
   return (
     <main className="h-screen snap-y snap-mandatory overflow-y-scroll">
+      <Link
+        href="/"
+        className="fixed top-4 left-4 z-50 inline-flex items-center gap-2 rounded-lg bg-black/40 px-4 py-2 text-white backdrop-blur hover:bg-black/60 transition"
+      > <ArrowLeft /> Back
+      </Link>
       <Hero
         image="/assets/tech-council/group.jpg"
         title={
