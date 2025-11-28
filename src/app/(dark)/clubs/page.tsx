@@ -45,7 +45,7 @@ export default function LandingPage() {
 
         {/* Tech Council Quadrant */}
         <Link
-          href="/tech-council"
+          href="/technologycouncil"
           prefetch={false}
           className="group relative col-span-2 overflow-hidden"
         >
