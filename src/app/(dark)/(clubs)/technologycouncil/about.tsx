@@ -19,10 +19,9 @@ export const AboutTechCouncil = () => {
               and knowledge of technology, helping them succeed in and beyond
               the classroom. We offer computer services around the school and
               promote technology through newsletters and events. Additionally,
-              we support other school clubs like Programming,
-              Engineering/Robotics, and Cybersecurity with fundraising for
-              competitions and equipment. Our mission is to enhance technology
-              usage across YMCI.
+              we support other school clubs like Programming and
+              Robotics with fundraising for competitions and equipment. 
+              Our mission is to enhance technology usage across YMCI.
             </p>
           </CardContent>
         </Card>
@@ -40,15 +39,18 @@ export const AboutTechCouncil = () => {
                 accounts, and more.
               </li>
               <li>
-                <strong>Fundraising</strong> - We support other school clubs
-                like Programming, Engineering/Robotics, and Cybersecurity with
-                fundraising for competitions and equipment.
+                <strong>3D Printing Design</strong> - We support teachers and clubs by designing 
+                and 3D printing their ideas.
               </li>
 
               <li>
                 <strong>Events</strong> - We host events throughout the school
                 year to help promote the technology clubs, and to raise funds
                 for competitions and equipment.
+              </li>
+              <li>
+                <strong><em>Upcoming: Learning</em></strong> - We want to host &apos;lunch and learns&apos; about general tech topics 
+                to help students expand their knowledge and skills.
               </li>
             </ul>
           </CardContent>

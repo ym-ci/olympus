@@ -39,12 +39,12 @@ const faq = [
     question:
       "What are the sections of the Technology Council? Can I join more than one?",
     answer:
-      "The council is divided into four sections: Events, Newsletter, Publicity, and Computer Service. Each section focuses on different aspects of promoting technology. Students are welcome to join more than one section if they’re interested!",
+      "The council is divided into four sections: Events, Computer Services, and 3D Printing Design. Each section focuses on different aspects of promoting technology. Students are welcome to join more than one section if they’re interested!",
   },
   {
     question: "How often does the Technology Council meet?",
     answer:
-      "Each section of the Technology Council—Events, Newsletter, Publicity, and Computer Service—meets weekly to plan and work on projects.",
+      "Each section of the Technology Events, Computer Services, and 3D Printing Design meet weekly during lunch to plan and work on initiatives.",
   },
 
   {
