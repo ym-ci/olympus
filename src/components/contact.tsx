@@ -57,7 +57,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
             <a href={`mailto:${email}`}>{email}</a>
           </p>
         </div>
-        <a href={`mailto:${email}`} className="w-full">
+        <a href={`mailto:${email}?subject=YMCI%20Club%20-%20Inquiries`} className="w-full">
           <Button color="primary" className="w-full">
             Send Email
           </Button>

@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import { Hero } from "@/app/(dark)/(clubs)/landing";
 import { AboutUs } from "@/app/(dark)/(clubs)/robotics/about";
-import BouncingButton from "@/components/BouncingButton";
+// import BouncingButton from "@/components/BouncingButton";
 import Sponsors from "@/app/(dark)/(clubs)/robotics/sponsors";
 
 const faq = [
@@ -55,17 +55,6 @@ const faq = [
       </>
     ),
   },
-  // {
-  //   question:
-  //     "What is the difference between Robotics Club and the Robotics Team?",
-  //   answer: (
-  //     <>
-  //       Robotics Club is a club that meets bi-weekly after school to work on fun
-  //       projects and learn new things. The Robotics Team is a group of dedicated
-  //       students who build and program robots to compete in competitions.
-  //     </>
-  //   ),
-  // },
   {
     question: "What competitions does the team compete in?",
     answer: (
