@@ -53,7 +53,7 @@ const Hero = () => {
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/ccc-signup" target="_blank">
+              <Link href="https://forms.gle/WBoeA3RqyVEKtJx46" target="_blank">
                  <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-white/10 bg-white/5 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm transition-all hover:scale-105">
                   Register Now
                   <ArrowRight className="ml-2 h-4 w-4" />

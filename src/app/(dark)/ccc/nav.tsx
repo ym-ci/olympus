@@ -60,7 +60,7 @@ const Navbar = () => {
           </nav>
 
           <div className="ml-2 pl-2 border-l border-white/10">
-             <Link href="/ccc-signup" target="_blank">
+             <Link href="https://forms.gle/WBoeA3RqyVEKtJx46" target="_blank">
               <button className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-indigo-500 hover:scale-105">
                 Register
               </button>

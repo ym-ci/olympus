@@ -93,7 +93,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Price</h3>
-                <p className="text-slate-400">$10 Entry Fee</p>
+                <p className="text-slate-400">$10 due <strong>February 5th</strong></p>
               </div>
             </div>
           </div>
@@ -108,10 +108,10 @@ const Info = () => {
               </div>
               <div className="text-center md:text-left">
                 <h3 className="text-2xl font-bold text-white mb-2">Registration Deadline Approaching</h3>
-                <p className="text-slate-300">Sign up before <span className="text-white font-semibold">February 6th</span> to secure your spot.</p>
+                <p className="text-slate-300">Sign up before <span className="text-white font-semibold">February 5th</span> to secure your spot.</p>
               </div>
             </div>
-            <Link href="/ccc-signup" target="_blank" className="w-full md:w-auto">
+            <Link href="https://forms.gle/WBoeA3RqyVEKtJx46" target="_blank" className="w-full md:w-auto">
               <Button size="lg" className="w-full md:w-auto bg-white text-indigo-950 hover:bg-slate-200 font-bold px-8 h-12 text-lg transition-transform hover:scale-105">
                 Register Now
               </Button>
