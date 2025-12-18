@@ -180,9 +180,11 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" /> {/* Snake-Lauryn */}
             <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" /> {/* Scene-Nathan */}
             <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" /> {/* Scene-Olivia */}
+            <YoutubeVideo id="u_756_-Xikc"/> {/* Scene - Nathan - on Helen's Channel  */}
+            <YoutubeVideo id="zDlTNChZtOY"/> {/* Scene - Olivia - on Helen's Channel  */}
 
             <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Project Videos</h1>            
-            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" /> {/* Exit the Dragon */}
+                        <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" /> {/* Exit the Dragon */}
             <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" /> {/* Hole Escape */}
             <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" /> {/* Key Blaster Demo */}
             <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" /> {/* Super Mario */}
@@ -194,7 +196,7 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1QBqA-_8i_8jMP7cQpbAJsjf2E_2H8Ad8/preview" /> {/* Word Bunny */}
             <DriveVideo url="https://drive.google.com/file/d/1SZU2757KKdd4tBtQPdKWqWbX5vv8h-Hp/preview" /> {/* Zombie Shooter */}
             <DriveVideo url="https://drive.google.com/file/d/12bLy9sNgEwe0zMmSxesMdVo-pHFOCc_5/preview" /> {/* The Wizard & The Knight */}            
-            <DriveVideo url="https://drive.google.com/file/d/1_9p_Vn5_GRgUmoURGDHw7t2ZMWwkZCIv/preview" /> {/* Furious Fireball */}       
+            <DriveVideo url="https://drive.google.com/file/d/1_9p_Vn5_GRgUmoURGDHw7t2ZMWwkZCIv/preview" /> {/* Furious Fireball */}          
           </div>
         ),
       },
@@ -237,15 +239,15 @@ const courses: Course[] = [
             <YoutubeVideo id="qLFiF6ZQlAE"/> 
             <YoutubeVideo id="G5lb-oTKE-A"/> 
             <YoutubeVideo id="g08OutJ2NjU"/> 
-            <YoutubeVideo id="jGEUGBzywz4"/>  {/* Felicia Zhou */}
+            <YoutubeVideo id="jGEUGBzywz4"/> {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
             <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
             <YoutubeVideo id="eRbv4Oq9Ob4"/> {/* Gian Pauyon */}
-            <DriveVideo url="https://drive.google.com/file/d/1M2eoGDtCpWp72fLlYiGaybiHiMMGQtWd/preview"></DriveVideo> {/* Ethan Bravo */} 
-            <DriveVideo url="https://drive.google.com/file/d/1UhLpKzDfeo8bAhklI4lq6OSKJbMNgQRD/preview"></DriveVideo> {/* Jakim Cau */} 
-            <DriveVideo url="https://drive.google.com/file/d/1N0NqyP8m0QJ9QiRnhxOd0C6rM3ItvT2n/preview"></DriveVideo> {/* Chloe Lawrence */} 
-            <DriveVideo url="https://drive.google.com/file/d/1NhY7P8RPvBczAyGFGqcVLBhc22BA6lj7/preview"></DriveVideo> {/* Panayiotis Vavaroutsos */} 
-            <DriveVideo url="https://drive.google.com/file/d/1Ke1ocyj8MBuY370MW0uRx3eoIwnXb_-m/preview"></DriveVideo> {/* Adriano Tino */}       
+            <YoutubeVideo id="i0aSwOt_Gqs"/> {/* Ethan Bravo - on Helen's Channel  */}
+            <YoutubeVideo id="jwzO6aKzvZI"/> {/* Jakim Cau - on Helen's Channel  */}
+            <YoutubeVideo id="vrkJm26Ilew"/> {/* Chloe Lawrence - on Helen's Channel  */}
+            <YoutubeVideo id="fchMW79ploM"/> {/* Panayiotis Vavaroutsos - on Helen's Channel  */}
+            <YoutubeVideo id="hTmTDf8phfk"/> {/* Adriano Tino - on Helen's Channel  */}   
           </div>
         ),
       },
@@ -286,12 +288,16 @@ const courses: Course[] = [
             <YoutubeVideo id="Uiy7pGqdFlUs" />
             <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
             */}
-            <DriveVideo url="https://drive.google.com/file/d/12j98NuIUBUzMLfY_o9YhQreuynqHQQBw/preview"></DriveVideo> {/* Elemental Escape */}
-            <DriveVideo url="https://drive.google.com/file/d/1CP8Ze25qQyG-w_PqMumxd8t5uup15z7N/preview"></DriveVideo> {/* Nam Cap */}
-            <DriveVideo url="https://drive.google.com/file/d/1S4DM3BV1tsz7-evfFN8CxRHhvQb_B5El/preview"></DriveVideo> {/* Omni Fighter */}
             <YoutubeVideo id="CPWX_HymZqg"/> {/* White Coats */}
             <YoutubeVideo id="ol21zBTqDXs"/> {/* Tetris */}
             <YoutubeVideo id="VtV1dqQbDyM"/> {/* Crusader */}
+            <YoutubeVideo id="i0aSwOt_Gqs"/> {/* Ethan Bravo - on Helen's Channel  */}
+            <YoutubeVideo id="jwzO6aKzvZI"/> {/* Jakim Cau - on Helen's Channel  */}
+            <YoutubeVideo id="vrkJm26Ilew"/> {/* Chloe Lawrence - on Helen's Channel  */}
+            <YoutubeVideo id="fchMW79ploM"/> {/* Panayiotis Vavaroutsos - on Helen's Channel  */}
+            <YoutubeVideo id="hTmTDf8phfk"/> {/* Adriano Tino - on Helen's Channel  */}
+            <YoutubeVideo id="NjxWjIhZIAk"/> {/* Elemental Escape - on Helen's Channel */}
+            <YoutubeVideo id="cweLDVGAVc0"/> {/* Nam Cap - on Helen's Channel */}
           </div>
         ),
       },
