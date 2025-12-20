@@ -178,8 +178,6 @@ const courses: Course[] = [
             <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Assignments</h1>
             <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" /> {/* Snake-Christian */}
             <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" /> {/* Snake-Lauryn */}
-            <DriveVideo url="https://drive.google.com/file/d/1jafLg8jebG0GT04ywXIFMOXk0b5-V38r/preview" /> {/* Scene-Nathan */}
-            <DriveVideo url="https://drive.google.com/file/d/1FKj8ty5NRwjJBOEKSEhb2XXm7yeIp3a-/preview" /> {/* Scene-Olivia */}
             <YoutubeVideo id="u_756_-Xikc"/> {/* Scene - Nathan - on Helen's Channel  */}
             <YoutubeVideo id="zDlTNChZtOY"/> {/* Scene - Olivia - on Helen's Channel  */}
 
