@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Calendar, MapPin, Clock, DollarSign, AlertCircle, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Clock, DollarSign, AlertCircle, ArrowRight, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { motion } from "framer-motion";
@@ -93,6 +93,16 @@ const Info = () => {
                 <p className="text-xs text-slate-500">Arrive by 8:15 AM</p>
               </div>
             </div>
+            <div className="w-full h-[1px] bg-white/5" />
+            <div className="flex items-center gap-4">
+              <div className="rounded-2xl bg-yellow-500/20 p-3 text-yellow-400 ring-1 ring-yellow-500/30">
+                <DollarSign className="h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white text-lg">Price</h3>
+                <p className="text-slate-400">$20 per team</p>
+              </div>
+            </div>
           </div>
         </InfoCard>
 
@@ -115,12 +125,16 @@ const Info = () => {
             </div>
             <div className="w-full h-[1px] bg-white/5" />
             <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-yellow-500/20 p-3 text-yellow-400 ring-1 ring-yellow-500/30">
-                <DollarSign className="h-6 w-6" />
+              <div className="rounded-2xl bg-lime-500/20 p-3 text-lime-400 ring-1 ring-lime-500/30">
+                <Video className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="font-semibold text-white text-lg">Price</h3>
-                <p className="text-slate-400">$20 per team</p>
+                <h3 className="font-semibold text-white text-lg">Live Stream & Scores</h3>
+                <Link href="/ceta-2026" target="_blank">
+                  <Button variant="link" className="p-0 text-blue-400 hover:text-blue-300 text-lg">
+                    Watch now! <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 export const nav = [
   { href: "/ceta", label: "CETA" },
   { href: "#info", label: "Details" },
+  // { href: "/ceta-2026", label: "Watch"},
 ];
 
 const Navbar = () => {
@@ -32,18 +33,18 @@ const Navbar = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className={`flex items-center gap-1 rounded-full border border-white/10 bg-black/20 px-2 py-2 backdrop-blur-xl transition-all duration-300 ${
+          className={`flex items-center gap-3 rounded-full border border-white/10 bg-black/20 px-4 py-2 backdrop-blur-xl transition-all duration-300 ${
             scrolled ? "bg-black/40 shadow-lg shadow-indigo-500/10" : ""
           }`}
         >
           <Link
             href="/"
-            className="mr-4 rounded-full px-4 py-2 text-sm font-bold text-slate-300 hover:bg-white/20 transition-colors"
+            className="rounded-full px-4 py-2 text-sm font-bold text-slate-300 hover:bg-white/20 transition-colors"
           >
             YMCI
           </Link>
-          
-          <nav className="flex items-center">
+
+          <nav className="flex items-center gap-3">
             {nav.map((item) => (
               <Link
                 key={item.href}
@@ -59,13 +60,18 @@ const Navbar = () => {
             ))}
           </nav>
 
-          <div className="ml-2 pl-2 border-l border-white/10">
-             <Link href="https://forms.gle/Qi6wvBmajwB5B1J56" target="_blank">
-              <button className="rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-indigo-500 hover:scale-105">
-                Register
-              </button>
-            </Link>
-          </div>
+          {/* Divider with even spacing */}
+          <div className="mx-1 h-8 w-px bg-white/10" />
+          {/* <Link href="/ceta-2026" target="_blank">
+            <button className="rounded-full bg-lime-600 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-lime-500 hover:scale-105">
+              Watch
+            </button>
+          </Link> */}
+          <Link href="https://forms.gle/Qi6wvBmajwB5B1J56" target="_blank">
+            <button className="rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-blue-600 hover:scale-105">
+              Register
+            </button>
+          </Link>
         </motion.div>
       </div>
 
