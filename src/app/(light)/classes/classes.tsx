@@ -228,10 +228,7 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            {/*
-            <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
-            */}
+          <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
             <YoutubeVideo id="qLFiF6ZQlAE"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="G5lb-oTKE-A"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="g08OutJ2NjU"/> {/* on Marie's Channel  */}
