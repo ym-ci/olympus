@@ -176,24 +176,24 @@ const courses: Course[] = [
         videos: (
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
             <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Assignments</h1>
-            <DriveVideo url="https://drive.google.com/file/d/1I3HAhfcBtVt5HGWH8jXvn9peMlBNaRhL/preview" /> {/* Snake-Christian */}
-            <DriveVideo url="https://drive.google.com/file/d/1Mv1aiyo95CHxL3O8a7H-0Y8Yahpy8cNX/preview" /> {/* Snake-Lauryn */}
+            <YoutubeVideo id="O2J0rtFN1a8"/> {/* Snake - Christian - on Helen's Channel  */}
+            <YoutubeVideo id="Ph0oDbOQrCM"/> {/* Snake - Lauryn - on Helen's Channel  */}
             <YoutubeVideo id="u_756_-Xikc"/> {/* Scene - Nathan - on Helen's Channel  */}
             <YoutubeVideo id="zDlTNChZtOY"/> {/* Scene - Olivia - on Helen's Channel  */}
-
-            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Project Videos</h1>            
-                        <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" /> {/* Exit the Dragon */}
+           
+            <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Project Videos</h1>
+            <DriveVideo url="https://drive.google.com/file/d/1x2mXUCR-f3Y4ZLYlNfGpF1Am6Ee4MYf1/preview" /> {/* Exit the Dragon */}
             <DriveVideo url="https://drive.google.com/file/d/1fGrx-U3EMOlVHnjr_DVaDHZJk1THs-lI/preview" /> {/* Hole Escape */}
-            <DriveVideo url="https://drive.google.com/file/d/1xpbdWkL9Z0kQNbuEbVAs2UoGQE5Ju-Kp/preview" /> {/* Key Blaster Demo */}
-            <DriveVideo url="https://drive.google.com/file/d/1WuobnzzeB-kQKS0j7dF_z1KZge_JMFM8/preview" /> {/* Super Mario */}
-            <DriveVideo url="https://drive.google.com/file/d/1HxeGHWOozp9RdqM1Nu_-FIAq6-ZSl1iY/preview" /> {/* Starship Runaway */}
-            <DriveVideo url="https://drive.google.com/file/d/1XoAmucM-6S-a_H32YJpKsJzHelBVD94o/preview" /> {/* Splash and Solve */}
+            <YoutubeVideo id="9HB6xPO165k"/> {/* Key Blaster Demo - on Helen's Channel  */}
+            <YoutubeVideo id="GivagHvkg54"/> {/* Super Mario - on Helen's Channel  */}
+            <YoutubeVideo id="DZ5MoaJGXkU"/> {/* Starship Runaway - on Helen's Channel  */}
+            <YoutubeVideo id="c3_Gaxh2Da8"/> {/* Splash and Solve - on Helen's Channel  */}
 
             <DriveVideo url="https://drive.google.com/file/d/1XGa3C_uzImqqqDXbhuPmMdqjXyNWtKH2/preview" /> {/* Police Pursuit */}  
-            <DriveVideo url="https://drive.google.com/file/d/1I_YsM8vSGAu8o0lDI61W9fGJE3WhjXXA/preview" /> {/* Snakes & Ladders */}
-            <DriveVideo url="https://drive.google.com/file/d/1QBqA-_8i_8jMP7cQpbAJsjf2E_2H8Ad8/preview" /> {/* Word Bunny */}
-            <DriveVideo url="https://drive.google.com/file/d/1SZU2757KKdd4tBtQPdKWqWbX5vv8h-Hp/preview" /> {/* Zombie Shooter */}
-            <DriveVideo url="https://drive.google.com/file/d/12bLy9sNgEwe0zMmSxesMdVo-pHFOCc_5/preview" /> {/* The Wizard & The Knight */}            
+            <YoutubeVideo id="-MvFU4wXiVs"/> {/* Snakes & Ladders - on Helen's Channel  */}
+            <YoutubeVideo id="Rw58nktkwMc"/> {/* Word Bunny - on Helen's Channel  */}
+            <YoutubeVideo id="AdJvfngaXp4"/> {/* Zombie Shooter - on Helen's Channel  */}
+            <YoutubeVideo id="6aIi9JKUjCI"/> {/* The Wizard & The Knight - on Helen's Channel  */}
             <DriveVideo url="https://drive.google.com/file/d/1_9p_Vn5_GRgUmoURGDHw7t2ZMWwkZCIv/preview" /> {/* Furious Fireball */}          
           </div>
         ),
