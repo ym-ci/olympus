@@ -234,9 +234,9 @@ const courses: Course[] = [
             <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
             <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
             */}
-            <YoutubeVideo id="qLFiF6ZQlAE"/> 
-            <YoutubeVideo id="G5lb-oTKE-A"/> 
-            <YoutubeVideo id="g08OutJ2NjU"/> 
+            <YoutubeVideo id="qLFiF6ZQlAE"/> {/* on Marie's Channel  */}
+            <YoutubeVideo id="G5lb-oTKE-A"/> {/* on Marie's Channel  */}
+            <YoutubeVideo id="g08OutJ2NjU"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="jGEUGBzywz4"/> {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
             <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
@@ -286,16 +286,12 @@ const courses: Course[] = [
             <YoutubeVideo id="Uiy7pGqdFlUs" />
             <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
             */}
+            <YoutubeVideo id="NjxWjIhZIAk"/> {/* Elemental Escape - on Helen's Channel */}
+            <YoutubeVideo id="cweLDVGAVc0"/> {/* Nam Cap - on Helen's Channel */}
+            <YoutubeVideo id="RR_ZBd1Vr9k"/> {/* Omni Fighter - on Helen's Channel */}  
             <YoutubeVideo id="CPWX_HymZqg"/> {/* White Coats */}
             <YoutubeVideo id="ol21zBTqDXs"/> {/* Tetris */}
             <YoutubeVideo id="VtV1dqQbDyM"/> {/* Crusader */}
-            <YoutubeVideo id="i0aSwOt_Gqs"/> {/* Ethan Bravo - on Helen's Channel  */}
-            <YoutubeVideo id="jwzO6aKzvZI"/> {/* Jakim Cau - on Helen's Channel  */}
-            <YoutubeVideo id="vrkJm26Ilew"/> {/* Chloe Lawrence - on Helen's Channel  */}
-            <YoutubeVideo id="fchMW79ploM"/> {/* Panayiotis Vavaroutsos - on Helen's Channel  */}
-            <YoutubeVideo id="hTmTDf8phfk"/> {/* Adriano Tino - on Helen's Channel  */}
-            <YoutubeVideo id="NjxWjIhZIAk"/> {/* Elemental Escape - on Helen's Channel */}
-            <YoutubeVideo id="cweLDVGAVc0"/> {/* Nam Cap - on Helen's Channel */}
           </div>
         ),
       },
