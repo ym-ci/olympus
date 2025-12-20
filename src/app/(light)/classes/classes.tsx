@@ -228,11 +228,9 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
             {/*
-            <DriveVideo url="https://drive.google.com/file/d/1rNm4PYJbJTQRZtZnH-r7HbRD8gY0FjxH/preview"></DriveVideo>
-            <DriveVideo url="https://drive.google.com/file/d/1AH44qgDeHXTR2Y5po2t2kkEnS0iUE8Wn/preview"></DriveVideo>
-            <DriveVideo url="https://drive.google.com/file/d/1J30p7Sz_W45cfQB3pKRTi_tBeimk_zqT/preview"></DriveVideo>
+            <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
             */}
             <YoutubeVideo id="qLFiF6ZQlAE"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="G5lb-oTKE-A"/> {/* on Marie's Channel  */}
@@ -282,10 +280,6 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
-            {/*
-            <YoutubeVideo id="Uiy7pGqdFlUs" />
-            <DriveVideo url="https://drive.google.com/file/d/1SLakW7-nWj-e1OTyD2tMDsUCnkK1TS9B/preview"></DriveVideo>
-            */}
             <YoutubeVideo id="NjxWjIhZIAk"/> {/* Elemental Escape - on Helen's Channel */}
             <YoutubeVideo id="cweLDVGAVc0"/> {/* Nam Cap - on Helen's Channel */}
             <YoutubeVideo id="RR_ZBd1Vr9k"/> {/* Omni Fighter - on Helen's Channel */}  
