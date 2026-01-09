@@ -83,7 +83,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Location</h3>
-                <p className="text-slate-400">Room 204/206 @ YMCI</p>
+                <p className="text-slate-400">Room 204 @ YMCI</p>
               </div>
             </div>
             <div className="w-full h-[1px] bg-white/5" />
