@@ -57,7 +57,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Date</h3>
-                <p className="text-slate-400">Feb 18th</p>
+                <p className="text-slate-400">February 18th</p>
               </div>
             </div>
             <div className="w-full h-[1px] bg-white/5" />
