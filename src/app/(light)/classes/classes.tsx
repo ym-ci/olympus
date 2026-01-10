@@ -1,10 +1,9 @@
 "use client" 
 import type React from "react"
-import { useMemo, useState } from "react"
+import { useMemo, useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { YoutubeVideo } from "@/components/video/youtube"
-import { DriveVideo } from "@/components/video/drive"
 import Image from "next/image"
 import { Infographic } from "@/app/(light)/classes/infographic"
 import Link from "next/link"
@@ -30,6 +29,8 @@ type Course = {
 const courses: Course[] = [
   {
     id: "TEJ",
+    name: "Computer Engineering",
+    description: "Computer Engineering Technology",
     classes: [
       {
         id: "TEJ3M",
@@ -144,8 +145,6 @@ const courses: Course[] = [
         ),
       },
     ],
-    name: "Computer Engineering",
-    description: "Computer Engineering Technology",
   },
   {
     id: "ICS",
@@ -294,6 +293,17 @@ export default function Classes() {
   const [selectedCourse, setSelectedCourse] = useState<string | null>(courses[0]?.id ?? null)
   const [selectedClass, setSelectedClass] = useState<string | null>(courses[0]?.classes[0]?.id ?? null)
 
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+
+    const course = courses.find(c => c.id === hash);
+    if (!course) return;
+
+    setSelectedCourse(course.id);
+    setSelectedClass(course.classes[0]?.id ?? null);
+  }, []);
+
   const c = useMemo(
     () => courses.find((c) => c.id === selectedCourse)?.classes.find((cls) => cls.id === selectedClass),
     [selectedCourse, selectedClass],
@@ -366,6 +376,8 @@ export default function Classes() {
               onClick={() => {
                 setSelectedCourse(course.id)
                 setSelectedClass(course.classes[0]?.id ?? null)
+
+                window.location.hash = course.id
               }}
               className="relative flex-1 basis-full md:basis-auto px-4 md:px-6 py-3 md:py-4 text-base md:text-lg transition-colors"
             >
