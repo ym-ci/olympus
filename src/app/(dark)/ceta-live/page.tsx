@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export default function CETA2026() {
+export default function CETALIVE() {
   return (
     <div className="relative min-h-screen w-full bg-[#030014] overflow-x-hidden selection:bg-indigo-500/30 text-slate-200 flex flex-col items-center py-10 px-4">
       {/* Background Gradients */}
@@ -27,11 +27,11 @@ export default function CETA2026() {
               className="h-[2.2em] w-auto object-contain"
               priority
             />
-            <span>@ YMCI - 2026</span>
+            <span>@ YMCI</span>
           </h1>
 
           <p className="text-slate-400 text-lg md:text-xl">
-            Welcome to CETA Robotics Competition 2026 hosted at York Mills CI by Technology Council and Robotics Team!
+            Welcome to CETA Robotics Competition hosted at York Mills CI by Technology Council and Robotics Team!
           </p>
         </div>
 

@@ -130,7 +130,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Live Stream & Scores</h3>
-                <Link href="/ceta-2026" target="_blank">
+                <Link href="/ceta-live" target="_blank">
                   <Button variant="link" className="p-0 text-blue-400 hover:text-blue-300 text-lg">
                     Watch now! <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>

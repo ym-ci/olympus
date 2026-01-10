@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 export const nav = [
   { href: "/ceta", label: "CETA" },
   { href: "#info", label: "Details" },
-  // { href: "/ceta-2026", label: "Watch"},
 ];
 
 const Navbar = () => {
@@ -62,11 +61,13 @@ const Navbar = () => {
 
           {/* Divider with even spacing */}
           <div className="mx-1 h-8 w-px bg-white/10" />
-          {/* <Link href="/ceta-2026" target="_blank">
+          {/* Watch Button - turn on when registration closes */}
+          {/* <Link href="/ceta-live" target="_blank">
             <button className="rounded-full bg-lime-600 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-lime-500 hover:scale-105">
               Watch
             </button>
           </Link> */}
+          {/* Registration Button - turn off when registration closes */}
           <Link href="https://forms.gle/Qi6wvBmajwB5B1J56" target="_blank">
             <button className="rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-blue-600 hover:scale-105">
               Register
