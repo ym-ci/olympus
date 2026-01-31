@@ -66,7 +66,6 @@ const courses: Course[] = [
           <div className="flex w-full flex-col gap-4 md:flex-row">
             <div className="flex min-w-0 flex-col gap-2">
               <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-                {/* <DriveVideo url="https://drive.google.com/file/d/1zXv1DxL_Yx44gTwUlyqbjuWufxIXC_Dd/preview" /> */}
                 <YoutubeVideo id="AvVXW7dvTBA" />
                 <YoutubeVideo id="4D1mmO83ufo" />
               </div>
@@ -75,6 +74,7 @@ const courses: Course[] = [
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
                 <YoutubeVideo id="Fya9y7kVNiU" vertical />
                 <YoutubeVideo id="wkt8DENV97Q" vertical />
+                <YoutubeVideo id="Kxjmd9ueivA" vertical />
               </div>
             </div>
           </div>
@@ -118,6 +118,8 @@ const courses: Course[] = [
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
               <YoutubeVideo id="Jc7ePaNkMME" vertical />
               <YoutubeVideo id="Um6cMtcq3Dg" vertical />
+              <YoutubeVideo id="CJl4bUZ0DRY"/>
+              <YoutubeVideo id="lJsto3OwVN4"/>
               {/* <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical /> */}
               {/* <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical /> */}
             </div>
@@ -227,10 +229,16 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+          // <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
             <YoutubeVideo id="qLFiF6ZQlAE"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="G5lb-oTKE-A"/> {/* on Marie's Channel  */}
             <YoutubeVideo id="g08OutJ2NjU"/> {/* on Marie's Channel  */}
+            <YoutubeVideo id="-NO_ds_WV38"/>
+            <YoutubeVideo id="2NE0eAAuKac"/>
+            <YoutubeVideo id="jK6dqTvlDQQ"/>
+            <YoutubeVideo id="V_bSxbQPIZI"/>
+            <YoutubeVideo id="Ql7wu0S4qcw"/>
             <YoutubeVideo id="jGEUGBzywz4"/> {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
             <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
@@ -275,7 +283,8 @@ const courses: Course[] = [
           </div>
         ),
         videos: (
-          <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+          // <div className="flex w-full max-w-full flex-col overflow-x-auto md:gap-4">
+          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
             <YoutubeVideo id="NjxWjIhZIAk"/> {/* Elemental Escape - on Helen's Channel */}
             <YoutubeVideo id="cweLDVGAVc0"/> {/* Nam Cap - on Helen's Channel */}
             <YoutubeVideo id="RR_ZBd1Vr9k"/> {/* Omni Fighter - on Helen's Channel */}  
