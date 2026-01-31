@@ -18,7 +18,7 @@ const steps: Step[] = [
   },
   {
     title: "3) Quote Generated",
-    desc: "We will generate and send a quote to the requester, awaiting approval.",
+    desc: "We will generate and send a quote to the requester, awaiting confirmation.",
   },
   {
     title: "4) We print",
@@ -201,7 +201,7 @@ export default function PrintingServicePage(): JSX.Element {
             <div>
               <h2 style={{ ...styles.h2, margin: 0 }}>Ready to submit?</h2>
               <p style={{ ...styles.sectionSubtext, margin: "6px 0 0" }}>
-                Open the Google Form and we’ll take it from there.
+                Submit a print request and we’ll take it from there!
               </p>
             </div>
 
@@ -211,7 +211,7 @@ export default function PrintingServicePage(): JSX.Element {
               rel="noreferrer"
               style={{ ...styles.button, ...styles.buttonPrimary }}
             >
-              Open Google Form →
+              Submit a Print Request →
             </a>
           </div>
         </section>
