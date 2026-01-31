@@ -64,22 +64,17 @@ const courses: Course[] = [
         ),
         videos: (
           <div className="flex w-full flex-col gap-4 md:flex-row">
-            {/* <div className="flex min-w-0 flex-col gap-2"> */}
              <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
               <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Circuit Work</h1>
                 <YoutubeVideo id="5tiF0xcV7Uw" vertical />
                 <YoutubeVideo id="Fya9y7kVNiU" vertical />
 
               <h1 className="text-2xl col-span-1 md:col-span-2 font-bold">Culminating Project Videos</h1>
-              {/* <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2"> */}
                 <YoutubeVideo id="AvVXW7dvTBA" />
                 <YoutubeVideo id="4D1mmO83ufo" />
-              {/* </div> */}
-              {/* <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center"> */}
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
                 <YoutubeVideo id="wkt8DENV97Q" vertical />
                 <YoutubeVideo id="Kxjmd9ueivA" vertical />
-              {/* </div> */}
             </div>
           </div>
         ),
@@ -292,7 +287,7 @@ const courses: Course[] = [
             <YoutubeVideo id="RR_ZBd1Vr9k"/> {/* Omni Fighter - on Helen's Channel */}  
             <YoutubeVideo id="CPWX_HymZqg"/> {/* White Coats */}
             <YoutubeVideo id="ol21zBTqDXs"/> {/* Tetris */}
-            <YoutubeVideo id="VtV1dqQbDyM"/> {/* Crusader */}
+            {/* <YoutubeVideo id="VtV1dqQbDyM"/>*/} {/* Crusader */}
           </div>
         ),
       },
