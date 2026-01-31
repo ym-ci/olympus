@@ -117,11 +117,9 @@ const courses: Course[] = [
           <div className="flex flex-col gap-4">
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
               <YoutubeVideo id="Jc7ePaNkMME" vertical />
-              <YoutubeVideo id="Um6cMtcq3Dg" vertical />
+              <YoutubeVideo id="91cCjh3YGJI" vertical />
               <YoutubeVideo id="CJl4bUZ0DRY"/>
               <YoutubeVideo id="lJsto3OwVN4"/>
-              {/* <DriveVideo url="https://drive.google.com/file/d/1tkVzhGaGwj3CdHYfXDnbJCiEdu2BfE0e/preview" vertical /> */}
-              {/* <DriveVideo url="https://drive.google.com/file/d/1dHphcMG8w0aej6YMtj0fx4eVqE5XN-6K/preview" vertical /> */}
             </div>
             <div className="flex flex-row gap-4 place-content-center">
               <div className="w-full md:w-auto">
