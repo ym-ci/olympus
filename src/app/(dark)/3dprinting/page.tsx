@@ -172,15 +172,11 @@ export default function PrintingServicePage(): JSX.Element {
 
                 {/* Row 4 */}
                 <div style={styles.cellLabel}>Payment Model</div>
-                <div style={styles.cell}>
-                Higher of per weight (0.03/g) <br /> or per time (0.018/min)
+                <div style={styles.cellSpan3}>
+                  Higher of&nbsp;<em>per weight</em>&nbsp;(0.03/g)&nbsp;or&nbsp;
+                    <em>per time</em>&nbsp;(0.018/min)
                 </div>
-                <div style={styles.cell}>
-                Higher of per weight (0.03/g) <br /> or per time (0.018/min)
-                </div>
-                <div style={styles.cell}>
-                Higher of per weight (0.03/g) <br /> or per time (0.018/min)
-                </div>
+
 
                 {/* Row 5 */}
                 <div style={styles.cellLabel}>Payment Method</div>
@@ -494,6 +490,22 @@ export const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
     color: "rgba(239,68,68,0.7)",          // light maroon (red-300)
     lineHeight: 1.5,
+  },
+
+  cellSpan3: {
+    gridColumn: "2 / span 3",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 18,
+    borderRadius: 18,
+    border: "1px solid rgba(127,29,29,0.28)",
+    background: "rgba(255,255,255,0.035)",
+    color: "rgba(255,255,255,0.92)",
+    fontSize: 14,
+    lineHeight: 1.45,
+    textAlign: "center",
+    minHeight: 56,
   },
 
 };
