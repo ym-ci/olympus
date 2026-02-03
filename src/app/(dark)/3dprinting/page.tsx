@@ -160,8 +160,8 @@ export default function PrintingServicePage(): JSX.Element {
 
                 {/* Row 2 */}
                 <div style={styles.cellLabel}>Filament Multiplier</div>
-                <div style={styles.cell}>× 2</div>
-                <div style={styles.cell}>× 1.25</div>
+                <div style={styles.cell}>× 3</div>
+                <div style={styles.cell}>× 1.75</div>
                 <div style={styles.cell}>× 1</div>
 
                 {/* Row 3 */}
@@ -173,8 +173,8 @@ export default function PrintingServicePage(): JSX.Element {
                 {/* Row 4 */}
                 <div style={styles.cellLabel}>Payment Model</div>
                 <div style={styles.cellSpan3}>
-                  Higher of&nbsp;<em>per weight</em>&nbsp;(0.03/g)&nbsp;or&nbsp;
-                    <em>per time</em>&nbsp;(0.018/min)
+                  Higher of&nbsp;<em>per weight</em>&nbsp;(0.05/g)&nbsp;or&nbsp;
+                    <em>per time</em>&nbsp;(0.03/min)
                 </div>
 
 
