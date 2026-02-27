@@ -18,7 +18,7 @@ const Hero = () => {
           <PopIn duration={0.5}>
             <div className="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
-              Registration Opens in March 2026
+              Registration is now open
             </div>
           </PopIn>
 

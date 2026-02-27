@@ -100,7 +100,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Price</h3>
-                <p className="text-slate-400">$20 per team</p>
+                <p className="text-slate-400">$40 per team</p>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ const Info = () => {
               </div>
               <div className="text-center md:text-left">
                 <h3 className="text-2xl font-bold text-white mb-2">Registration Deadline Approaching</h3>
-                <p className="text-slate-300">Sign up before <span className="text-white font-semibold">April 24th, 2026</span> to secure your spot.</p>
+                <p className="text-slate-300">Sign up before <span className="text-white font-semibold">April 22nd, 2026</span> to secure your spot.</p>
               </div>
             </div>
             <Link href="https://forms.gle/Qi6wvBmajwB5B1J56" target="_blank" className="w-full md:w-auto">
