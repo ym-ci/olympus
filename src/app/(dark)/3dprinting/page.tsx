@@ -186,7 +186,10 @@ export default function PrintingServicePage(): JSX.Element {
             </div>
 
             <p style={styles.footnote}>
-                *Transfers are made to the Computer Science Department.
+                Transfers are made to the Computer Science Department.
+            </p>
+            <p style={styles.footnote}>
+                *Service requests from outside of York Mills CI will be treated as <strong>Individuals</strong> for pricing.
             </p>
             </section>
 
