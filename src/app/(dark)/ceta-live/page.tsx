@@ -93,6 +93,17 @@ export default function CETALIVE() {
               </svg>
             </span>
           </Link>
+
+          <Link
+            href="https://ceta.ymci.ca/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group px-8 py-4 rounded-xl bg-slate-800/50 border border-slate-700 text-slate-200 font-semibold text-lg hover:bg-slate-800 hover:text-white transition-all duration-300 w-full sm:w-auto text-center backdrop-blur-sm"
+          >
+            <span className="flex items-center justify-center gap-2">
+              Admin Portal
+            </span>
+          </Link>
         </div>
       </main>
     </div>
