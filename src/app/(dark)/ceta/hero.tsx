@@ -18,7 +18,7 @@ const Hero = () => {
           <PopIn duration={0.5}>
             <div className="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
-              Registration is now open
+              Registration is now closed
             </div>
           </PopIn>
 
@@ -52,12 +52,12 @@ const Hero = () => {
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="https://forms.gle/2Rk444EKBbCQcWdZ7" target="_blank">
+              {/* <Link href="https://forms.gle/2Rk444EKBbCQcWdZ7" target="_blank">
                  <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-white/10 bg-white/5 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm transition-all hover:scale-105">
                   Register Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </SlideUp>
 
