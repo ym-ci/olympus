@@ -140,8 +140,8 @@ const Info = () => {
           </div>
         </InfoCard>
 
-        {/* Registration CETA - turn off when registration closes*/}
-        {/* <InfoCard className="md:col-span-3 bg-gradient-to-r from-indigo-00/40 to-blue-900/40 border-indigo-500/30" delay={0.4}>
+        {/* Registration CTA */}
+        <InfoCard className="md:col-span-3 bg-gradient-to-r from-indigo-00/40 to-blue-900/40 border-indigo-500/30" delay={0.4}>
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-6">
               <div className="hidden md:flex rounded-full bg-indigo-500/20 p-4 text-indigo-400 ring-1 ring-indigo-500/40">
@@ -158,7 +158,7 @@ const Info = () => {
               </Button>
             </Link>
           </div>
-        </InfoCard> */}
+        </InfoCard>
 
       </div>
     </section>
