@@ -53,7 +53,7 @@ export default function CETALIVE() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 w-full justify-center items-center">
           <Link
-            href="https://ceta.ymci.ca/bracket"
+            href="./bracket"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold text-lg hover:from-blue-800 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 w-full sm:w-auto text-center"
