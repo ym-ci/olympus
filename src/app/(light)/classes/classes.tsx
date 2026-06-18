@@ -75,6 +75,10 @@ const courses: Course[] = [
                 <YoutubeVideo id="eKFr5Fq63_s" vertical />
                 <YoutubeVideo id="wkt8DENV97Q" vertical />
                 <YoutubeVideo id="Kxjmd9ueivA" vertical />
+                <YoutubeVideo id="o7pb8CThzuA"/>
+                {/* <YoutubeVideo id=""/>
+                <YoutubeVideo id=""/>
+                <YoutubeVideo id=""/> */}
             </div>
           </div>
         ),
@@ -119,6 +123,8 @@ const courses: Course[] = [
               <YoutubeVideo id="91cCjh3YGJI" vertical />
               <YoutubeVideo id="CJl4bUZ0DRY"/>
               <YoutubeVideo id="lJsto3OwVN4"/>
+              <YoutubeVideo id="-X2zy4DTuXk"/>
+              {/* <YoutubeVideo id=""/>*/}
             </div>
             <div className="flex flex-row gap-4 place-content-center">
               <div className="w-full md:w-auto">
@@ -236,6 +242,10 @@ const courses: Course[] = [
             <YoutubeVideo id="jK6dqTvlDQQ"/>
             <YoutubeVideo id="V_bSxbQPIZI"/>
             <YoutubeVideo id="Ql7wu0S4qcw"/>
+            <YoutubeVideo id="W5v1N7_pgbQ" />
+            <YoutubeVideo id="_wpl38mukx4"/>
+            <YoutubeVideo id="OYX5excNMMI"/>
+            {/*<YoutubeVideo id=""/> */}
             <YoutubeVideo id="jGEUGBzywz4"/> {/* Felicia Zhou */}
             <YoutubeVideo id="rZt6HUNvgT0"/> {/* Ian Min */}
             <YoutubeVideo id="q403E2kCh0U"/> {/* Satoru Katsuta */}
