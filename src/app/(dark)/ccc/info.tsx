@@ -57,7 +57,7 @@ const Info = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-lg">Date</h3>
-                <p className="text-slate-400">February 18th</p>
+                <p className="text-slate-400">February 17th</p>
               </div>
             </div>
             <div className="w-full h-[1px] bg-white/5" />
@@ -111,6 +111,7 @@ const Info = () => {
                 <p className="text-slate-300">Sign up before <span className="text-white font-semibold">February 5th</span> to secure your spot.</p>
               </div>
             </div>
+            {/* Registration Open */}
             <Link href="https://forms.gle/WBoeA3RqyVEKtJx46" target="_blank" className="w-full md:w-auto">
               <Button size="lg" className="w-full md:w-auto bg-white text-indigo-950 hover:bg-slate-200 font-bold px-8 h-12 text-lg transition-transform hover:scale-105">
                 Register Now

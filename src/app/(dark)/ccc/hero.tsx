@@ -14,13 +14,21 @@ const Hero = () => {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center text-center gap-8">
           
-          {/* Badge */}
+          {/* Badge Closed */}
           <PopIn duration={0.5}>
-            <div className="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-md">
-              <span className="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
-              Registration Open
+            <div className="inline-flex items-center rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-sm font-medium text-red-300 backdrop-blur-md">
+              <span className="flex h-2 w-2 rounded-full bg-red-400 mr-2 animate-pulse"></span>
+              Registration Closed
             </div>
           </PopIn>
+
+          {/* Badge Open */}
+          {/* <PopIn duration={0.5}>
+            <div className="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-md">
+              <span className="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
+              Registration Closed
+            </div>
+          </PopIn> */}
 
           {/* Main Title */}
           <div className="space-y-4">
@@ -53,7 +61,7 @@ const Hero = () => {
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="https://forms.gle/WBoeA3RqyVEKtJx46" target="_blank">
+              <Link href="https://forms.gle/xscjhW6kU8gD5xf4A" target="_blank">
                  <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-white/10 bg-white/5 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm transition-all hover:scale-105">
                   Register Now
                   <ArrowRight className="ml-2 h-4 w-4" />
