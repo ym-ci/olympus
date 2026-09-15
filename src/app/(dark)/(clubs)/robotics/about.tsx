@@ -52,7 +52,7 @@ export function AboutUs() {
               ]}
               button={
                 <Link
-                  href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4?cjc=bzfg3257"
+                  href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"

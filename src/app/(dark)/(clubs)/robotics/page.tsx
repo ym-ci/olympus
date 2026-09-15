@@ -26,14 +26,12 @@ const faq = [
     answer: (
       <div className="space-y-4">
         <p>
-          <strong>Robotics Team:</strong> No time commitment, just show up to
-          our bi-weekly meetings!
+          <strong>VEX:</strong> Every Mondays Afterschool (3:30 - 5pm) and Tuesday Mornings (7:30am - 8:55am) in room{" "}
+          <strong>206</strong>.
         </p>
         <p>
-          <strong>Robotics team:</strong> We meet almost every day at lunch in
-          room <strong>204/206</strong>. We require at least 2+ hours of
-          commitment per week. We also have a weekly meeting every monday after
-          school in room <strong>206</strong>.
+          <strong>Juniors:</strong> Every Thursday at Lunch in room{" "}
+          <strong>206</strong>.
         </p>
       </div>
     ),
@@ -42,8 +40,7 @@ const faq = [
     question: "Where are meetings held?",
     answer: (
       <>
-        Weekly, every monday afterschool and every other Thursday at lunch in room{" "}
-        <strong>206/204</strong>.
+        We meet in room{" "} <strong>206</strong> for building and will go practice on our field in <strong>Titan Hall</strong>.
       </>
     ),
   },
@@ -66,9 +63,19 @@ const faq = [
             VEX V5 Robotics Competition
           </Link>
         </strong>{" "}
-        (95500A), and the{" "}
+        (95500A){", "}
         <strong className="text-blue-400 hover:text-blue-500 hover:underline">
-          <Link href="https://www.cool-mcu.com/pages/ceta">
+          <Link href="https://www.instagram.com/rsx.utoronto/?hl=en">
+            SEEK RSX Jr
+          </Link>
+        </strong>{", "}
+        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://engineering.ontariotechu.ca/outreach/teacher-programs/robotics_competition/index.php">
+            Ontario Tech Robotics Competition
+          </Link>
+        </strong>{", "} and {" "}
+        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://ceta.ymci.ca/">
             CETA Competition
           </Link>
         </strong>
@@ -103,7 +110,7 @@ const faq = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/Sx6HJSpopeQ?si=ec7c0tWRPUlF_QA-"
+        src="https://www.youtube.com/watch?v=68NxYIAzbkY"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -116,7 +123,7 @@ const faq = [
     question: "I've got more questions! Who do I contact?",
     answer: (
       <div className="flex flex-row gap-2">
-        <Card className="w-full">
+        {/* <Card className="w-full">
           <CardHeader>Executives</CardHeader>
           <CardContent className="space-y-4">
             <p>
@@ -146,13 +153,12 @@ const faq = [
               </DialogContent>
             </Dialog>
           </CardContent>
-        </Card>
+        </Card> */}
         <Card className="w-full">
           <CardHeader>Staff Advisor</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For inquries regarding funding, equipment, or anything else,
-              please contact our staff advisor.
+              For inquries please contact our staff advisor and they will direct you to the proper exectutive member.
             </p>
             <Contact>
               <Button className="w-full">Contact Staff Advisor</Button>
