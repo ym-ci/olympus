@@ -6,13 +6,13 @@ import { InstagramIcon } from "@/components/icons/instagram";
 import { Contact } from "@/components/contact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-// import {
-//   Dialog,
-//   DialogContent,
-//   DialogHeader,
-//   DialogTitle,
-//   DialogTrigger,
-// } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Link from "next/link";
 import { Hero } from "@/app/(dark)/(clubs)/landing";
 import { AboutUs } from "@/app/(dark)/(clubs)/robotics/about";
@@ -95,12 +95,6 @@ const faq = [
           Instagram
         </Link>
         !
-        {/* {" "}
-        and
-        {" "}
-        <Link href="https://www.youtube.com/@ymrobotics" target="_blank" className="text-blue-400 hover:underline hover:text-blue-500">
-          YouTube
-        </Link> */}
       </>
     ),
   },
@@ -123,42 +117,38 @@ const faq = [
     question: "I've got more questions! Who do I contact?",
     answer: (
       <div className="flex flex-row gap-2">
-        {/* <Card className="w-full">
-          <CardHeader>Executives</CardHeader>
+        <Card className="w-full">
+          <CardHeader>Our Team</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For everything else related to the team details, please
-              contact our executives!
+              For everything related to the team details, please
+              contact us!
             </p>
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="w-full">Contact Executives</Button>
+                <Button className="w-full">Contact Team</Button>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Executives</DialogTitle>
+                  <DialogTitle>Contact our Team!</DialogTitle>
                 </DialogHeader>
                 <div className="flex flex-col gap-2">
                   <p>
-                    <strong>Ryan Yu:</strong> ryan.yu9@student.tdsb.on.ca
+                    robotics@ymci.ca
                   </p>
-                  <p>
-                    <strong>Aaron Huang:</strong>{" "}
-                    aaron.huang5@student.tdsb.on.ca
-                  </p>
-                  <Link href="mailto:ryan.yu9@student.tdsb.on.ca,aaron.huang5@student.tdsb.on.ca?subject=Robotics%20Team%20-%20Question">
+                  <Link href="mailto:robotics@ymci.ca?subject=Robotics%20Team%20-%20Question">
                     <Button className="w-full">Send Email</Button>
                   </Link>
                 </div>
               </DialogContent>
             </Dialog>
           </CardContent>
-        </Card> */}
+        </Card>
         <Card className="w-full">
           <CardHeader>Staff Advisor</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For inquries please contact our staff advisor and they will direct you to the proper exectutive member.
+              For other inquries please contact our staff advisor.
             </p>
             <Contact>
               <Button className="w-full">Contact Staff Advisor</Button>
