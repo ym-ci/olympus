@@ -10,16 +10,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+// import {
+//   Dialog,
+//   DialogClose,
+//   DialogContent,
+//   DialogDescription,
+//   DialogFooter,
+//   DialogHeader,
+//   DialogTitle,
+//   DialogTrigger,
+// } from "@/components/ui/dialog";
 
 export function AboutUs() {
   return (
@@ -40,7 +40,7 @@ export function AboutUs() {
         </div>
 
         <div className="mb-12 flex justify-center">
-          <div className="w-full max-w-lg">
+          <div className="w-full max-w-2xl">
             <RoboticsCard
               title="Robotics Team"
               imageSrc="/assets/robotics/bot_cool.jpg"
@@ -50,6 +50,7 @@ export function AboutUs() {
                 "No experience necessary",
                 "Application required",
               ]}
+              note="See FAQ below for more info."
               button={
                 <Link
                   href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4"
@@ -87,6 +88,7 @@ interface RoboticsCardProps {
   title: string;
   imageSrc: string;
   items: string[];
+  note?: string;
   button: React.ReactNode;
   gradient?: string;
   borderColor?: string;
@@ -96,6 +98,7 @@ function RoboticsCard({
   title,
   imageSrc,
   items,
+  note,
   button,
   gradient = "from-gray-800/50 to-gray-900/50",
   borderColor = "border-gray-700 hover:border-gray-600",
@@ -127,6 +130,11 @@ function RoboticsCard({
             </li>
           ))}
         </ul>
+        {note && (
+          <p className="mt-3 ml-5 text-sm text-gray-400">
+            {note}
+          </p>
+        )}
       </CardContent>
       <CardFooter className="px-6 pb-6">{button}</CardFooter>
     </Card>

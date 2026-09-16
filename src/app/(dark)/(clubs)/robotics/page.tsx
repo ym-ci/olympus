@@ -6,13 +6,13 @@ import { InstagramIcon } from "@/components/icons/instagram";
 import { Contact } from "@/components/contact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogHeader,
+//   DialogTitle,
+//   DialogTrigger,
+// } from "@/components/ui/dialog";
 import Link from "next/link";
 import { Hero } from "@/app/(dark)/(clubs)/landing";
 import { AboutUs } from "@/app/(dark)/(clubs)/robotics/about";
@@ -110,7 +110,7 @@ const faq = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/watch?v=68NxYIAzbkY"
+        src="https://www.youtube.com/embed/68NxYIAzbkY"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -181,9 +181,9 @@ export default function RoboticsPage() {
       <Hero
         image="/assets/robotics/banner.jpg"
         title={
-          <div>
-            <h1 className="pb-4">Robotics Team</h1>
-            <div className="flex flex-row gap-2 place-self-center">
+          <div className="flex flex-col items-center">
+          <h1 className="mb-3">Robotics Team</h1>
+          <div className="flex items-center justify-center gap-3">
               <Link
                 href="https://www.instagram.com/ym_robotics/"
                 target="_blank"
@@ -194,7 +194,7 @@ export default function RoboticsPage() {
                 />
               </Link>
 
-              <Link href="/ymrc?ref=site_hero_icon" target="_blank">
+              <Link href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4" target="_blank">
                 <ClassroomIcon className="h-8 w-8" />
               </Link>
             </div>
