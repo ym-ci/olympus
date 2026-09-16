@@ -38,9 +38,10 @@ export function AboutUs() {
             the perfect path for your robotics journey.
           </p>
         </div>
+        
 
         <div className="mb-12 flex justify-center">
-          <div className="w-full max-w-2xl">
+          <div className="w-full max-w-4xl">
             <RoboticsCard
               title="Robotics Team"
               imageSrc="/assets/robotics/bot_cool.jpg"
@@ -50,36 +51,61 @@ export function AboutUs() {
                 "No experience necessary",
                 "Application required",
               ]}
-              note="See FAQ below for more info."
               button={
-                <Link
-                  href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full"
-                >
-                  <Button className="w-full transform bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
-                    Join Robotics Team
-                  </Button>
-                </Link>
+                <div className="flex w-full flex-col gap-3 sm:flex-row">
+                  <Link href="#faq" className="w-full">
+                    <Button
+                      variant="outline"
+                      className="w-full border-gray-600 bg-transparent text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800"
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://classroom.google.com/c/Nzk1NTcwMDI0NTU4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button className="w-full transform bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                      Join Robotics Team
+                    </Button>
+                  </Link>
+                </div>
               }
               gradient="from-purple-500/10 to-pink-500/10"
               borderColor="border-purple-500/30 hover:border-purple-500/60"
             />
           </div>
         </div>
-
-        <div className="text-center">
-          <Link href="#faq" className="inline-block">
-            <Button
-              variant="outline"
-              className="transform border-2 border-gray-600 px-8 py-3 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:bg-blue-500/10"
-            >
-              Learn More
-            </Button>
-          </Link>
+        {/* Videos */}
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-4xl font-bold text-transparent lg:text-5xl">
+            Videos
+          </h2>
+          <p className="mx-auto max-w-3xl text-lg text-gray-400">
+            Heres some videos that showcase our team!
+          </p>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <video className="h-[220px] sm:h-[280px] md:h-[600px] w-full rounded-lg" controls>
+                <source
+                  src="/assets/robotics/downloadmedia-20260916 (1).mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <video className="h-[220px] sm:h-[280px] md:h-[600px] w-full rounded-lg" controls>
+                <source
+                  src="/assets/robotics/downloadmedia-20260916.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          
         </div>
       </div>
+      
     </section>
   );
 }

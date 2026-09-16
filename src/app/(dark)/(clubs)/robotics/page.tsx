@@ -73,12 +73,32 @@ const faq = [
           <Link href="https://engineering.ontariotechu.ca/outreach/teacher-programs/robotics_competition/index.php">
             Ontario Tech Robotics Competition
           </Link>
-        </strong>{", "} and {" "}
+        </strong>{", "}
+        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://engineering.ontariotechu.ca/outreach/teacher-programs/robotics_competition/index.php">
+            Ontario Tech Robotics Competition
+          </Link>
+        </strong>{", "}
         <strong className="text-blue-400 hover:text-blue-500 hover:underline">
           <Link href="https://ceta.ymci.ca/">
             CETA Competition
           </Link>
+        </strong>{", "} and {" "}
+        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://skillsontario.com/">
+            Skills Ontario
+          </Link>
         </strong>
+        <br></br>
+        <p>
+          Additionally, we host
+          <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://firstroboticscanada.org/fll/">{" "}
+            First Lego League
+          </Link>
+        </strong>{" "}
+          at our school!
+        </p>
       </>
     ),
   },
