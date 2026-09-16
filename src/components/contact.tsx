@@ -101,7 +101,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                 href={`mailto:${advisor.email}?subject=YMCI%20Club%20-%20Inquiries`}
                 className="mt-4 block w-full"
               >
-                <Button color="primary" className="w-full">
+                <Button className="bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-2 font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
                   Send Email
                 </Button>
               </a>

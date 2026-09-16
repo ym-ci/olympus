@@ -83,20 +83,24 @@ const faq = [
           <Link href="https://ceta.ymci.ca/">
             CETA Competition
           </Link>
-        </strong>{", "} and {" "}
+        </strong>{", and "}
         <strong className="text-blue-400 hover:text-blue-500 hover:underline">
           <Link href="https://skillsontario.com/">
             Skills Ontario
           </Link>
         </strong>
-        <br></br>
-        <p>
+        <p className="mt-4">
           Additionally, we host
           <strong className="text-blue-400 hover:text-blue-500 hover:underline">
           <Link href="https://firstroboticscanada.org/fll/">{" "}
             First Lego League
           </Link>
-        </strong>{" "}
+        </strong>{" and the "}
+        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
+          <Link href="https://ceta.ymci.ca/">
+            CETA Competition
+          </Link>
+        </strong> {" "}
           at our school!
         </p>
       </>
@@ -145,11 +149,15 @@ const faq = [
           <CardContent className="space-y-4">
             <p>
               For everything related to the team details, please
-              contact us!
+              contact our team!
             </p>
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="w-full">Contact Team</Button>
+                <div className="flex justify-center">
+                  <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                    Contact Team
+                  </Button>
+                </div>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
@@ -171,10 +179,14 @@ const faq = [
           <CardHeader>Staff Advisor</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For other inquries please contact our staff advisor.
+              For other inquries please contact our staff advisors.
             </p>
             <Contact>
-              <Button className="w-full">Contact Staff Advisor</Button>
+              <div className="flex justify-center">
+                <Button className="mt-6 bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                  Contact Staff Advisors
+                </Button>
+              </div>
             </Contact>
           </CardContent>
         </Card>
