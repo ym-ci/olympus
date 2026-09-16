@@ -121,22 +121,25 @@ const faq = [
   {
     question: "What is the VEX V5 Robotics Competition's objective this year?",
     answer: (
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/68NxYIAzbkY"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+      <div className="flex w-full justify-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/68NxYIAzbkY"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
+      
     ),
   },
   {
     question: "I've got more questions! Who do I contact?",
     answer: (
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-col md:flex-row gap-2">
         <Card className="w-full">
           <CardHeader>Our Team</CardHeader>
           <CardContent className="space-y-4">
