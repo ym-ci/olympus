@@ -30,12 +30,12 @@ export function FAQ({
           </p>
         </div>
 
-        <div className="rounded-2xl border border-gray-800 bg-gray-900/50 p-8 backdrop-blur-sm">
+        <div className="rounded-2xl border border-gray-800 bg-gray-900 p-8 ">
           <div className="space-y-4">
             {faq.map((item, index) => (
               <div
                 key={index}
-                className="rounded-xl border border-gray-700/50 px-6 py-6 transition-all duration-300 hover:border-blue-500/50 hover:bg-gray-800/30"
+                className="rounded-xl border border-gray-700 px-6 py-6 transition-all duration-300 hover:border-blue-500/50 hover:bg-gray-800"
               >
                 <h3 className="mb-4 text-left font-semibold text-white">
                   {item.question}
