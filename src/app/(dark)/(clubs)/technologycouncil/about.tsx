@@ -56,9 +56,6 @@ export const AboutTechCouncil = () => {
           </CardContent>
         </Card>
       </div>
-      <h1 className="pt-4 text-center text-2xl font-bold">
-        SITE UNDER CONSTRUCTION
-      </h1>
     </section>
   );
 };

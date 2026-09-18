@@ -83,7 +83,7 @@ const faq = [
                   <p className="text-lg">
                     technologycouncil@ymci.ca
                   </p>
-                  <Link href="mailto:andrew.ng3@student.tdsb.on.ca?subject=Tech%20Council%20-%20Question">
+                  <Link href="mailto:technologycouncil@ymci.ca?subject=Tech%20Council%20-%20Question">
                     <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">Send Email</Button>
                   </Link>
                 </div>
