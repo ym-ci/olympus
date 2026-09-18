@@ -75,11 +75,6 @@ const faq = [
           </Link>
         </strong>{", "}
         <strong className="text-blue-400 hover:text-blue-500 hover:underline">
-          <Link href="https://engineering.ontariotechu.ca/outreach/teacher-programs/robotics_competition/index.php">
-            Ontario Tech Robotics Competition
-          </Link>
-        </strong>{", "}
-        <strong className="text-blue-400 hover:text-blue-500 hover:underline">
           <Link href="https://ceta.ymci.ca/">
             CETA Competition
           </Link>

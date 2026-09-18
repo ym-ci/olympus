@@ -83,7 +83,7 @@ export function AboutUs() {
           <h2 className="mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-4xl font-bold text-transparent lg:text-5xl">
             Videos
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-gray-400">
+          <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-400">
             Heres some videos that showcase our team!
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

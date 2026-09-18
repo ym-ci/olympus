@@ -55,7 +55,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>{children}</DialogTrigger>
 
-      <DialogContent>
+      <DialogContent className="bg-gray-950">
         <DialogHeader>
           <DialogTitle>Contact our Staff Advisors</DialogTitle>
         </DialogHeader>
@@ -97,14 +97,16 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                 </p>
               </div>
 
-              <a
-                href={`mailto:${advisor.email}?subject=YMCI%20Club%20-%20Inquiries`}
-                className="mt-4 block w-full"
-              >
-                <Button className="bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-2 font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
-                  Send Email
-                </Button>
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href={`mailto:${advisor.email}?subject=YMCI%20Club%20-%20Inquiries`}
+                  className="mt-4 block inline-block"
+                >
+                  <Button className="bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-2 font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                    Send Email
+                  </Button>
+                </a>
+              </div>
             </div>
           ))}
         </div>
