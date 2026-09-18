@@ -62,22 +62,22 @@ const faq = [
     answer: (
       <div className="flex flex-row gap-2">
         <Card className="w-full">
-          <CardHeader>Our Club</CardHeader>
+          <CardHeader>Our Council</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For everything related our club details, please
+              For everything related our council details, please
               contact our team!
             </p>
             <Dialog>
               <DialogTrigger asChild>
                 <div className="flex justify-center">
                   <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
-                  Contact Club</Button>
+                  Contact Council</Button>
                 </div>
               </DialogTrigger>
               <DialogContent className="bg-gray-950">
                 <DialogHeader>
-                  <DialogTitle>Contact our Club!</DialogTitle>
+                  <DialogTitle>Contact our Council!</DialogTitle>
                 </DialogHeader>
                 <div className="flex flex-col gap-2 items-center">
                   <p className="text-lg">
@@ -95,7 +95,7 @@ const faq = [
           <CardHeader>Staff Advisor</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For other inquries please contact our staff advisors.
+              For other inquries please contact our staff advisor.
             </p>
             <Contact club="Technology Council">
               <div className="flex justify-center">
