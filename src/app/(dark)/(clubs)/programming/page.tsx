@@ -80,7 +80,7 @@ const faq = [
               For inquries regarding funding, equipment, or anything else,
               please contact our staff advisor.
             </p>
-            <Contact>
+            <Contact club="Programming Club">
               <Button className="w-full">Contact Staff Advisor</Button>
             </Contact>
           </CardContent>

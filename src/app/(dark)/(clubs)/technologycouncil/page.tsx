@@ -3,6 +3,7 @@ import { AboutTechCouncil } from "@/app/(dark)/(clubs)/technologycouncil/about";
 import { Contact } from "@/components/contact";
 import { FAQ } from "@/components/faq";
 import { InstagramIcon } from "@/components/icons/instagram";
+import { ClassroomIcon } from "@/components/icons/classroom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
@@ -18,37 +19,44 @@ import { ArrowLeft } from "lucide-react"
 
 const faq = [
   {
-    question: "How can I join the Technology Council?",
+    question:
+      "What are the sections of the Technology Council? Can I join more than one?",
     answer:
-      "Look out for announcements at the start of the school year or reach out to the current council members for more information",
+      "The council is divided into three sections: Events, Computer Services, and 3D Printing Design. Each section focuses on different aspects of promoting technology. Students are welcome to join more than one section if they’re interested!",
   },
   {
+    question: "What is the time commitment?",
+    answer:
+      "Once a week for each department.",
+  },
+  {
+    question: "Where are meetings held?",
+    answer: (
+      <div className="space-y-4">
+        <p>
+          <strong>3D Printing Design:</strong> Every Tuesday at lunch in room <strong>204</strong>.
+        </p>
+        <p>  
+          <strong>Events:</strong> Every Wednesday at lunch in room <strong>204</strong>.
+        </p>
+        <p>  
+          <strong>Computer Services:</strong> Every Friday at lunch in room <strong>204</strong>.
+        </p>
+      </div>
+    ),
+     
+  },
+    {
     question: "Do I need technical expertise to join?",
     answer:
-      "Not at all! We welcome students with all levels of experience—whether you’re tech-savvy or just eager to learn and contribute",
-  },
-  {
-    question: "Can I join both the Technology Council and a tech club?",
-    answer:
-      "Absolutely! Many students are active in both the council and other tech clubs, as they complement each other well",
+      "Not at all! We welcome students with all levels of experience—whether you’re tech-savvy or just eager to learn and contribute.",
   },
   {
     question: "What skills can I gain by joining the Technology Council?",
     answer:
       "Members can develop skills in leadership, event planning, teamwork, technical problem-solving, and effective communication.",
   },
-  {
-    question:
-      "What are the sections of the Technology Council? Can I join more than one?",
-    answer:
-      "The council is divided into four sections: Events, Computer Services, and 3D Printing Design. Each section focuses on different aspects of promoting technology. Students are welcome to join more than one section if they’re interested!",
-  },
-  {
-    question: "How often does the Technology Council meet?",
-    answer:
-      "Each section of the Technology Events, Computer Services, and 3D Printing Design meet weekly during lunch to plan and work on initiatives.",
-  },
-
+  
   {
     question: "I've got more questions! Who do I contact?",
     answer: (
@@ -57,23 +65,26 @@ const faq = [
           <CardHeader>Executives</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For everything else related to the club/team details, please
-              contact our executives!
+              For everything related our club details, please
+              contact our team!
             </p>
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="w-full">Contact Executives</Button>
+                <div className="flex justify-center">
+                  <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                  Contact Executives</Button>
+                </div>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Executives</DialogTitle>
+                  <DialogTitle>Contact our Club!</DialogTitle>
                 </DialogHeader>
-                <div className="flex flex-col gap-2">
-                  <p>
-                    <strong>Max Ma:</strong> xiaoying.ma@student.tdsb.on.ca
+                <div className="flex flex-col gap-2 items-center">
+                  <p className="text-lg">
+                    technologycouncil@ymci.ca
                   </p>
                   <Link href="mailto:andrew.ng3@student.tdsb.on.ca?subject=Tech%20Council%20-%20Question">
-                    <Button className="w-full">Send Email</Button>
+                    <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">Send Email</Button>
                   </Link>
                 </div>
               </DialogContent>
@@ -84,11 +95,13 @@ const faq = [
           <CardHeader>Staff Advisor</CardHeader>
           <CardContent className="space-y-4">
             <p>
-              For inquries regarding funding, equipment, or anything else,
-              please contact our staff advisor.
+              For other inquries please contact our staff advisors.
             </p>
-            <Contact>
-              <Button className="w-full">Contact Staff Advisor</Button>
+            <Contact club="Technology Council">
+              <div className="flex justify-center">
+                <Button className="mt-6 bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
+                Contact Staff Advisor</Button>
+              </div>
             </Contact>
           </CardContent>
         </Card>
@@ -107,9 +120,9 @@ export default function TechCouncilPage() {
       <Hero
         image="/assets/tech-council/group.jpg"
         title={
-          <div>
-            <h1>Technology Council</h1>
-            <div className="flex flex-row gap-2 place-self-center">
+          <div className="flex flex-col items-center">
+            <h1 className="mb-8">Technology Council</h1>
+            <div className="flex items-center justify-center gap-3">
               <Link
                 href="https://www.instagram.com/ymtechcouncil/"
                 target="_blank"
@@ -118,6 +131,9 @@ export default function TechCouncilPage() {
                   className="h-8 w-8 fill-white"
                   viewBox="0 0 132 132"
                 />
+              </Link>
+              <Link href="https://classroom.google.com/c/Nzk1NTcwNzk5MTY5" target="_blank">
+                <ClassroomIcon className="h-8 w-8" />
               </Link>
             </div>
           </div>

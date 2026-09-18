@@ -154,16 +154,16 @@ const faq = [
                   </Button>
                 </div>
               </DialogTrigger>
-              <DialogContent>
+              <DialogContent className="bg-gray-950">
                 <DialogHeader>
                   <DialogTitle>Contact our Team!</DialogTitle>
                 </DialogHeader>
-                <div className="flex flex-col gap-2">
-                  <p>
+                <div className="flex flex-col gap-2 items-center">
+                  <p className="text-lg">
                     robotics@ymci.ca
                   </p>
                   <Link href="mailto:robotics@ymci.ca?subject=Robotics%20Team%20-%20Question">
-                    <Button className="w-full">Send Email</Button>
+                    <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">Send Email</Button>
                   </Link>
                 </div>
               </DialogContent>
@@ -171,12 +171,12 @@ const faq = [
           </CardContent>
         </Card>
         <Card className="w-full">
-          <CardHeader>Staff Advisor</CardHeader>
+          <CardHeader>Staff Advisors</CardHeader>
           <CardContent className="space-y-4">
             <p>
               For other inquries please contact our staff advisors.
             </p>
-            <Contact>
+            <Contact club="Robotics Team">
               <div className="flex justify-center">
                 <Button className="mt-6 bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
                   Contact Staff Advisors

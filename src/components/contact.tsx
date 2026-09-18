@@ -17,7 +17,13 @@ type Advisor = {
   clubs: string[];
 };
 
-export const Contact = ({ children }: { children: React.ReactNode }) => {
+export const Contact = ({
+  children,
+  club,
+}: {
+  children: React.ReactNode;
+  club: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const [advisors, setAdvisors] = useState<Advisor[]>([]);
@@ -61,7 +67,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
         </DialogHeader>
 
         <div className="space-y-6">
-          {advisors.map((advisor) => (
+          {advisors.filter((advisor) => advisor.clubs.includes(club)).map((advisor) => (
             <div
               key={advisor.email}
               className="rounded-xl border border-gray-700 p-5"
@@ -100,7 +106,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
               <div className="flex justify-center">
                 <a
                   href={`mailto:${advisor.email}?subject=YMCI%20Club%20-%20Inquiries`}
-                  className="mt-4 block inline-block"
+                  className="mt-4 inline-block"
                 >
                   <Button className="bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-2 font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
                     Send Email
