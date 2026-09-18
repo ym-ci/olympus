@@ -57,15 +57,9 @@ const faq = [
                 </DialogHeader>
                 <div className="flex flex-col gap-2">
                   <p>
-                    <strong>Pano Karakoulas:</strong> pano.karakoulas9@student.tdsb.on.ca
+                    programming@ymci.ca
                   </p>
-                  <p>
-                    <strong>Minghan Xiao:</strong> minghan.xiao@student.tdsb.on.ca
-                  </p>
-                  <p>
-                    <strong>Ra&apos;ed Somji:</strong> ra&apos;ed.somji@student.tdsb.on.ca
-                  </p>
-                  <Link href="mailto:pano.karakoulas9@student.tdsb.on.ca,minghan.xiao@student.tdsb.on.ca,ra&apos;ed.somji@student.tdsb.on.ca?subject=Robotics%20Team%20-%20Question">
+                  <Link href="mailto:programming@ymci.ca?subject=Programming%Club%20-%20Question">
                     <Button className="w-full">Send Email</Button>
                   </Link>
                 </div>

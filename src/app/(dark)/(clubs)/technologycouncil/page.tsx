@@ -62,7 +62,7 @@ const faq = [
     answer: (
       <div className="flex flex-row gap-2">
         <Card className="w-full">
-          <CardHeader>Executives</CardHeader>
+          <CardHeader>Our Club</CardHeader>
           <CardContent className="space-y-4">
             <p>
               For everything related our club details, please
@@ -72,10 +72,10 @@ const faq = [
               <DialogTrigger asChild>
                 <div className="flex justify-center">
                   <Button className="bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-purple-700">
-                  Contact Executives</Button>
+                  Contact Club</Button>
                 </div>
               </DialogTrigger>
-              <DialogContent>
+              <DialogContent className="bg-gray-950">
                 <DialogHeader>
                   <DialogTitle>Contact our Club!</DialogTitle>
                 </DialogHeader>
