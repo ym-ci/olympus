@@ -9,19 +9,19 @@ export default function LandingPage() {
       <div className="grid h-full w-full grid-cols-2 grid-rows-[1fr_1.25fr]">
         {/* Robotics Quadrant */}
         <Link
-          href="/robotics"
+          href="/technologycouncil"
           prefetch={false}
           className="group relative overflow-hidden"
         >
           <Image
-            src="/assets/robotics/group.jpg"
-            alt="Robotics"
+            src="/assets/tech-council/group.jpg"
+            alt="Technology Council"
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-black/50 transition-all duration-500 group-hover:bg-black/40" />
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
-            Robotics
+            Technology Council
           </h2>
         </Link>
 
@@ -43,8 +43,26 @@ export default function LandingPage() {
           </h2>
         </Link>
 
-        {/* Tech Council Quadrant */}
+        {/* Robotics Team Quadrant */}
         <Link
+          href="/robotics"
+          prefetch={false}
+          className="group relative col-span-2 overflow-hidden"
+        >
+          <Image
+            src="/assets/robotics/bot_cool.jpg"
+            alt="Robotics"
+            fill
+            className="object-cover transition-all duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/55 transition-all duration-500 group-hover:bg-black/30" />
+          <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
+            Robotics
+          </h2>
+        </Link>
+
+        {/* Tech Council Quadrant */}
+        {/* <Link
           href="/technologycouncil"
           prefetch={false}
           className="group relative col-span-2 overflow-hidden"
@@ -59,7 +77,7 @@ export default function LandingPage() {
           <h2 className="absolute bottom-4 left-4 text-2xl font-bold text-white md:text-3xl">
             Technology Council
           </h2>
-        </Link>
+        </Link> */}
 
       </div>
 

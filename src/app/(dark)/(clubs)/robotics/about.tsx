@@ -44,7 +44,7 @@ export function AboutUs() {
           <div className="w-full max-w-4xl">
             <RoboticsCard
               title="Robotics Team"
-              imageSrc="/assets/robotics/bot_cool.jpg"
+              imageSrc="/assets/robotics/bot_close_1.jpg"
               items={[
                 "Compete in the VEX V5 Robotics Competition",
                 "Compete in various other robotics competitions",

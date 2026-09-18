@@ -26,7 +26,7 @@ export const AboutTechCouncil = () => {
         </div>
         <div className="mb-12 flex justify-center">
           <TCCard
-            title=""
+            title="Technology Council"
             imageSrc="/assets/tech-council/group.jpg"
             items={[
               "We offer computer services around the school, including fixing computers, setting up accounts, and more.",
