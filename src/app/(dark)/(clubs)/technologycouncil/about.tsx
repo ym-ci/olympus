@@ -17,8 +17,7 @@ export const AboutTechCouncil = () => {
           <p className="mx-auto max-w-3xl text-lg text-gray-400">
             Technology Council is an initiative to increase student awareness
             and knowledge of technology, helping them succeed in and beyond
-            the classroom. We offer computer services around the school and
-            promote technology through newsletters and events. Additionally,
+            the classroom. We offer computer services around the school, 3d printing design, and events. Additionally,
             we support other school clubs like Programming and
             Robotics with fundraising for competitions and equipment. 
             Our mission is to enhance technology usage across YMCI.

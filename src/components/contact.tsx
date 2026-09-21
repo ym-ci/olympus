@@ -63,7 +63,7 @@ export const Contact = ({
 
       <DialogContent className="bg-gray-950">
         <DialogHeader>
-          <DialogTitle>Contact our Staff Advisors</DialogTitle>
+          <DialogTitle>Contact our Staff Advisor</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
