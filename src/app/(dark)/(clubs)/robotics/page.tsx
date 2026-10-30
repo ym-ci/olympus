@@ -136,6 +136,26 @@ const faq = [
     ),
   },
   {
+    question: "Are there any University Pathways?",
+    answer: (
+      <>
+      Our robotics community extends beyond York Mills! Founded by alumni of our robotics program, the&nbsp;
+      <Link
+      href="https://rift.utra.ca/"
+      target="_blank"
+      className="text-blue-400 hover:text-blue-500 hover:underline"
+      >
+      <strong>Rift Robotics Team</strong>
+      </Link>
+      &nbsp;at the <strong>University of Toronto</strong> 
+      &nbsp;offers our graduates the opportunity to continue developing their engineering, programming, and robotics skills at the post-secondary level.
+      Students from our robotics team who attend <strong>University of Toronto</strong>&nbsp;will receive priority consideration during the <strong>Rift&apos;s</strong> application process, 
+      helping them continue their robotics journey alongside familiar faces and fellow enthusiasts.
+      </>
+      
+    ),
+  },
+  {
     question: "I've got more questions! Who do I contact?",
     answer: (
       <div className="flex flex-col md:flex-row gap-2">
