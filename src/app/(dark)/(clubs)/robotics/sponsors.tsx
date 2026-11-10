@@ -17,7 +17,8 @@ export default function Sponsors() {
             Our Sponsors
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            We&apos;re grateful for the support of our amazing sponsors who help make our robotics journey possible.
+            We&apos;re grateful for the support of our amazing sponsors who help make our robotics journey possible. 
+            Click a logo to learn more about our sponsors!
           </p>
         </div>
         
@@ -47,6 +48,21 @@ export default function Sponsors() {
               className="w-full max-w-xs h-auto group-hover:scale-105 transition-transform duration-500" 
             />
           </Link>
+
+          {/* Oxford Learning */}
+          <Link 
+            href="https://qr.oxfordlearning.com/p/S-McQ2ZPsH?utm_source=qrcode&utm_medium=link-list&utm_campaign=56983495" 
+            target="_blank" 
+            className="group flex items-center justify-center p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-all duration-500 hover:bg-gray-800/50 hover:shadow-2xl hover:shadow-purple-500/10"
+          >
+            <Image 
+              src="/assets/robotics/sponsors/OxfordLearning.png" 
+              alt="Oxford Learning" 
+              width={320} 
+              height={320} 
+              className="w-full max-w-xs h-auto group-hover:scale-105 transition-transform duration-500" 
+            />
+          </Link>
         </div>
         
         {/* Jukebox */}
@@ -64,6 +80,8 @@ export default function Sponsors() {
             </p>
           </Link>
         </div>
+
+        
         
         {/* Call to Action */}
         <div className="text-center mt-16">
